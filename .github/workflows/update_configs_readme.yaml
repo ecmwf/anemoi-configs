@@ -15,14 +15,14 @@ jobs:
           - name: Checkout repository
             uses: actions/checkout@v2
         
-          - run: sed -i '/<!-- CONTENTS:START -->/,/<!-- CONTENTS:END -->/d' README.md
+          - run: sed -i '/<!-- CONTENTS:START -->/,/<!-- CONTENTS:END -->/d' configs/README.md
           - run: echo "<!-- CONTENTS:START -->" > configs/README.md
           - run: echo "## Configs Table of Contents" >> configs/README.md
           - run: echo "" >> configs/README.md
           - run: |
                 find configs -mindepth 1 -type d | while read dir; do
                 dirname=$(basename "$dir")
-                echo "- [${dirname}](./${dir})" >> configs/README.md
+                echo "- [${dirname}](${dir})" >> configs/README.md
                 done
           - run: echo "<!-- CONTENTS:END -->" >> configs/README.md
 
