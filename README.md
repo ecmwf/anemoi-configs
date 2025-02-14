@@ -3,6 +3,8 @@
 This repository provides information, examples, and tutorials on config files for use with Anemoi, as well as those used for the AIFS. 
 It is community-focused with the goal of explaining and detailing the complexity of these configs.
 
+[Apache License 2.0](LICENSE) In applying this licence, ECMWF does not waive the privileges and immunities granted to it by virtue of its status as an intergovernmental organisation nor does it submit to any jurisdiction.
+
 ## Table of Contents
 
 - [Introduction](#introduction)
