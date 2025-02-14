@@ -6,7 +6,7 @@
 
 Explain your model here. Detail what it does. Link to other sources, like papers or checkpoints.
 
-#### Citation
+### Citation
 
 Include details of the citation here.
 
@@ -29,11 +29,11 @@ Include information about the licensing of the model.
 
 Run through the full process of training the model, from dataset creation to training.
 
-### Datasets
+### Datasets
 
 Include the dataset recipe here in the folder, and detail how to use it.
 
-### Training
+### Training Step
 
 Include the training configuration, or however many training steps there were.
 
