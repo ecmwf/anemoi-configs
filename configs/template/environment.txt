@@ -1,0 +1,2 @@
+# Add the requirments for the environment here
+# e.g. anemoi-training==?.?.?
