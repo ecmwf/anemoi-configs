@@ -1,12 +1,7 @@
-
-# Configs
-
-A collection of configs and explanations for use with Anemoi.
-
 <!-- CONTENTS:START -->
 ## Configs Table of Contents
 
-- [template](configs/template)
-- [aifs](configs/aifs)
-- [aifs-single-mse-1.0](configs/aifs/aifs-single-mse-1.0)
+- [configs](/configs)
+- [aifs-single-mse-1.0](/configs/aifs/aifs-single-mse-1.0)
+- [template](/configs/template)
 <!-- CONTENTS:END -->
