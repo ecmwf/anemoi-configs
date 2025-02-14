@@ -1,3 +1,7 @@
+# Configs
+
+Here you can find a collection of configurations for various anemoi models.
+
 <!-- CONTENTS:START -->
 ## Table of Contents
 
