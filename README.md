@@ -11,6 +11,7 @@ It is community-focused with the goal of explaining and detailing the complexity
 - [Getting Started](#getting-started)
 - [Configuration Files](#configuration-files)
 - [Tutorials](#tutorials)
+- [Tools](#tools)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -30,11 +31,17 @@ To get started with Anemoi and its configuration files, follow these steps:
 
 ## Configuration Files
 
+In [configs](/configs) you can find a curated selection of Anemoi config files detailing
+how to train a model, all the way from dataset creation to finetuning.
+
 ## Tutorials
 
 Step-by-step tutorials to guide you through creating and modifying configuration files.
 
 ![Tutorials](tutorials/)
+
+## Tools
+
 
 ## Contributing
 
