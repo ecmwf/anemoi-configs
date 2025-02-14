@@ -16,7 +16,7 @@ jobs:
             uses: actions/checkout@v2
         
           - run: sed -i '/<!-- CONTENTS:START -->/,/<!-- CONTENTS:END -->/d' configs/README.md
-          - run: echo "<!-- CONTENTS:START -->" > configs/README.md
+          - run: echo "<!-- CONTENTS:START -->" >> configs/README.md
           - run: echo "## Table of Contents" >> configs/README.md
           - run: echo "" >> configs/README.md
           - run: |
