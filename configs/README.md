@@ -1,6 +1,4 @@
-# Configs
-
-Find here a collection of configs
-
 <!-- CONTENTS:START -->
+## Configs Table of Contents
+
 <!-- CONTENTS:END -->
