@@ -17,11 +17,14 @@ jobs:
         
           - run: sed -i '/<!-- CONTENTS:START -->/,/<!-- CONTENTS:END -->/d' configs/README.md
           - run: echo "<!-- CONTENTS:START -->" > configs/README.md
-          - run: echo "## Configs Table of Contents" >> configs/README.md
+          - run: echo "## Table of Contents" >> configs/README.md
           - run: echo "" >> configs/README.md
           - run: |
                 find configs -type f -name '*.md' -exec dirname {} \; | sort -u | while read dir; do
                     dirname=$(basename "$dir")
+                    if [ "$dirname" == "configs" ]; then
+                        continue
+                    fi
                     echo "- [${dirname}](/${dir})" >> configs/README.md
                 done
           - run: echo "<!-- CONTENTS:END -->" >> configs/README.md
