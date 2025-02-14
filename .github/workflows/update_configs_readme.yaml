@@ -5,7 +5,7 @@ on:
         branches:
             - main
         paths:
-            - 'configs/**'
+                - 'configs/**'
 
 jobs:
     update-readme:
@@ -20,9 +20,9 @@ jobs:
           - run: echo "## Configs Table of Contents" >> configs/README.md
           - run: echo "" >> configs/README.md
           - run: |
-                find configs -mindepth 1 -type d | while read dir; do
-                dirname=$(basename "$dir")
-                echo "- [${dirname}](${dir})" >> configs/README.md
+                find configs -type f -name '*.md' -exec dirname {} \; | sort -u | while read dir; do
+                    dirname=$(basename "$dir")
+                    echo "- [${dirname}](/${dir})" >> configs/README.md
                 done
           - run: echo "<!-- CONTENTS:END -->" >> configs/README.md
 
