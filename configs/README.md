@@ -1,6 +1,7 @@
 
 # Configs
 
+A collection of configs and explanations for use with Anemoi.
 
 <!-- CONTENTS:START -->
 ## Configs Table of Contents
