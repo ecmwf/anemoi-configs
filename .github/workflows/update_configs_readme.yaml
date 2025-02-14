@@ -17,6 +17,7 @@ jobs:
         
           - run: sed -i '/<!-- CONTENTS:START -->/,/<!-- CONTENTS:END -->/d' configs/README.md
           - run: echo "<!-- CONTENTS:START -->" >> configs/README.md
+          - run: echo "<!-- Updated: $(date) -->" >> configs/README.md
           - run: echo "## Table of Contents" >> configs/README.md
           - run: echo "" >> configs/README.md
           - run: |
