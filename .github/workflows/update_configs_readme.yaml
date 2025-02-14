@@ -1,0 +1,35 @@
+name: Update Configs README
+
+on:
+    push:
+        branches:
+            - main
+        paths:
+            - 'configs/**'
+
+jobs:
+    update-readme:
+        runs-on: ubuntu-latest
+
+        steps:
+          - name: Checkout repository
+            uses: actions/checkout@v2
+        
+          - run: sed -i '/<!-- CONTENTS:START -->/,/<!-- CONTENTS:END -->/d' README.md
+          - run: echo "<!-- CONTENTS:START -->" > configs/README.md
+          - run: echo "## Configs Table of Contents" >> configs/README.md
+          - run: echo "" >> configs/README.md
+          - run: |
+                find configs -mindepth 1 -type d | while read dir; do
+                dirname=$(basename "$dir")
+                echo "- [${dirname}](./${dir})" >> configs/README.md
+                done
+          - run: echo "<!-- CONTENTS:END -->" >> configs/README.md
+
+          - name: Commit and push changes
+            run: |
+                git config --global user.name 'github-actionsß[bot]'
+                git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+                git add configs/README.md
+                git commit -m 'Update configs README with Table of Contents'
+                git push
