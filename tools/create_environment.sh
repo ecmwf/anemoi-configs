@@ -1,0 +1,1 @@
+# Tool to create a new environment from a configuration folder.
