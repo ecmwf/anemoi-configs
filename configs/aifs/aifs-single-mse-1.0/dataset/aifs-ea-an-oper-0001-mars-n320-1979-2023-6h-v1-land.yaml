@@ -1,0 +1,67 @@
+name: aifs-ea-an-oper-0001-mars-n320-1979-2023-6h-v1-land
+
+description: Dataset containing land surface and cloud variables from ERA5 for
+  adding surface variables to the AIFS on n320 grid ready for training operational model
+
+dates:
+  start: '1979-01-01T00:00:00'
+  end: '2023-12-31T18:00:00'
+  frequency: 6h
+
+input:
+  join:
+  - mars:
+      class: ea
+      expver: '0001'
+      grid: n320
+      param:
+      - 100u
+      - 100v
+      - swvl1
+      - swvl2
+      - swvl3
+      - stl1
+      - stl2
+      - stl3
+      - sd
+      - tsn
+      - rsn
+      - tcc
+      - lcc
+      - mcc
+      - hcc
+      - lai_hv
+      - lai_lv
+      - slt
+      - tvl
+      - tvh
+      - cvl
+      - cvh
+      - cl
+      - isor
+      - anor
+      levtype: sfc
+      stream: oper
+      type: an
+  - accumulations:
+      class: ea
+      expver: '0001'
+      grid: n320
+      levtype: sfc
+      param:
+      - sf
+      - lsp
+      - ro
+      - strd
+      - ssrd
+      accumulation_period: 6
+
+build:
+  use_grib_paramid: true
+
+common:
+  mars_request:
+    class: ea
+    expver: '0001'
+    grid: n320
+
