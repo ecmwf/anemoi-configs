@@ -126,6 +126,8 @@ After creating the data, set the following environments variables and use the pr
 ```bash
 export DATASETS_PATH=???????
 export OUTPUT_PATH=???????
+
+cd training/pretraining
 anemoi-training train --config-name=pretraining.yaml
 ```
 
@@ -134,9 +136,17 @@ anemoi-training train --config-name=pretraining.yaml
 Once pretraining is done, set the run id and use the finetuning configuration file.
 
 ```bash
+export DATASETS_PATH=???????
+export OUTPUT_PATH=???????
 export PRETRAINING_RUN_ID=???????
+
+cd training/finetuning
 anemoi-training train --config-name=finetuning.yaml
 ```
+
+This finetuning steps assumes an uninterrupted 13 epochs. If an error occurs, and training is restarted ensure you update
+the `PRETRAINING_RUN_ID` to the new finetuning id. Additonally, the start of the `rollout` will need to be manually 
+updated to ensure correct rollout finetuning.
 
 #### Training Hyperparameters
 
