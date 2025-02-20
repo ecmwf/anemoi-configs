@@ -8,17 +8,16 @@ attribution: ECMWF
 licence: CC-BY-4.0
 
 dates:
-  frequency: 6h
   start: '1979-01-01T00:00:00'
-  end: '2022-12-31T18:00:00'
+  end: '1979-01-02T18:00:00'
+  # end: '2023-12-31T18:00:00'
+  frequency: 6h
 
 input:
   join:
   - mars:
       use_cdsapi_dataset: "reanalysis-era5-complete"
       class: ea
-      type: an
-      stream: oper
       expver: '0001'
       grid: n320
       levtype: pl
@@ -44,9 +43,8 @@ input:
       - 925
       - 1000
   - mars:
+      use_cdsapi_dataset: "reanalysis-era5-complete"
       class: ea
-      type: an
-      stream: oper
       expver: '0001'
       grid: n320
       levtype: sfc

@@ -2,3 +2,6 @@ anemoi-training==0.3.1
 anemoi-models==0.4.0
 anemoi-graphs>=0.4.4
 anemoi-datasets==0.5.16
+
+
+cdsapi==0.7.5
