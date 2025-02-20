@@ -3,6 +3,10 @@ name: aifs-ea-an-oper-0001-mars-n320-1979-2023-6h-v1-land
 description: Dataset containing land surface and cloud variables from ERA5 for
   adding surface variables to the AIFS on n320 grid ready for training operational model
 
+attribution: ECMWF
+
+licence: CC-BY-4.0
+
 dates:
   start: '1979-01-01T00:00:00'
   end: '2023-12-31T18:00:00'
@@ -11,6 +15,7 @@ dates:
 input:
   join:
   - mars:
+      use_cdsapi_dataset: "reanalysis-era5-complete"
       class: ea
       expver: '0001'
       grid: n320

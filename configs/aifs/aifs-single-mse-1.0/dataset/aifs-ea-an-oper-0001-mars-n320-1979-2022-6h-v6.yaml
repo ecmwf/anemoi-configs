@@ -15,6 +15,7 @@ dates:
 input:
   join:
   - mars:
+      use_cdsapi_dataset: "reanalysis-era5-complete"
       class: ea
       type: an
       stream: oper
