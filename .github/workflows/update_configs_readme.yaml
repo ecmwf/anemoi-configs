@@ -23,7 +23,8 @@ jobs:
           - run: |
                 find configs -type f -name '*.md' -exec dirname {} \; | sort -u | while read dir; do
                     dirname=$(basename "$dir")
-                    if [ "$dirname" == "configs" ]; then
+                    IGNORED_DIRS=("configs" "scripts" "training" "dataset")
+                    if [[ " ${IGNORED_DIRS[@]} " =~ " ${dirname} " ]]; then
                         continue
                     fi
                     echo "- [${dirname}](/${dir})" >> configs/README.md
