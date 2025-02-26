@@ -6,6 +6,8 @@ It is community-focused with the goal of explaining and detailing the complexity
 
 [Apache License 2.0](LICENSE) In applying this licence, ECMWF does not waive the privileges and immunities granted to it by virtue of its status as an intergovernmental organisation nor does it submit to any jurisdiction.
 
+You can find the announcements of all new configs [here](https://github.com/ecmwf/anemoi-configs/discussions/categories/configs).
+
 ## Table of Contents
 
 - [Introduction](#introduction)
