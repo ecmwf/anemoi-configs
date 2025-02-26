@@ -19,6 +19,7 @@ It is community-focused with the goal of explaining and detailing the complexity
 ## Introduction
 
 Welcome to the Anemoi Configs repository.
+
 Here you will find comprehensive guides and examples to help you understand and create configuration files for Anemoi, as well as useful tools to setup environments and get started.
 
 ## Getting Started
