@@ -18,6 +18,7 @@ jobs:
                 title: ${{ github.event.pull_request.title }}
                 body: |
                     ${{ github.event.pull_request.body }}
+                    By: ${{ github.event.pull_request.assignees.*.login }}
                 category-position: 5
 
           - name: Print Output
