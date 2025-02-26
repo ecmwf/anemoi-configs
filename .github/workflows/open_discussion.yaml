@@ -6,11 +6,12 @@ on:
 
 jobs:
     create-discussion:
-        if: github.event.pull_request.merged == true
+        if: github.event.pull_request.merged == true && contains(github.event.pull_request.labels.*.name, 'config-release')
         runs-on: ubuntu-latest
 
         steps:
           - name: Create Discussion
+            id: build-discussion
             uses: nvdaes/build-discussion@v1.0.29
             with:
                 token: ${{ secrets.GITHUB_TOKEN }}
@@ -18,3 +19,10 @@ jobs:
                 body: |
                     ${{ github.event.pull_request.body }}
                 category-position: 5
+
+          - name: Print Output
+            id: output
+            run: |
+                echo "${{ steps.build-discussion.outputs.discussion-id }}"
+                echo "${{ steps.build-discussion.outputs.discussion-url }}"
+                echo "${{ steps.build-discussion.outputs.discussion-number }}"
