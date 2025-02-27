@@ -13,6 +13,10 @@ The new version, 1.0, will bring changes to the AIFS single model, including amo
 - Improved scores for total precipitation.
 - Additional output variables, including 100 meter winds, snow-fall, solar-radiation and land variables such as soil-moisture and soil-temperature.
 
+<div style="display: flex; justify-content: center;">
+  <img src="./assets/radiation_cloudcover.gif" alt="AIFS New Parameters" style="width: 80%;"/>
+</div>
+
 To find out more information regarding the specifications and differences, please see the ECMWF Confluence page about the implementation [here](https://confluence.ecmwf.int/display/FCST/Implementation+of+AIFS+Single+v1).
 
 ### Description
