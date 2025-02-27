@@ -3,7 +3,7 @@
 ## Details
 
 Here, we introduce the **Artificial Intelligence Forecasting System (AIFS)**, a data driven forecast
-model developed by the European Centre for Medium-Range Weather Forecasts (ECMWF). 
+model developed by the European Centre for Medium-Range Weather Forecasts (ECMWF).
 
 The operational release of AIFS Single v1.0 marks the first operationally supported AIFS model. Version 1 will
 supersede the existing experimental version, [0.2.1 AIFS-single](https://huggingface.co/ecmwf/aifs-single).
@@ -18,6 +18,9 @@ The new version, 1.0, will bring changes to the AIFS single model, including amo
 </div>
 
 To find out more information regarding the specifications and differences, please see the ECMWF Confluence page about the implementation [here](https://confluence.ecmwf.int/display/FCST/Implementation+of+AIFS+Single+v1).
+
+This contains information about the configurations used to make the AIFS, if you wish to get the inference checkpoint,
+please find it here https://huggingface.co/ecmwf/aifs-single-1.0.
 
 ### Description
 
