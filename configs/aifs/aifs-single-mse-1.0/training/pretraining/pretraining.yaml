@@ -38,9 +38,6 @@ training:
     #rate: 1.5625e-5 # tests
     iterations: 260000
     min: 3e-7 #Not scaled by #GPU
-  loss_scaling:
-    10u: 0.1
-    10v: 0.1
 
 
 ### Set to restart a training run from a checkpoint

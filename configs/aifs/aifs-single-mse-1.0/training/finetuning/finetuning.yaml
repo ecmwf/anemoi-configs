@@ -44,10 +44,6 @@ training:
     iterations: 7900
     warmup_t: 100
     min: 3e-7 #Not scaled by #GPU
-  
-  loss_scaling:
-    10u: 0.1
-    10v: 0.1
 
   fork_run_id: ${oc.decode:${oc.env:PRETRAINING_RUN_ID}}
 

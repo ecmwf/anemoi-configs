@@ -6,12 +6,14 @@ Here, we introduce the **Artificial Intelligence Forecasting System (AIFS)**, a 
 model developed by the European Centre for Medium-Range Weather Forecasts (ECMWF). 
 
 The operational release of AIFS Single v1.0 marks the first operationally supported AIFS model. Version 1 will
-supersede the existing experimental version, [0.2.1 AIFS-single](https://huggingface.co/ecmwf/aifs-single). 
+supersede the existing experimental version, [0.2.1 AIFS-single](https://huggingface.co/ecmwf/aifs-single).
 The new version, 1.0, will bring changes to the AIFS single model, including among many others:
 
 - Improved performance for upper-level atmospheric variables (AIFS-single still uses 13 pressure-levels, so this improvement mainly refers to 50 hPa)
 - Improved scores for total precipitation.
 - Additional output variables, including 100 meter winds, snow-fall, solar-radiation and land variables such as soil-moisture and soil-temperature.
+
+To find out more information regarding the specifications and differences, please see the ECMWF Confluence page about the implementation [here](https://confluence.ecmwf.int/display/FCST/Implementation+of+AIFS+Single+v1).
 
 ### Description
 
@@ -123,6 +125,8 @@ We include the configs for both the atmospheric and the land under `datasets/`. 
 
 However, as the model was finetuned on the operational real-time IFS NWP analyses which is not publicly available, we recommend you substitute that dataset for the
 `ERA5` one. This will still provide a good dataset to rollout finetune on, but may lead to some drop in skill compared to the AIFS v1.0.
+
+For a point of reference we provide the recipe for the [operational dataset](dataset/aifs-od-an-oper-0001-mars-n320-2016-2023-6h-v6.yaml).
 
 To create these datasets, ensure `anemoi-datasets` is installed, as well as the `cdspai`, then with the following:
 
