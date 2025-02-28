@@ -138,6 +138,16 @@ of this stage. Optimizer step are equal to 7900 ( 12 epoch with ~630 steps per e
 As in the previous version of aifs-single for fine-tuning and initialisation of the model during inference, IFS fields
 are interpolated from their native O1280 resolution (approximately \\(0.1°\\)) down to N320 (approximately \\(0.25°\\)).
 
+### Compute Requirements 
+
+In terms of compute requirements to train AIFS v1 at n320 resolution have used 16 nodes, with 4 NVIDIA GPU Nodes with A100-SXM-64GB VRAM. Those details are defined under the config/hardware settings. To be able to fit the model on memory, we shard the over 1 node. This is done by setting the `config.hardware.num_gpus_per_model` to the number of GPUs you wish to shard the model across. In the case of sharding across a node: (`num_gpus_per_model:4`). 
+
+```
+num_gpus_per_node:  4
+num_nodes: 16
+num_gpus_per_model: 4
+```
+
 ### Datasets
 
 As `ERA5` is provided open for use through the CDS [Climate Data Store](https://cds.climate.copernicus.eu/), an anemoi dataset can be created from that source.

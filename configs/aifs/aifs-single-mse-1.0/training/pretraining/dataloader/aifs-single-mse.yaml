@@ -52,11 +52,6 @@ training:
     start: null
     end: 2022
     frequency: ${data.frequency}
-    drop:  []
-  - dataset: ${hardware.paths.dataset_land}/${hardware.files.dataset_land}
-    start: null
-    end: 2022
-    frequency: ${data.frequency}
     drop:  [anor, isor, lsp, stl3, swvl3, tsn, rsn, sd,  tvh, tvl, cvh, cvl, cl, slt, lai_lv, lai_hv]
   start: null
   end: 2022
@@ -68,11 +63,6 @@ validation:
     start: 2022
     end: 2022
     frequency: ${data.frequency}
-    drop:  []
-  - dataset: ${hardware.paths.dataset_land}/${hardware.files.dataset_land}
-    start: 2022
-    end: 2022
-    frequency: ${data.frequency}
     drop:  [anor, isor, lsp, stl3, swvl3, tsn, rsn, sd,  tvh, tvl, cvh, cvl, cl, slt, lai_lv, lai_hv]
   start: 2022
   end: 2022
@@ -81,11 +71,6 @@ validation:
 test:
   dataset:
   - dataset: ${hardware.paths.data}/${hardware.files.dataset}
-    start: 2022
-    end: null
-    frequency: ${data.frequency}
-    drop:  []
-  - dataset: ${hardware.paths.dataset_land}/${hardware.files.dataset_land}
     start: 2022
     end: null
     frequency: ${data.frequency}
