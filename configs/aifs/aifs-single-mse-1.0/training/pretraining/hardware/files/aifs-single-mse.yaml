@@ -1,8 +1,6 @@
 
 # Specification of atmo and land datasets
-dataset: aifs-ea-an-oper-0001-mars-${data.resolution}-1979-2022-6h-v6.zarr
-dataset_land: aifs-ea-an-oper-0001-mars-${data.resolution}-1979-2023-6h-v1-land.zarr
-
+dataset: aifs-ea-an-oper-0001-mars-${data.resolution}-1979-2022-6h-aifs-v1.zarr
 graph: graph_enc_proc_dec_${data.resolution}.pt
 
 checkpoint:
