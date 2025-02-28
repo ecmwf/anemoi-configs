@@ -76,14 +76,27 @@ Lang, S., Alexe, M., Chantry, M., Dramsch, J., Pinault, F., Raoult, B., ... & Ra
 
 ### Data Details
 
-Describe the input and output data of your model here, use a table.
+The full list of input and output fields is shown below:
 
 | Field                                                                                                                                                       | Level type                                                                   | Input/Output |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|--------------|
 | Geopotential, horizontal and vertical wind components, specific humidity, temperature                                                                       | Pressure level: 50,100, 150, 200, 250,300, 400, 500, 600,700, 850, 925, 1000 | Both         |
 | Surface pressure, mean sea-level pressure, skin temperature, 2 m temperature, 2 m dewpoint temperature, 10 m horizontal wind components, total column water | Surface                                                                      | Both         |
+| Soil moisture and soil temperature (layers 1 & 2) | Surface | Both |
+| 100m horizontal wind components, solar radiation (Surface short-wave (solar) radiation downwards and Surface long-wave (thermal) radiation downwards), cloud variables (tcc, hcc, mcc, lcc), runoff and snow fall  | Surface | Output | 
+| Total precipitation, convective precipitation                                                                                                               | Surface                                                                      | Output       |
+| Land-sea mask, orography, standard deviation of sub-grid orography, slope of sub-scale orography, insolation, latitude/longitude, time of day/day of year   | Surface                                                                      | Input        |
 
-etc
+Input and output states are normalised to unit variance and zero mean for each level. Some of
+the forcing variables, like orography, are min-max normalised.
+
+This is also shown below,
+
+<div style="display: flex; justify-content: center;">
+  <img src="./assets/variables_categories_aifs.png" alt="AIFS Parameter Details" style="width: 80%;"/>
+</div>
+
+
 
 ### License
 
