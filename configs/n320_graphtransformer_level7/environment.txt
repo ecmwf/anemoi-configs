@@ -1,0 +1,6 @@
+# It was trained using Python 3.11
+anemoi-datasets=0.5.15
+anemoi-utils=0.4.11
+anemoi-training=0.3.2
+anemoi-models=0.4.1
+anemoi-graphs=0.4.2

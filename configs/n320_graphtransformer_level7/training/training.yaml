@@ -1,0 +1,25 @@
+defaults:
+- data: era_and_cerra
+- dataloader: era_and_cerra
+- diagnostics: evaluation_pilot_proj
+- hardware: leonardo
+- graph: knn_multiscale_knn
+- model: graphtransformer
+- training: default
+- _self_
+
+
+### This file is for local experimentation.
+##  When you commit your changes, assign the new features and keywords
+##  to the correct defaults.
+# For example to change from default GPU count:
+# hardware:
+#   num_gpus_per_node: 1
+
+hardware:
+  files:
+    dataset: aifs-ea-an-oper-0001-mars-n320-1979-2023-6h-v8
+
+training:
+  run_id: null
+  
