@@ -34,18 +34,7 @@ and direct observational data.
 - **Developed by:** ECMWF
 - **Model type:** Encoder-processor-decoder model
 
-The full list of input and output fields is shown below:
 
-| Field                                                                                                                                                       | Level type                                                                   | Input/Output |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|--------------|
-| Geopotential, horizontal and vertical wind components, specific humidity, temperature                                                                       | Pressure level: 50,100, 150, 200, 250,300, 400, 500, 600,700, 850, 925, 1000 | Both         |
-| Surface pressure, mean sea-level pressure, skin temperature, 2 m temperature, 2 m dewpoint temperature, 10 m horizontal wind components, total column water | Surface                                                                      | Both         |
-| Soil moisture and soil temperature (layers 1 & 2)                                                                                                           | Surface                                                                      | Both         |
-| 100m horizontal wind components, solar radiation (Surface short-wave (solar) radiation downwards and Surface long-wave (thermal) radiation downwards), cloud variables (tcc, hcc, mcc, lcc), runoff and snow fall  | Surface               | Output       |
-| Total precipitation, convective precipitation                                                                                                               | Surface                                                                      | Output       |
-| Land-sea mask, orography, standard deviation of sub-grid orography, slope of sub-scale orography, insolation, latitude/longitude, time of day/day of year   | Surface                                                                      | Input        |
-
-Input and output states are normalised to unit variance and zero mean for each level. Some of the forcing variables, like orography, are min-max normalised.
 
 #### Model resolution
 
@@ -89,6 +78,9 @@ The full list of input and output fields is shown below:
 
 Input and output states are normalised to unit variance and zero mean for each level. Some of
 the forcing variables, like orography, are min-max normalised.
+
+Details of the exact normalisation for each variable can be see in the `data` section of the config, [here](./training/pretraining/data/aifs-single-mse.yaml)
+
 
 This is also shown below,
 
