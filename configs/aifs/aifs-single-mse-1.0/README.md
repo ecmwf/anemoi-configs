@@ -163,15 +163,14 @@ To create these datasets, ensure `anemoi-datasets` is installed, as well as the 
 ```bash
 export DATASETS_PATH=??????? # Location where the datasets should be saved
 
-anemoi-datasets create dataset/aifs-ea-an-oper-0001-mars-n320-1979-2022-6h-v6.zarr $DATASETS_PATH/aifs-ea-an-oper-0001-mars-n320-1979-2022-6h-v6.zarr
-anemoi-datasets create dataset/aifs-ea-an-oper-0001-mars-n320-1979-2023-6h-v1-land.zarr $DATASETS_PATH/aifs-ea-an-oper-0001-mars-n320-1979-2023-6h-v1-land.zarr
+anemoi-datasets create dataset/aifs-ea-an-oper-0001-mars-n320-1979-2022-6h-aifs-v1.yaml $DATASETS_PATH/aifs-ea-an-oper-0001-mars-n320-1979-2022-6h-aifs-v1.zarr
 ```
 
 When inspected the dataset should look something like below, 
 
 ```text
-$ anemoi-datasets inspect $DATASETS_PATH/aifs-ea-an-oper-0001-mars-n320-1979-2022-6h-v6.zarr
-📦 Path          : aifs-ea-an-oper-0001-mars-n320-1979-2022-6h-v6.zarr
+$ anemoi-datasets inspect $DATASETS_PATH/aifs-ea-an-oper-0001-mars-n320-1979-2022-6h-aifs-v1.zarr
+📦 Path          : aifs-ea-an-oper-0001-mars-n320-1979-2022-6h-aifs-v1
 🔢 Format version: 0.30.0
 
 📅 Start      : 1979-01-01 00:00
