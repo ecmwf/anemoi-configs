@@ -141,6 +141,8 @@ num_gpus_per_model: 4
 If the memory requirements of an n320 model are too much for the system being trained on, we also provide configurations for o96, which will reduce the memory requirements significantly.
 To train this model switch the dataset config and training configs for the o96 variants.
 
+For the o96 resolution it is possible to fit the model all on 1 gpu, so `config.hardware.num_gpus_per_model` can be set to 1.
+
 ### Datasets
 
 As `ERA5` is provided open for use through the CDS [Climate Data Store](https://cds.climate.copernicus.eu/), an anemoi dataset can be created from that source.
