@@ -1,0 +1,57 @@
+defaults:
+- data: aifs-single-mse
+- dataloader: aifs-single-mse
+- diagnostics: eval_rollout
+- hardware: default
+- graph: encoder_decoder_only_o96
+- model: transformer_o96
+- training: default
+- _self_
+
+
+### This file is for local experimentation.
+##  When you commit your changes, assign the new features and keywords
+##  to the correct defaults.
+
+# For example to change from default GPU count:
+# hardware:
+#   num_gpus_per_node: 1
+
+diagnostics:
+  plot:
+    enabled: False
+    scatter: False
+    asynchronous: False
+    mode: asyncio
+
+dataloader:
+  batch_size:
+    training: 1
+    validation: 1
+  num_workers:
+    training: 8
+    validation: 8
+  limit_batches:
+    training: 1000
+    validation: 10
+
+data:
+  resolution: o96
+
+training:
+  max_epochs: 13
+  load_weights_only: True
+
+  lr:
+    rate: 8e-07 # tests
+    iterations: 7900
+    warmup_t: 100
+    min: 3e-7 #Not scaled by #GPU
+
+  fork_run_id: ${oc.decode:${oc.env:PRETRAINING_RUN_ID}}
+
+  rollout:
+    epoch_increment: 1
+    max: 12
+    start: 1
+

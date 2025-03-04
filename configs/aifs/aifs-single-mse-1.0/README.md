@@ -88,8 +88,6 @@ This is also shown below,
   <img src="./assets/variables_categories_aifs.png" alt="AIFS Parameter Details" style="width: 80%;"/>
 </div>
 
-
-
 ### License
 
 The model weights, and configuration files are published under a Creative Commons Attribution 4.0 International (CC BY 4.0).
@@ -111,7 +109,7 @@ Based on the different experiments we have made - the final training recipe for 
 from the one used for AIFS Single v0.2.1 since we found that we could get a well trained model by skipping the ERA5
 rollout and directly doing the rollout on the operational-analysis (extended) dataset. When we say 'extended' we refer 
 to the fact that for AIFS Single v0.2.1 we used just operational-analysis data from 2019 to 2021, while in this new 
-release we have done the fine-tunning from 2016 to 2022. 
+release we have done the fine-tunning from 2016 to 2022.
 
 The other important change in the fine-tuning stage is that for AIFS Single v0.2.1 after the 6hr model training the
 optimiser was not restarted (ie. rollout was done with the minimal lr of \\(3 × 10^{-7}\\)). For this release we have seen
@@ -130,15 +128,18 @@ of this stage. Optimizer step are equal to 7900 ( 12 epoch with ~630 steps per e
 As in the previous version of aifs-single for fine-tuning and initialisation of the model during inference, IFS fields
 are interpolated from their native O1280 resolution (approximately \\(0.1°\\)) down to N320 (approximately \\(0.25°\\)).
 
-### Compute Requirements 
+### Compute Requirements
 
-In terms of compute requirements to train AIFS v1 at n320 resolution have used 16 nodes, with 4 NVIDIA GPU Nodes with A100-SXM-64GB VRAM. Those details are defined under the config/hardware settings. To be able to fit the model on memory, we shard the over 1 node. This is done by setting the `config.hardware.num_gpus_per_model` to the number of GPUs you wish to shard the model across. In the case of sharding across a node: (`num_gpus_per_model:4`). 
+In terms of compute requirements to train AIFS v1 at n320 resolution have used 16 nodes, with 4 NVIDIA GPU Nodes with A100-SXM-64GB VRAM. Those details are defined under the config/hardware settings. To be able to fit the model on memory, we shard the over 1 node. This is done by setting the `config.hardware.num_gpus_per_model` to the number of GPUs you wish to shard the model across. In the case of sharding across a node: (`num_gpus_per_model:4`).
 
-```
+```yaml
 num_gpus_per_node:  4
 num_nodes: 16
 num_gpus_per_model: 4
 ```
+
+If the memory requirements of an n320 model are too much for the system being trained on, we also provide configurations for o96, which will reduce the memory requirements significantly.
+To train this model switch the dataset config and training configs for the o96 variants.
 
 ### Datasets
 
@@ -156,9 +157,11 @@ To create these datasets, ensure `anemoi-datasets` is installed, as well as the 
 export DATASETS_PATH=??????? # Location where the datasets should be saved
 
 anemoi-datasets create dataset/aifs-ea-an-oper-0001-mars-n320-1979-2022-6h-aifs-v1.yaml $DATASETS_PATH/aifs-ea-an-oper-0001-mars-n320-1979-2022-6h-aifs-v1.zarr
+# For o96 anemoi-datasets create dataset/aifs-ea-an-oper-0001-mars-o96-1979-2022-6h-aifs-v1.yaml $DATASETS_PATH/aifs-ea-an-oper-0001-mars-o96-1979-2022-6h-aifs-v1.zarr
+
 ```
 
-When inspected the dataset should look something like below, 
+When inspected the dataset should look something like below,
 
 ```text
 $ anemoi-datasets inspect $DATASETS_PATH/aifs-ea-an-oper-0001-mars-n320-1979-2022-6h-aifs-v1.zarr
@@ -291,6 +294,7 @@ export OUTPUT_PATH=???????   # Where checkpoints, logs, metric and graphs should
 
 cd training/pretraining
 anemoi-training train --config-name=pretraining.yaml
+# For o96 anemoi-training train --config-name=pretraining_o96.yaml
 ```
 
 #### Finetuning Step
@@ -305,6 +309,7 @@ export PRETRAINING_RUN_ID=??????? # ID of the pretraining run.
 
 cd training/finetuning
 anemoi-training train --config-name=finetuning.yaml
+# For o96 anemoi-training train --config-name=finetuning_o96.yaml
 ```
 
 This finetuning steps assumes an uninterrupted 13 epochs. If an error occurs, and training is restarted ensure you update
