@@ -1,9 +1,9 @@
 defaults:
 - data: era_and_cerra
-- dataloader: era_and_cerra
+- dataloader: era
 - diagnostics: evaluation_pilot_proj
 - hardware: leonardo
-- graph: knn_multiscale_knn
+- graph: global
 - model: graphtransformer
 - training: default
 - _self_
