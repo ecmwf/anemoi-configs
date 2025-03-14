@@ -81,7 +81,6 @@ the forcing variables, like orography, are min-max normalised.
 
 Details of the exact normalisation for each variable can be see in the `data` section of the config, [here](./training/pretraining/data/aifs-single-mse.yaml)
 
-
 This is also shown below,
 
 <div style="display: flex; justify-content: center;">
@@ -102,6 +101,10 @@ anemoi-training==0.3.1
 anemoi-models==0.4.0
 anemoi-graphs>=0.4.4
 ```
+
+> **Note:**
+  Additionally, to match the configuration with AIFS 1.0, `flash_attn` must be installed.
+  See [here](https://github.com/Dao-AILab/flash-attention) for more information on how to install it.
 
 ### Training Strategy
 
@@ -130,7 +133,12 @@ are interpolated from their native O1280 resolution (approximately \\(0.1°\\)) 
 
 ### Compute Requirements
 
-In terms of compute requirements to train AIFS v1 at n320 resolution have used 16 nodes, with 4 NVIDIA GPU Nodes with A100-SXM-64GB VRAM. Those details are defined under the config/hardware settings. To be able to fit the model on memory, we shard the over 1 node. This is done by setting the `config.hardware.num_gpus_per_model` to the number of GPUs you wish to shard the model across. In the case of sharding across a node: (`num_gpus_per_model:4`).
+We trained AIFS v1 at n320 resolution using 16 nodes, each with 4 NVIDIA A100-SXM-64GB cards, on a slurm based HPC system.
+Please adjust the following configs based on the specifications of your system.
+
+To be able to fit the model on memory, we shard over 1 node. This is done by setting the `config.hardware.num_gpus_per_model` to the number of GPUs you wish to shard the model across. In the case of sharding across 1 node with 4 gpus: (`num_gpus_per_model:4`).
+
+Anemoi expects all these details to be defined in the `config/hardware` settings.
 
 ```yaml
 num_gpus_per_node:  4
@@ -138,10 +146,12 @@ num_nodes: 16
 num_gpus_per_model: 4
 ```
 
-If the memory requirements of an n320 model are too much for the system being trained on, we also provide configurations for o96, which will reduce the memory requirements significantly.
+If the memory requirements of an n320 model is too much for the system being trained on, we also provide configurations for o96, which will reduce the memory requirements significantly.
 To train this model switch the dataset config and training configs for the o96 variants.
 
-For the o96 resolution it is possible to fit the model all on 1 gpu, so `config.hardware.num_gpus_per_model` can be set to 1.
+For the o96 resolution it is possible to fit the model all on 1 40GB gpu, so `config.hardware.num_gpus_per_model` can be set to 1.
+
+> **Note:** Anemoi has been built with slurm in mind, if you are using a job system other then slurm, and find issues, please raise an issue on the appropriate anemoi repository.
 
 ### Datasets
 
