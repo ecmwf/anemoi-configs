@@ -1,0 +1,118 @@
+name: aifs-ea-an-oper-0001-mars-n320-1979-2024-6h-v1-aifs-single-v1
+
+description: Dataset from 1979 to 2024, resolution n320. From ERA5 data, deterministic.
+  Includes all variables used to train AIFS v1
+  See https://apps.ecmwf.int/mars-catalogue/?class=ea&stream=oper&expver=1&type=an&year=2023&month=jan&levtype=sfc
+
+attribution: ECMWF
+
+licence: CC-BY-4.0
+
+dates:
+  start: '1979-01-01T00:00:00'
+  end: '2024-12-31T18:00:00'
+  frequency: 6h
+
+input:
+  join:
+  - mars:
+      use_cdsapi_dataset: "reanalysis-era5-complete"
+      class: ea
+      expver: '0001'
+      grid: o96
+      levtype: pl
+      param:
+      - q
+      - t
+      - u
+      - v
+      - w
+      - z
+      levelist:
+      - 50
+      - 100
+      - 150
+      - 200
+      - 250
+      - 300
+      - 400
+      - 500
+      - 600
+      - 700
+      - 850
+      - 925
+      - 1000
+  - mars:
+      use_cdsapi_dataset: "reanalysis-era5-complete"
+      class: ea
+      expver: '0001'
+      grid: o96
+      levtype: sfc
+      param:
+      - 10u
+      - 10v
+      - 2d
+      - 2t
+      - lsm
+      - msl
+      - sdor
+      - skt
+      - slor
+      - sp
+      - tcw
+      - z
+      - 100u
+      - 100v
+      - swvl1
+      - swvl2
+      - stl1
+      - stl2
+      - tcc
+      - lcc
+      - mcc
+      - hcc
+  - accumulations:
+      class: ea
+      type: an
+      stream: oper
+      expver: '0001'
+      grid: o96
+      levtype: sfc
+      param:
+      - cp
+      - tp
+      - sf
+      - ro
+      - strd
+      - ssrd
+      step: 6
+  - forcings:
+      template: ${input.join.0.mars}
+      param:
+      - cos_julian_day
+      - cos_latitude
+      - cos_local_time
+      - cos_longitude
+      - insolation
+      - sin_julian_day
+      - sin_latitude
+      - sin_local_time
+      - sin_longitude
+
+output:
+  dtype: float32
+  remapping:
+    param_level: '{param}_{levelist}'
+
+statistics: {}
+
+build:
+  use_grib_paramid: true
+
+common:
+  mars_request:
+    class: ea
+    expver: '0001'
+    grid: o96
+
+
