@@ -99,7 +99,7 @@ To train this model you can use the configuration files included in this reposit
 ```txt
 anemoi-training==0.3.1
 anemoi-models==0.4.0
-anemoi-graphs>=0.4.4
+anemoi-graphs==0.4.4
 ```
 
 > [!NOTE]  

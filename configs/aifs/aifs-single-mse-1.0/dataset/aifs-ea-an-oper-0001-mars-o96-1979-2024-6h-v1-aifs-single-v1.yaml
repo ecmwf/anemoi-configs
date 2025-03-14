@@ -1,7 +1,7 @@
-name: aifs-ea-an-oper-0001-mars-n320-1979-2024-6h-v1-aifs-single-v1
+name: aifs-ea-an-oper-0001-mars-o96-1979-2024-6h-v1-aifs-single-v1
 
 description: Dataset from 1979 to 2024, resolution n320. From ERA5 data, deterministic.
-  Includes all variables used to train AIFS v1
+  Includes all variables used to train AIFS v1 at o96 resolution.
   See https://apps.ecmwf.int/mars-catalogue/?class=ea&stream=oper&expver=1&type=an&year=2023&month=jan&levtype=sfc
 
 attribution: ECMWF
