@@ -1,4 +1,4 @@
-name: aifs-od-an-oper-0001-mars-n320-2016-2023-6h-v6
+name: aifs-od-an-oper-0001-mars-n320-2016-2023-6h-v1-aifs-single-v1
 
 description: Dataset from 2016 to 2023, resolution n320. Operational data, deterministic.
   See https://apps.ecmwf.int/mars-catalogue/?stream=oper&levtype=sfc&expver=1&month=jan&year=2024&type=an&class=od
