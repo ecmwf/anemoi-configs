@@ -25,12 +25,20 @@ function parse_arguments() {
         display_help
     fi
 
+    # Check for help flag before processing other arguments
+    for arg in "$@"; do
+        if [[ "$arg" == "-h" || "$arg" == "--help" ]]; then
+            display_help
+        fi
+    done
+
     CONFIG_PATH="$1"
     REAL_CONFIG_PATH="$(realpath "$(dirname "$0")/../configs/$CONFIG_PATH")"
     if [ ! -d "$REAL_CONFIG_PATH" ]; then
         echo "Error: $CONFIG_PATH is not a valid config path"
         echo "Must be one of the following:"
-        ls "$(dirname "$0")/../configs"
+        find "$(dirname "$0")/../configs/" -mindepth 1 -maxdepth 1 -type d -exec basename {} \;
+
         exit 1
     fi
     shift
