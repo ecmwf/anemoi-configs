@@ -1,0 +1,101 @@
+activation: GELU
+num_channels: 1024
+
+model:
+  _target_: anemoi.models.models.encoder_processor_decoder.AnemoiModelEncProcDec
+
+processor:
+  _target_: anemoi.models.layers.processor.TransformerProcessor
+  _convert_: all
+  activation: ${model.activation}
+  num_layers: 16
+  num_chunks: 2
+  mlp_hidden_ratio: 4 # GraphTransformer or Transformer only
+  num_heads: 16 # GraphTransformer or Transformer only
+  window_size: 1120
+  dropout_p: 0.0 # GraphTransformer
+
+encoder:
+  _target_: anemoi.models.layers.mapper.GraphTransformerForwardMapper
+  _convert_: all
+  trainable_size: ${model.trainable_parameters.data2hidden}
+  sub_graph_edge_attributes: ${model.attributes.edges}
+  activation: ${model.activation}
+  num_chunks: 1
+  mlp_hidden_ratio: 4 # GraphTransformer or Transformer only
+  num_heads: 16 # GraphTransformer or Transformer only
+
+
+decoder:
+  _target_: anemoi.models.layers.mapper.GraphTransformerBackwardMapper
+  _convert_: all
+  trainable_size: ${model.trainable_parameters.hidden2data}
+  sub_graph_edge_attributes: ${model.attributes.edges}
+  activation: ${model.activation}
+  num_chunks: 1
+  mlp_hidden_ratio: 4 # GraphTransformer or Transformer only
+  num_heads: 16 # GraphTransformer or Transformer only
+
+trainable_parameters:
+  data: 8
+  hidden: 8
+  data2hidden: 8
+  hidden2data: 8
+  
+bounding: #These are applied in order
+  - _target_: anemoi.models.layers.bounding.ReluBounding #[0, infinity)
+    variables:
+    - tp
+    - ro
+    - tcw
+    - ssrd
+    - q_50
+    - q_100
+    - q_150
+    - q_200
+    - q_250
+    - q_300
+    - q_400
+    - q_500
+    - q_600
+    - q_700
+    - q_850
+    - q_925
+    - q_1000
+  - _target_: anemoi.models.layers.bounding.HardtanhBounding #[0, 1)
+    variables:
+    - tcc
+    - swvl1
+    - swvl2
+    min_val: 0
+    max_val: 1
+  - _target_: anemoi.models.layers.bounding.FractionBounding # fraction of tp
+    variables:
+    - cp
+    - sf
+    min_val: 0
+    max_val: 1
+    total_var: tp
+  - _target_: anemoi.models.layers.bounding.FractionBounding # fraction of tp
+    variables:
+    - lcc
+    - mcc
+    - hcc
+    min_val: 0
+    max_val: 1
+    total_var: tcc
+
+
+  # - _target_: anemoi.models.layers.bounding.ClampBounding #[0, infinity)
+  #   variables:
+  #   - q_500
+  #   - q_100
+  #   - q_1000
+  
+attributes:
+  edges:
+  - edge_length
+  - edge_dirs
+  nodes: []
+
+node_loss_weight: area_weight
