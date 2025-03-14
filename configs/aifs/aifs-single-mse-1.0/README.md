@@ -102,9 +102,9 @@ anemoi-models==0.4.0
 anemoi-graphs>=0.4.4
 ```
 
-> **Note:**
-  Additionally, to match the configuration with AIFS 1.0, `flash_attn` must be installed.
-  See [here](https://github.com/Dao-AILab/flash-attention) for more information on how to install it.
+> [!NOTE]  
+> Additionally, to match the configuration with AIFS 1.0, `flash_attn` must be installed.
+> See [here](https://github.com/Dao-AILab/flash-attention) for more information on how to install it.
 
 ### Training Strategy
 
@@ -151,7 +151,8 @@ To train this model switch the dataset config and training configs for the o96 v
 
 For the o96 resolution it is possible to fit the model all on 1 40GB gpu, so `config.hardware.num_gpus_per_model` can be set to 1.
 
-> **Note:** Anemoi has been built with slurm in mind, if you are using a job system other then slurm, and find issues, please raise an issue on the appropriate anemoi repository.
+> [!CAUTION]
+> Anemoi has been built with slurm in mind, if you are using a job system other then slurm, and find issues, please raise an issue on the appropriate anemoi repository.
 
 ### Datasets
 
