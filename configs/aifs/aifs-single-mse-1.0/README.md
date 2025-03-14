@@ -136,9 +136,10 @@ are interpolated from their native O1280 resolution (approximately \\(0.1°\\)) 
 We trained AIFS v1 at n320 resolution using 16 nodes, each with 4 NVIDIA A100-SXM-64GB cards, on a slurm based HPC system.
 Please adjust the following configs based on the specifications of your system.
 
-To be able to fit the model on memory, we shard over 1 node. This is done by setting the `config.hardware.num_gpus_per_model` to the number of GPUs you wish to shard the model across. In the case of sharding across 1 node with 4 gpus: (`num_gpus_per_model:4`).
+To be able to fit the model on memory, we shard over 1 node. This is done by setting the `config.hardware.num_gpus_per_model` to the number of GPUs you wish to shard the model across. 
+In the case of sharding across 1 node with 4 gpus: (`num_gpus_per_model:4`).
 
-Anemoi expects all these details to be defined in the `config/hardware` settings.
+Anemoi expects all these details to be defined in the `config/hardware` settings, by default these parse information from the slurm job.
 
 ```yaml
 num_gpus_per_node:  4

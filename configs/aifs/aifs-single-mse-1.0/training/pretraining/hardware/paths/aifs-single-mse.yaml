@@ -1,5 +1,5 @@
 data: ${oc.decode:${oc.env:DATASETS_PATH}}
-output: ${oc.decode:${oc.env:OUTPUT_DIR}}
+output: ${oc.decode:${oc.env:OUTPUT_PATH}}
 logs:
   base: ${hardware.paths.output}logs/
   wandb: ${hardware.paths.logs.base}
