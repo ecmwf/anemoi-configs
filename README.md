@@ -12,7 +12,7 @@ You can find the announcements of all new configs [here](https://github.com/ecmw
 <!-- - [Getting Started](#getting-started) -->
 - [Configuration Files](#configuration-files)
 <!-- - [Tutorials](#tutorials) -->
-<!-- - [Tools](#tools) -->
+- [Tools](#tools)
 <!-- - [Contributing](#contributing) -->
 - [License](#license)
 
@@ -40,11 +40,52 @@ how to train a model, all the way from dataset creation to finetuning.
 Step-by-step tutorials to guide you through creating and modifying configuration files.
 
 ![Tutorials](tutorials/)
+ -->
 
 ## Tools
 
-INCLUDE_TOOLS_HERE
+We provide some basic tools to help you get started with using these configs.
 
+## Create Tool
+
+### Description
+
+The `create.sh` script is a tool designed to create a new environment from a specified configuration folder. It sets up a virtual environment, installs necessary packages, and copies configuration files to a specified output directory.
+
+### Usage
+
+To display the help message for the `create.sh` script, run the following command:
+
+```bash
+./tools/create.sh -h
+```
+
+```shell
+Usage: ./tools/create.sh <config-path> [--use-uv] [--venv-path <path>] [--output-dir <path>]
+
+    <config-path>          Relative path to the configuration folder
+    --use-uv               Optionally use uv
+    --venv-path <path>     Path to create the virtual environment (default: $HOME/anemoi_configs/<config-path>/venv/)
+    --output-dir <path>    Path to copy the configuration (default: $HOME/anemoi_configs/<config-path>)
+    -h, --help             Display this help message
+```
+
+#### Example
+
+To create a new environment using the configuration folder `example-config`, use the following command:
+
+```bash
+./tools/create.sh example-config --use-uv --venv-path /custom/path/to/venv --output-dir /custom/path/to/output
+```
+
+This command will:
+
+1. Create a virtual environment at `/custom/path/to/venv`.
+2. Install the necessary packages listed in `example-config/environment.txt`.
+3. Copy the configuration files from `example-config` to `/custom/path/to/output`.
+
+
+<!-- 
 ## Contributing
 
 We welcome contributions from the community. Please read our [contributing guidelines](CONTRIBUTING.md) to get started. -->
