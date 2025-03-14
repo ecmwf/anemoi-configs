@@ -65,27 +65,12 @@ input:
       - 100v
       - swvl1
       - swvl2
-      - swvl3
       - stl1
       - stl2
-      - stl3
-      - sd
-      - tsn
-      - rsn
       - tcc
       - lcc
       - mcc
       - hcc
-      - lai_hv
-      - lai_lv
-      - slt
-      - tvl
-      - tvh
-      - cvl
-      - cvh
-      - cl
-      - isor
-      - anor
   - accumulations:
       class: ea
       type: an
@@ -97,7 +82,6 @@ input:
       - cp
       - tp
       - sf
-      - lsp
       - ro
       - strd
       - ssrd
