@@ -1,4 +1,5 @@
 # It was trained using Python 3.11
+# Note we train AIFS using flash_attention (https://github.com/Dao-AILab/flash-attention). The use of 'Flash Attention' package also imposes certain requirements in terms of software and hardware. Those can be found under #Installation and Features in https://github.com/Dao-AILab/flash attention
 anemoi-datasets==0.5.15
 anemoi-utils==0.4.11
 anemoi-training==0.3.2
