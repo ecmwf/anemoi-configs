@@ -1,0 +1,39 @@
+defaults:
+- data: era_and_cerra
+- dataloader: era_and_cerra
+- diagnostics: evaluation_pilot_proj
+- hardware: leonardo
+- graph: limited_area
+- model: graphtransformer
+- training: default
+- _self_
+
+
+### This file is for local experimentation.
+##  When you commit your changes, assign the new features and keywords
+##  to the correct defaults.
+# For example to change from default GPU count:
+# hardware:
+#   num_gpus_per_node: 1
+
+dataloader:
+  grid_indices:
+    _target_: anemoi.training.data.grid_indices.MaskedGrid
+    nodes_name: data
+    node_attribute_name: indices_connected_nodes
+
+model:
+  output_mask: cutout_mask
+
+hardware:
+  files:
+    cerra_dataset: cerra-rr-an-oper-0001-mars-5p5km-1984-2020-3h-v2-rmi
+    cerra_z_dataset: cerra-rr-an-oper-0001-mars-5p5km-1984-2020-3h-v2-z_sfc-rmi
+    dataset: aifs-ea-an-oper-0001-mars-n320-1979-2023-6h-v8
+
+training:
+  run_id: null 
+  fork_run_id: proper-osprey
+  load_weights_only: True # only load model weights, do not restore optimiser states etc.
+  transfer_learning: True
+  
