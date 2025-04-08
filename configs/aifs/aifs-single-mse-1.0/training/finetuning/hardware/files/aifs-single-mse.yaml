@@ -1,0 +1,11 @@
+
+# Specification of atmo and land datasets
+dataset: aifs-ea-an-oper-0001-mars-${data.resolution}-1979-2024-6h-v1-aifs-single-v1.zarr
+graph: graph_enc_proc_dec_${data.resolution}.pt
+
+checkpoint:
+  every_n_epochs: aifs-by_epoch-epoch_{epoch:03d}-val_wmse_{val_wmse:.3e}
+  every_n_train_steps: aifs-by_step-epoch_{epoch:03d}-step_{step:06d}
+  every_n_minutes: aifs-by_time-epoch_{epoch:03d}-step_{step:06d}
+
+warm_start: null

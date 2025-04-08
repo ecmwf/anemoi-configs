@@ -1,0 +1,77 @@
+prefetch_factor: 2
+
+# ============
+# read_frequency:
+#   Only ever read_frequency-th GPU of each model commm group reads data
+#   to reduce CPU memory usage.
+#   The number of GPUs per model must be divisible by read_frequency.
+#   Default: 1 (all GPUs read data)
+# ============
+read_group_size: ${hardware.num_gpus_per_model}
+read_frequency: 4
+num_workers:
+  training: 8
+  validation: 8
+  test: 1
+  predict: 1
+batch_size:
+  training: 1
+  validation: 1
+  test: 4
+  predict: 4
+
+# ============
+# Default effective batch_size for training is 16
+# For the o96 resolution, default per-gpu batch_size is 2 (8 gpus required)
+# The global lr is calculated as:
+# global_lr = local_lr * num_gpus_per_node * num_nodes / gpus_per_model
+# Assuming a constant effective batch_size, any change in the per_gpu batch_size
+# should come with a rescaling of the local_lr to keep a constant global_lr
+# ============
+
+# runs only N training batches [N = integer | null]
+# if null then we run through all the batches
+limit_batches:
+  training: null
+  validation: null
+  test: 20
+  predict: 20
+
+# ============
+# Dataloader definitions
+# These follow the anemoi-datasets patterns
+# You can make these as complicated for merging as you like
+# See https://anemoi-datasets.readthedocs.io
+# ============
+
+dataset: ${hardware.paths.data}/${hardware.files.dataset}
+
+training:
+  dataset:
+  - dataset: ${hardware.paths.data}/${hardware.files.dataset}
+    start: null
+    end: 2022
+    frequency: ${data.frequency}
+  start: null
+  end: 2022
+  drop: []
+
+validation:
+  dataset:
+  - dataset: ${hardware.paths.data}/${hardware.files.dataset}
+    start: 2022
+    end: 2024
+    frequency: ${data.frequency}
+  start: 2022
+  end: 2024
+  drop: []
+
+test:
+  dataset:
+  - dataset: ${hardware.paths.data}/${hardware.files.dataset}
+    start: 2022
+    end: null
+    frequency: ${data.frequency}
+  start: 2022
+  end: null
+  drop: []
