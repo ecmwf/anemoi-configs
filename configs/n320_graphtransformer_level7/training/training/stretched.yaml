@@ -137,8 +137,10 @@ pressure_level_scaler:
   minimum: 0.2
   slope: 0.001
 
+
 node_loss_weights:
   _target_: anemoi.training.losses.nodeweights.ReweightedGraphAttribute
   target_nodes: ${graph.data}
   node_attribute: area_weight
-  cutout_weight_frac_of_global: 0.3
+  scaled_attribute: cutout_mask
+  weight_frac_of_total: 0.3
