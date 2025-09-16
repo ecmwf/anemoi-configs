@@ -19,10 +19,7 @@ defaults:
 
 diagnostics:
   plot:
-    enabled: True
-    scatter: False
-    asynchronous: False
-    mode: asyncio
+    callbacks: []
 
 dataloader:
   # Batch size must be set depending on the number of GPUs
@@ -32,10 +29,10 @@ dataloader:
     validation: 1
 
 training:
-  max_epochs: 67
+  # max_epochs: 67
+  max_steps: 260000
   lr:
     rate: 3.125e-5 # tests
-    #rate: 1.5625e-5 # tests
     iterations: 260000
     min: 3e-7 #Not scaled by #GPU
 
