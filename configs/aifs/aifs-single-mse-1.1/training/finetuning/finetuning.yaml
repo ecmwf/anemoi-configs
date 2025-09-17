@@ -19,10 +19,7 @@ defaults:
 
 diagnostics:
   plot:
-    enabled: False
-    scatter: False
-    asynchronous: False
-    mode: asyncio
+    callbacks: []
 
 dataloader:
   batch_size:

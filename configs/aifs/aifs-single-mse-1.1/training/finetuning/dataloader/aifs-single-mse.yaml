@@ -1,4 +1,5 @@
 prefetch_factor: 2
+pin_memory: True
 
 # ============
 # read_frequency:
@@ -8,15 +9,15 @@ prefetch_factor: 2
 #   Default: 1 (all GPUs read data)
 # ============
 read_group_size: ${hardware.num_gpus_per_model}
-read_frequency: 4
+
 num_workers:
   training: 8
   validation: 8
   test: 1
   predict: 1
 batch_size:
-  training: 1
-  validation: 1
+  training: 2
+  validation: 4
   test: 4
   predict: 4
 
@@ -43,6 +44,10 @@ limit_batches:
 # You can make these as complicated for merging as you like
 # See https://anemoi-datasets.readthedocs.io
 # ============
+
+grid_indices:
+  _target_: anemoi.training.data.grid_indices.FullGrid
+  nodes_name: ${graph.data}
 
 dataset: ${hardware.paths.data}/${hardware.files.dataset}
 
