@@ -1,7 +1,7 @@
 defaults:
 - data: aifs-single-mse
 - dataloader: aifs-single-mse
-- diagnostics: eval_rollout
+- diagnostics: evaluation
 - hardware: default
 - graph: encoder_decoder_only_o96
 - model: transformer_o96
@@ -20,7 +20,7 @@ defaults:
 diagnostics:
   plot:
     callbacks: []
-    
+
 dataloader:
   # Batch size must be set depending on the number of GPUs
   # and memory available.

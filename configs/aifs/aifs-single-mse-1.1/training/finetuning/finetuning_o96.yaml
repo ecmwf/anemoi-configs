@@ -1,7 +1,7 @@
 defaults:
 - data: aifs-single-mse
 - dataloader: aifs-single-mse
-- diagnostics: eval_rollout
+- diagnostics: evaluation
 - hardware: default
 - graph: encoder_decoder_only_o96
 - model: transformer_o96
