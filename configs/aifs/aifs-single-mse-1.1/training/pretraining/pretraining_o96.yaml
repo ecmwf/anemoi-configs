@@ -1,0 +1,47 @@
+defaults:
+- data: aifs-single-mse
+- dataloader: aifs-single-mse
+- diagnostics: evaluation
+- hardware: default
+- graph: encoder_decoder_only_o96
+- model: transformer_o96
+- training: default
+- _self_
+
+
+# This is the default configuration for training the model
+# on the AIFS single model. It is recommended to use this as a base
+# configuration and modify it for your own needs.
+
+# For example to change from default GPU count:
+# hardware:
+#   num_gpus_per_node: 1
+
+diagnostics:
+  plot:
+    callbacks: []
+
+dataloader:
+  # Batch size must be set depending on the number of GPUs
+  # and memory available.
+  batch_size:
+    training: 2
+    validation: 4
+
+data:
+  resolution: o96
+
+training:
+  # max_epochs: 67
+  max_steps: 260000
+  lr:
+    rate: 3.125e-5 # tests
+    #rate: 1.5625e-5 # tests
+    iterations: 260000
+    min: 3e-7 #Not scaled by #GPU
+
+
+### Set to restart a training run from a checkpoint
+# hardware:
+#   files:
+#     warm_start: ???

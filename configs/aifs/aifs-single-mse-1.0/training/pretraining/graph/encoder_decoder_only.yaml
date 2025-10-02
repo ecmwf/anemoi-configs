@@ -14,7 +14,7 @@ nodes:
   # Hidden nodes
   hidden:
     node_builder:
-      _target_: anemoi.graphs.nodes. ReducedGaussianGridNodes # options: ZarrDatasetNodes, NPZFileNodes
+      _target_: anemoi.graphs.nodes.ReducedGaussianGridNodes # options: ZarrDatasetNodes, NPZFileNodes
       grid: o96
 
 edges:
