@@ -1,0 +1,4 @@
+- hardware=atos
+- training.lr.rate=1e-4
+- training.deterministic=False
+- diagnostics.log.mlflow.run_name=red False

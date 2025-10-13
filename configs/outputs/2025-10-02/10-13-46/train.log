@@ -1,0 +1,158 @@
+[2025-10-02 10:13:46,771][anemoi.training.train.train][INFO] - Skipping config validation.
+[2025-10-02 10:13:46,772][anemoi.training.train.train][INFO] - Starting from checkpoint: False
+[2025-10-02 10:13:47,870][anemoi.training.diagnostics.logger][INFO] - Maximum number of params allowed to be logged is: 2000
+[2025-10-02 10:13:47,872][anemoi.training.diagnostics.mlflow.logger][INFO] - MLflow is logging offline.
+[2025-10-02 10:13:48,070][anemoi.training.diagnostics.mlflow.logger][INFO] - Logging 1 parameters
+[2025-10-02 10:13:48,078][anemoi.training.diagnostics.mlflow.logger][INFO] - Terminal Log Path: /scratch/momc/plots/b329e2104be94871ae6c7ffd10f8a45d/plots/terminal_log.txt
+[2025-10-02 10:13:48,078][anemoi.training.diagnostics.mlflow.logger][INFO] - SLURM job id: 35217259
+[2025-10-02 10:13:48,078][anemoi.training.train.train][INFO] - Mlflow Run id: b329e2104be94871ae6c7ffd10f8a45d
+[2025-10-02 10:13:48,078][anemoi.training.train.train][INFO] - Run id: b329e2104be94871ae6c7ffd10f8a45d
+[2025-10-02 10:13:48,078][anemoi.training.train.train][INFO] - Parent run server2server: None
+[2025-10-02 10:13:48,078][anemoi.training.train.train][INFO] - Fork run server2server: None
+[2025-10-02 10:13:48,079][anemoi.training.train.train][INFO] - Checkpoints path: /scratch/momc/checkpoint/b329e2104be94871ae6c7ffd10f8a45d
+[2025-10-02 10:13:48,079][anemoi.training.train.train][INFO] - Plots path: /scratch/momc/plots/b329e2104be94871ae6c7ffd10f8a45d
+[2025-10-02 10:13:48,079][anemoi.training.train.train][INFO] - Dry run: False
+[2025-10-02 10:13:48,896][anemoi.graphs.nodes.builders.from_file][INFO] - Reading the dataset from /home/mlx/ai-ml/datasets//aifs-ea-an-oper-0001-mars-o48-1979-2022-6h-v6.zarr.
+[2025-10-02 10:13:49,494][anemoi.graphs.edges.builders.cutoff][INFO] - Using CutOff-Edges (with radius = 208.3 km) between data and hidden.
+[2025-10-02 10:13:49,504][anemoi.graphs.edges.builders.base][WARNING] - The 'torch-cluster' library is not installed. Installing 'torch-cluster' can significantly improve performance for graph creation. You can install it using 'pip install torch-cluster'.
+[2025-10-02 10:13:49,765][anemoi.graphs.edges.builders.knn][INFO] - Using KNN-Edges (with 3 nearest neighbours) between hidden and data.
+[2025-10-02 10:13:49,765][anemoi.graphs.edges.builders.base][WARNING] - The 'torch-cluster' library is not installed. Installing 'torch-cluster' can significantly improve performance for graph creation. You can install it using 'pip install torch-cluster'.
+[2025-10-02 10:13:49,795][anemoi.graphs.create][INFO] - Cleaning graph.
+[2025-10-02 10:13:49,796][anemoi.graphs.create][INFO] - _grid_reference_distance deleted from graph.
+[2025-10-02 10:13:49,796][anemoi.graphs.create][INFO] - _dataset deleted from graph.
+[2025-10-02 10:13:49,796][anemoi.graphs.create][INFO] - _grid_reference_distance deleted from graph.
+[2025-10-02 10:13:49,803][anemoi.graphs.create][INFO] - Graph saved at /scratch/momc/graphs/graph_o32.pt.
+[2025-10-02 10:13:50,273][anemoi.training.data.datamodule.singledatamodule][WARNING] - Falling back rollout to: 1
+[2025-10-02 10:13:50,274][anemoi.training.data.datamodule.singledatamodule][INFO] - Timeincrement set to 1 for data with frequency, 21600, and timestep, 21600
+[2025-10-02 10:13:50,275][anemoi.training.train.train][INFO] - Number of data variables: 25
+[2025-10-02 10:13:50,276][anemoi.training.train.train][INFO] - Variables: ['z_1000', 'z_500', 'z_700', 'z_300', '2t', 't_850', 'tcw', 'z_250', 'lsm', 'z', 'cp', 'tp', 'cos_latitude', 'cos_longitude', 'sin_latitude', 'sin_longitude', 'cos_julian_day', 'cos_local_time', 'sin_julian_day', 'sin_local_time', 'insolation', 'lsm', 'sdor', 'slor', 'z']
+[2025-10-02 10:13:50,276][anemoi.training.train.train][INFO] - Total number of prognostic variables: 12
+[2025-10-02 10:13:50,276][anemoi.training.train.train][INFO] - Total number of auxiliary variables: 13
+[2025-10-02 10:13:50,276][anemoi.training.train.train][INFO] - Total GPU count / model group size: 1 - NB: the learning rate will be scaled by this factor!
+[2025-10-02 10:13:50,276][anemoi.training.train.train][INFO] - Effective learning rate: 1.000e-04
+[2025-10-02 10:13:51,596][anemoi.training.diagnostics.callbacks.plot][INFO] - Setting up asynchronous plotting ...
+[2025-10-02 10:13:51,598][anemoi.training.diagnostics.callbacks.plot][INFO] - Setting up asynchronous plotting ...
+[2025-10-02 10:13:51,605][anemoi.training.diagnostics.callbacks.plot][INFO] - Setting up asynchronous plotting ...
+[2025-10-02 10:13:51,605][anemoi.training.diagnostics.callbacks.plot][INFO] - Using defined accumulation colormap for fields: ['tp', 'cp']
+[2025-10-02 10:13:51,606][anemoi.training.diagnostics.callbacks.plot][INFO] - Setting up asynchronous plotting ...
+[2025-10-02 10:13:51,608][anemoi.training.diagnostics.callbacks.plot][INFO] - Setting up asynchronous plotting ...
+[2025-10-02 10:13:51,609][anemoi.training.diagnostics.callbacks.plot][INFO] - Using precip histogram plotting method for fields: ['tp', 'cp'].
+[2025-10-02 10:13:51,612][anemoi.models.migrations.migrator][INFO] - Loading migration 1755530253_initial
+[2025-10-02 10:13:51,651][anemoi.training.train.train][INFO] - MLFlow logger enabled
+[2025-10-02 10:13:51,653][pytorch_lightning.utilities.rank_zero][INFO] - Using 16bit Automatic Mixed Precision (AMP)
+[2025-10-02 10:13:51,669][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: True (cuda), used: True
+[2025-10-02 10:13:51,669][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2025-10-02 10:13:51,669][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2025-10-02 10:13:51,709][lightning_fabric.utilities.seed][INFO] - [rank: 0] Seed set to 35217259
+[2025-10-02 10:13:51,713][anemoi.training.train.train][INFO] - Initial seed: Rank 0, initial seed 35217259, running with random seed: 35217259
+[2025-10-02 10:13:58,104][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: cos_latitude is not normalized.
+[2025-10-02 10:13:58,105][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: cos_longitude is not normalized.
+[2025-10-02 10:13:58,105][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: sin_latitude is not normalized.
+[2025-10-02 10:13:58,105][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: sin_longitude is not normalized.
+[2025-10-02 10:13:58,105][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: cos_julian_day is not normalized.
+[2025-10-02 10:13:58,105][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: cos_local_time is not normalized.
+[2025-10-02 10:13:58,105][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: sin_julian_day is not normalized.
+[2025-10-02 10:13:58,105][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: sin_local_time is not normalized.
+[2025-10-02 10:13:58,105][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: insolation is not normalized.
+[2025-10-02 10:13:58,105][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: lsm is not normalized.
+[2025-10-02 10:13:58,162][anemoi.models.layers.utils][INFO] - Linear kernel: torch.nn.Linear.
+[2025-10-02 10:13:58,163][anemoi.models.layers.utils][INFO] - LayerNorm kernel: torch.nn.LayerNorm.
+[2025-10-02 10:13:58,164][anemoi.models.layers.utils][INFO] - Activation kernel: torch.nn.GELU.
+[2025-10-02 10:13:58,165][anemoi.models.layers.utils][INFO] - QueryNorm kernel: anemoi.models.layers.normalization.AutocastLayerNorm.
+[2025-10-02 10:13:58,166][anemoi.models.layers.utils][INFO] - KeyNorm kernel: anemoi.models.layers.normalization.AutocastLayerNorm.
+[2025-10-02 10:13:58,205][anemoi.models.layers.utils][INFO] - Linear kernel: torch.nn.Linear.
+[2025-10-02 10:13:58,206][anemoi.models.layers.utils][INFO] - LayerNorm kernel: torch.nn.LayerNorm.
+[2025-10-02 10:13:58,206][anemoi.models.layers.utils][INFO] - Activation kernel: torch.nn.GELU.
+[2025-10-02 10:13:58,207][anemoi.models.layers.utils][INFO] - QueryNorm kernel: anemoi.models.layers.normalization.AutocastLayerNorm.
+[2025-10-02 10:13:58,207][anemoi.models.layers.utils][INFO] - KeyNorm kernel: anemoi.models.layers.normalization.AutocastLayerNorm.
+[2025-10-02 10:13:58,238][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 10:13:58,243][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 10:13:58,247][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 10:13:58,251][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 10:13:58,256][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 10:13:58,261][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 10:13:58,265][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 10:13:58,492][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 10:13:58,496][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 10:13:58,501][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 10:13:58,505][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 10:13:58,509][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 10:13:58,514][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 10:13:58,518][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 10:13:58,522][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 10:13:58,527][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 10:13:58,536][anemoi.models.layers.utils][INFO] - Linear kernel: torch.nn.Linear.
+[2025-10-02 10:13:58,537][anemoi.models.layers.utils][INFO] - LayerNorm kernel: torch.nn.LayerNorm.
+[2025-10-02 10:13:58,537][anemoi.models.layers.utils][INFO] - Activation kernel: torch.nn.GELU.
+[2025-10-02 10:13:58,538][anemoi.models.layers.utils][INFO] - QueryNorm kernel: anemoi.models.layers.normalization.AutocastLayerNorm.
+[2025-10-02 10:13:58,539][anemoi.models.layers.utils][INFO] - KeyNorm kernel: anemoi.models.layers.normalization.AutocastLayerNorm.
+[2025-10-02 10:13:58,617][anemoi.training.losses.scalers.variable_level][INFO] - Variable Level Scaling: Applying ReluVariableLevelScaler scaling to pl variables ({'param': ['t', 'z']})
+[2025-10-02 10:13:58,617][anemoi.training.losses.scalers.variable_level][INFO] - with slope = 0.001 and y-intercept/minimum = 0.2.
+[2025-10-02 10:13:58,683][anemoi.training.train.train][INFO] - The following submodules will NOT be trained: []
+[2025-10-02 10:14:00,460][anemoi.training.utils.compile][INFO] - The following modules will be compiled: ['anemoi.models.layers.conv.GraphTransformerConv']
+[2025-10-02 10:14:00,471][lightning_fabric.utilities.distributed][INFO] - Initializing distributed: GLOBAL_RANK: 0, MEMBER: 1/1
+[2025-10-02 10:14:00,651][pytorch_lightning.utilities.rank_zero][INFO] - ----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All distributed processes registered. Starting with 1 processes
+----------------------------------------------------------------------------------------------------
+
+[2025-10-02 10:14:00,659][pytorch_lightning.accelerators.cuda][INFO] - LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+[2025-10-02 10:14:00,790][lightning_fabric.utilities.seed][INFO] - [rank: 0] Seed set to 35217259
+[2025-10-02 10:14:00,797][pytorch_lightning.callbacks.model_summary][INFO] - 
+  | Name    | Type                 | Params | Mode 
+---------------------------------------------------------
+0 | model   | AnemoiModelInterface | 14.9 M | train
+1 | loss    | MSELoss              | 0      | train
+2 | metrics | ModuleDict           | 0      | train
+---------------------------------------------------------
+14.9 M    Trainable params
+0         Non-trainable params
+14.9 M    Total params
+59.597    Total estimated model params size (MB)
+286       Modules in train mode
+0         Modules in eval mode
+[2025-10-02 10:14:00,852][anemoi.training.diagnostics.mlflow.logger][INFO] - Logging 497 parameters
+[2025-10-02 10:14:03,220][anemoi.training.data.datamodule.singledatamodule][WARNING] - Falling back rollout to: 1
+[2025-10-02 10:14:03,253][anemoi.training.data.dataset.singledataset][INFO] - Worker 0 (pid 2796061, global_rank 0, model comm group 0)  has low/high range 0 / 182
+[2025-10-02 10:14:03,256][anemoi.training.data.dataset.singledataset][INFO] - Worker 0 (validation, pid 2796061, glob. rank 0, model comm group 0, group_rank 0, seed group id 0, base_seed 35217259, sanity rnd 0.168912)
+[2025-10-02 10:14:03,278][anemoi.training.data.dataset.singledataset][INFO] - Worker 1 (pid 2796062, global_rank 0, model comm group 0)  has low/high range 182 / 364
+[2025-10-02 10:14:03,280][anemoi.training.data.dataset.singledataset][INFO] - Worker 1 (validation, pid 2796062, glob. rank 0, model comm group 0, group_rank 0, seed group id 0, base_seed 35217259, sanity rnd 0.168912)
+[2025-10-02 10:14:03,303][anemoi.training.data.dataset.singledataset][INFO] - Worker 2 (pid 2796063, global_rank 0, model comm group 0)  has low/high range 364 / 546
+[2025-10-02 10:14:03,305][anemoi.training.data.dataset.singledataset][INFO] - Worker 2 (validation, pid 2796063, glob. rank 0, model comm group 0, group_rank 0, seed group id 0, base_seed 35217259, sanity rnd 0.168912)
+[2025-10-02 10:14:03,328][anemoi.training.data.dataset.singledataset][INFO] - Worker 3 (pid 2796064, global_rank 0, model comm group 0)  has low/high range 546 / 728
+[2025-10-02 10:14:03,330][anemoi.training.data.dataset.singledataset][INFO] - Worker 3 (validation, pid 2796064, glob. rank 0, model comm group 0, group_rank 0, seed group id 0, base_seed 35217259, sanity rnd 0.168912)
+[2025-10-02 10:14:03,353][anemoi.training.data.dataset.singledataset][INFO] - Worker 4 (pid 2796065, global_rank 0, model comm group 0)  has low/high range 728 / 910
+[2025-10-02 10:14:03,355][anemoi.training.data.dataset.singledataset][INFO] - Worker 4 (validation, pid 2796065, glob. rank 0, model comm group 0, group_rank 0, seed group id 0, base_seed 35217259, sanity rnd 0.168912)
+[2025-10-02 10:14:03,379][anemoi.training.data.dataset.singledataset][INFO] - Worker 5 (pid 2796066, global_rank 0, model comm group 0)  has low/high range 910 / 1092
+[2025-10-02 10:14:03,381][anemoi.training.data.dataset.singledataset][INFO] - Worker 5 (validation, pid 2796066, glob. rank 0, model comm group 0, group_rank 0, seed group id 0, base_seed 35217259, sanity rnd 0.168912)
+[2025-10-02 10:14:03,406][anemoi.training.data.dataset.singledataset][INFO] - Worker 6 (pid 2796067, global_rank 0, model comm group 0)  has low/high range 1092 / 1274
+[2025-10-02 10:14:03,408][anemoi.training.data.dataset.singledataset][INFO] - Worker 6 (validation, pid 2796067, glob. rank 0, model comm group 0, group_rank 0, seed group id 0, base_seed 35217259, sanity rnd 0.168912)
+[2025-10-02 10:14:03,436][anemoi.training.data.dataset.singledataset][INFO] - Worker 7 (pid 2796068, global_rank 0, model comm group 0)  has low/high range 1274 / 1456
+[2025-10-02 10:14:03,440][anemoi.training.data.dataset.singledataset][INFO] - Worker 7 (validation, pid 2796068, glob. rank 0, model comm group 0, group_rank 0, seed group id 0, base_seed 35217259, sanity rnd 0.168912)
+[2025-10-02 10:14:03,435][anemoi.models.data_indices.collection][INFO] - The order of the variables in the model matches the order in the data.
+[2025-10-02 10:14:04,793][anemoi.training.diagnostics.callbacks.plot][ERROR] - Traceback (most recent call last):
+  File "/lus/h2resw01/hpcperm/naco/aifs/correctness/anemoi-core/training/src/anemoi/training/diagnostics/callbacks/plot.py", line 155, in _plot_with_error_catching
+    self._plot(trainer, *args, **kwargs)
+  File "/perm/naco/venvs/correctness-ac/lib/python3.11/site-packages/lightning_utilities/core/rank_zero.py", line 41, in wrapped_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/lus/h2resw01/hpcperm/naco/aifs/correctness/anemoi-core/training/src/anemoi/training/diagnostics/callbacks/plot.py", line 1145, in _plot
+    plot_parameters_dict_spectrum = {
+                                    ^
+  File "/lus/h2resw01/hpcperm/naco/aifs/correctness/anemoi-core/training/src/anemoi/training/diagnostics/callbacks/plot.py", line 1146, in <dictcomp>
+    pl_module.data_indices.model.output.name_to_index[name]: (
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+KeyError: '10u'
+Traceback (most recent call last):
+  File "/lus/h2resw01/hpcperm/naco/aifs/correctness/anemoi-core/training/src/anemoi/training/diagnostics/callbacks/plot.py", line 155, in _plot_with_error_catching
+    self._plot(trainer, *args, **kwargs)
+  File "/perm/naco/venvs/correctness-ac/lib/python3.11/site-packages/lightning_utilities/core/rank_zero.py", line 41, in wrapped_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/lus/h2resw01/hpcperm/naco/aifs/correctness/anemoi-core/training/src/anemoi/training/diagnostics/callbacks/plot.py", line 1145, in _plot
+    plot_parameters_dict_spectrum = {
+                                    ^
+  File "/lus/h2resw01/hpcperm/naco/aifs/correctness/anemoi-core/training/src/anemoi/training/diagnostics/callbacks/plot.py", line 1146, in <dictcomp>
+    pl_module.data_indices.model.output.name_to_index[name]: (
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+KeyError: '10u'

@@ -1,0 +1,5 @@
+[2025-10-01 14:09:57,818][anemoi.training.train.train][INFO] - Skipping config validation.
+[2025-10-01 14:09:57,819][anemoi.training.train.train][INFO] - Starting from checkpoint: False
+[2025-10-01 14:09:59,053][anemoi.training.diagnostics.logger][INFO] - AnemoiMLFlow logging to https://mlflow.ecmwf.int/
+[2025-10-01 14:09:59,053][anemoi.training.diagnostics.logger][INFO] - Maximum number of params allowed to be logged is: 2000
+[2025-10-01 14:09:59,055][anemoi.training.diagnostics.mlflow.logger][INFO] - MLflow token authentication disabled for https://mlflow.ecmwf.int/

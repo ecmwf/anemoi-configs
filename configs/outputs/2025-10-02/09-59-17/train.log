@@ -1,0 +1,41 @@
+[2025-10-02 09:59:17,998][anemoi.training.train.train][INFO] - Skipping config validation.
+[2025-10-02 09:59:18,003][anemoi.training.train.train][INFO] - Starting from checkpoint: False
+[2025-10-02 09:59:32,269][anemoi.training.diagnostics.logger][INFO] - Maximum number of params allowed to be logged is: 2000
+[2025-10-02 09:59:32,272][anemoi.training.diagnostics.mlflow.logger][INFO] - MLflow is logging offline.
+[2025-10-02 09:59:33,183][anemoi.training.diagnostics.mlflow.logger][INFO] - Logging 1 parameters
+[2025-10-02 09:59:33,190][anemoi.training.diagnostics.mlflow.logger][INFO] - Terminal Log Path: /scratch/momc/plots/4d26695f474842cabd28032aa43448f9/plots/terminal_log.txt
+[2025-10-02 09:59:33,190][anemoi.training.diagnostics.mlflow.logger][INFO] - SLURM job id: 35217259
+[2025-10-02 09:59:33,190][anemoi.training.train.train][INFO] - Mlflow Run id: 4d26695f474842cabd28032aa43448f9
+[2025-10-02 09:59:33,191][anemoi.training.train.train][INFO] - Run id: 4d26695f474842cabd28032aa43448f9
+[2025-10-02 09:59:33,191][anemoi.training.train.train][INFO] - Parent run server2server: None
+[2025-10-02 09:59:33,191][anemoi.training.train.train][INFO] - Fork run server2server: None
+[2025-10-02 09:59:33,191][anemoi.training.train.train][INFO] - Checkpoints path: /scratch/momc/checkpoint/4d26695f474842cabd28032aa43448f9
+[2025-10-02 09:59:33,191][anemoi.training.train.train][INFO] - Plots path: /scratch/momc/plots/4d26695f474842cabd28032aa43448f9
+[2025-10-02 09:59:33,191][anemoi.training.train.train][INFO] - Dry run: False
+[2025-10-02 09:59:43,500][anemoi.graphs.nodes.builders.from_file][INFO] - Reading the dataset from /home/mlx/ai-ml/datasets//aifs-ea-an-oper-0001-mars-o48-1979-2022-6h-v6.zarr.
+[2025-10-02 09:59:47,054][anemoi.graphs.edges.builders.cutoff][INFO] - Using CutOff-Edges (with radius = 208.3 km) between data and hidden.
+[2025-10-02 09:59:47,451][anemoi.graphs.edges.builders.base][WARNING] - The 'torch-cluster' library is not installed. Installing 'torch-cluster' can significantly improve performance for graph creation. You can install it using 'pip install torch-cluster'.
+[2025-10-02 09:59:49,758][anemoi.graphs.edges.builders.knn][INFO] - Using KNN-Edges (with 3 nearest neighbours) between hidden and data.
+[2025-10-02 09:59:49,759][anemoi.graphs.edges.builders.base][WARNING] - The 'torch-cluster' library is not installed. Installing 'torch-cluster' can significantly improve performance for graph creation. You can install it using 'pip install torch-cluster'.
+[2025-10-02 09:59:49,789][anemoi.graphs.create][INFO] - Cleaning graph.
+[2025-10-02 09:59:49,789][anemoi.graphs.create][INFO] - _grid_reference_distance deleted from graph.
+[2025-10-02 09:59:49,789][anemoi.graphs.create][INFO] - _dataset deleted from graph.
+[2025-10-02 09:59:49,790][anemoi.graphs.create][INFO] - _grid_reference_distance deleted from graph.
+[2025-10-02 09:59:49,828][anemoi.graphs.create][INFO] - Graph saved at /scratch/momc/graphs/graph_o32.pt.
+[2025-10-02 09:59:50,667][anemoi.training.data.datamodule.singledatamodule][WARNING] - Falling back rollout to: 1
+[2025-10-02 09:59:50,668][anemoi.training.data.datamodule.singledatamodule][INFO] - Timeincrement set to 1 for data with frequency, 21600, and timestep, 21600
+[2025-10-02 09:59:50,669][anemoi.training.train.train][INFO] - Number of data variables: 25
+[2025-10-02 09:59:50,669][anemoi.training.train.train][INFO] - Variables: ['z_1000', 'z_500', 'z_700', 'z_300', '2t', 't_850', 'tcw', 'z_250', 'lsm', 'z', 'cp', 'tp', 'cos_latitude', 'cos_longitude', 'sin_latitude', 'sin_longitude', 'cos_julian_day', 'cos_local_time', 'sin_julian_day', 'sin_local_time', 'insolation', 'lsm', 'sdor', 'slor', 'z']
+[2025-10-02 09:59:50,669][anemoi.training.train.train][INFO] - Total number of prognostic variables: 12
+[2025-10-02 09:59:50,669][anemoi.training.train.train][INFO] - Total number of auxiliary variables: 13
+[2025-10-02 09:59:50,669][anemoi.training.train.train][INFO] - Total GPU count / model group size: 4 - NB: the learning rate will be scaled by this factor!
+[2025-10-02 09:59:50,670][anemoi.training.train.train][INFO] - Effective learning rate: 4.000e-04
+[2025-10-02 10:00:04,225][anemoi.training.diagnostics.callbacks.plot][INFO] - Setting up asynchronous plotting ...
+[2025-10-02 10:00:04,227][anemoi.training.diagnostics.callbacks.plot][INFO] - Setting up asynchronous plotting ...
+[2025-10-02 10:00:04,288][anemoi.training.diagnostics.callbacks.plot][INFO] - Setting up asynchronous plotting ...
+[2025-10-02 10:00:04,288][anemoi.training.diagnostics.callbacks.plot][INFO] - Using defined accumulation colormap for fields: ['tp', 'cp']
+[2025-10-02 10:00:04,290][anemoi.training.diagnostics.callbacks.plot][INFO] - Setting up asynchronous plotting ...
+[2025-10-02 10:00:04,291][anemoi.training.diagnostics.callbacks.plot][INFO] - Setting up asynchronous plotting ...
+[2025-10-02 10:00:04,292][anemoi.training.diagnostics.callbacks.plot][INFO] - Using precip histogram plotting method for fields: ['tp', 'cp'].
+[2025-10-02 10:00:04,355][anemoi.models.migrations.migrator][INFO] - Loading migration 1755530253_initial
+[2025-10-02 10:00:04,462][anemoi.training.train.train][INFO] - MLFlow logger enabled

@@ -1,0 +1,3 @@
+- hardware=slurm
+- training.max_steps=50000
+- diagnostics.log.mlflow.run_name=50000 iterations

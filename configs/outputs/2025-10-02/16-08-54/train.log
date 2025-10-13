@@ -1,0 +1,743 @@
+[2025-10-02 16:08:54,232][anemoi.training.train.train][INFO] - Skipping config validation.
+[2025-10-02 16:08:54,233][anemoi.training.train.train][INFO] - Starting from checkpoint: False
+[2025-10-02 16:08:54,233][anemoi.training.train.train][INFO] - Skipping config validation.
+[2025-10-02 16:08:54,233][anemoi.training.train.train][INFO] - Starting from checkpoint: False
+[2025-10-02 16:08:54,233][anemoi.training.train.train][INFO] - Run id: None
+[2025-10-02 16:08:54,236][anemoi.training.train.train][INFO] - Skipping config validation.
+[2025-10-02 16:08:54,236][anemoi.training.train.train][INFO] - Starting from checkpoint: False
+[2025-10-02 16:08:54,236][anemoi.training.train.train][INFO] - Run id: None
+[2025-10-02 16:08:54,243][anemoi.training.train.train][INFO] - Skipping config validation.
+[2025-10-02 16:08:54,243][anemoi.training.train.train][INFO] - Starting from checkpoint: False
+[2025-10-02 16:08:54,243][anemoi.training.train.train][INFO] - Run id: None
+[2025-10-02 16:08:55,564][anemoi.training.diagnostics.logger][INFO] - Maximum number of params allowed to be logged is: 2000
+[2025-10-02 16:08:55,564][anemoi.training.diagnostics.logger][INFO] - Maximum number of params allowed to be logged is: 2000
+[2025-10-02 16:08:55,564][anemoi.training.diagnostics.logger][INFO] - Maximum number of params allowed to be logged is: 2000
+[2025-10-02 16:08:55,564][anemoi.training.diagnostics.logger][INFO] - Maximum number of params allowed to be logged is: 2000
+[2025-10-02 16:08:55,577][anemoi.training.diagnostics.mlflow.logger][INFO] - MLflow is logging offline.
+[2025-10-02 16:08:55,608][anemoi.training.train.train][INFO] - Parent run server2server: None
+[2025-10-02 16:08:55,608][anemoi.training.train.train][INFO] - Fork run server2server: None
+[2025-10-02 16:08:55,608][anemoi.training.train.train][INFO] - Parent run server2server: None
+[2025-10-02 16:08:55,608][anemoi.training.train.train][INFO] - Checkpoints path: /scratch/momc/checkpoint
+[2025-10-02 16:08:55,608][anemoi.training.train.train][INFO] - Fork run server2server: None
+[2025-10-02 16:08:55,608][anemoi.training.train.train][INFO] - Plots path: /scratch/momc/plots
+[2025-10-02 16:08:55,608][anemoi.training.train.train][INFO] - Checkpoints path: /scratch/momc/checkpoint
+[2025-10-02 16:08:55,609][anemoi.training.train.train][INFO] - Plots path: /scratch/momc/plots
+[2025-10-02 16:08:55,617][anemoi.training.train.train][INFO] - Parent run server2server: None
+[2025-10-02 16:08:55,617][anemoi.training.train.train][INFO] - Fork run server2server: None
+[2025-10-02 16:08:55,617][anemoi.training.train.train][INFO] - Checkpoints path: /scratch/momc/checkpoint
+[2025-10-02 16:08:55,618][anemoi.training.train.train][INFO] - Plots path: /scratch/momc/plots
+[2025-10-02 16:08:55,781][anemoi.training.diagnostics.mlflow.logger][INFO] - Logging 1 parameters
+[2025-10-02 16:08:55,789][anemoi.training.diagnostics.mlflow.logger][INFO] - Terminal Log Path: /scratch/momc/plots/3b456a9a70dc465dae27f8c63a781fb3/plots/terminal_log.txt
+[2025-10-02 16:08:55,790][anemoi.training.diagnostics.mlflow.logger][INFO] - SLURM job id: 35295700
+[2025-10-02 16:08:55,790][anemoi.training.train.train][INFO] - Mlflow Run id: 3b456a9a70dc465dae27f8c63a781fb3
+[2025-10-02 16:08:55,790][anemoi.training.train.train][INFO] - Run id: 3b456a9a70dc465dae27f8c63a781fb3
+[2025-10-02 16:08:55,790][anemoi.training.train.train][INFO] - Parent run server2server: None
+[2025-10-02 16:08:55,790][anemoi.training.train.train][INFO] - Fork run server2server: None
+[2025-10-02 16:08:55,790][anemoi.training.train.train][INFO] - Checkpoints path: /scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3
+[2025-10-02 16:08:55,790][anemoi.training.train.train][INFO] - Plots path: /scratch/momc/plots/3b456a9a70dc465dae27f8c63a781fb3
+[2025-10-02 16:08:55,791][anemoi.training.train.train][INFO] - Dry run: False
+[2025-10-02 16:08:56,317][anemoi.graphs.nodes.builders.from_file][INFO] - Reading the dataset from /home/mlx/ai-ml/datasets//aifs-ea-an-oper-0001-mars-o48-1979-2022-6h-v6.zarr.
+[2025-10-02 16:08:56,317][anemoi.graphs.nodes.builders.from_file][INFO] - Reading the dataset from /home/mlx/ai-ml/datasets//aifs-ea-an-oper-0001-mars-o48-1979-2022-6h-v6.zarr.
+[2025-10-02 16:08:56,317][anemoi.graphs.nodes.builders.from_file][INFO] - Reading the dataset from /home/mlx/ai-ml/datasets//aifs-ea-an-oper-0001-mars-o48-1979-2022-6h-v6.zarr.
+[2025-10-02 16:08:56,317][anemoi.graphs.nodes.builders.from_file][INFO] - Reading the dataset from /home/mlx/ai-ml/datasets//aifs-ea-an-oper-0001-mars-o48-1979-2022-6h-v6.zarr.
+[2025-10-02 16:08:57,017][anemoi.graphs.edges.builders.cutoff][INFO] - Using CutOff-Edges (with radius = 208.3 km) between data and hidden.
+[2025-10-02 16:08:57,018][anemoi.graphs.edges.builders.cutoff][INFO] - Using CutOff-Edges (with radius = 208.3 km) between data and hidden.
+[2025-10-02 16:08:57,027][anemoi.graphs.edges.builders.cutoff][INFO] - Using CutOff-Edges (with radius = 208.3 km) between data and hidden.
+[2025-10-02 16:08:57,027][anemoi.graphs.edges.builders.cutoff][INFO] - Using CutOff-Edges (with radius = 208.3 km) between data and hidden.
+[2025-10-02 16:08:57,028][anemoi.graphs.edges.builders.base][WARNING] - The 'torch-cluster' library is not installed. Installing 'torch-cluster' can significantly improve performance for graph creation. You can install it using 'pip install torch-cluster'.
+[2025-10-02 16:08:57,029][anemoi.graphs.edges.builders.base][WARNING] - The 'torch-cluster' library is not installed. Installing 'torch-cluster' can significantly improve performance for graph creation. You can install it using 'pip install torch-cluster'.
+[2025-10-02 16:08:57,037][anemoi.graphs.edges.builders.base][WARNING] - The 'torch-cluster' library is not installed. Installing 'torch-cluster' can significantly improve performance for graph creation. You can install it using 'pip install torch-cluster'.
+[2025-10-02 16:08:57,037][anemoi.graphs.edges.builders.base][WARNING] - The 'torch-cluster' library is not installed. Installing 'torch-cluster' can significantly improve performance for graph creation. You can install it using 'pip install torch-cluster'.
+[2025-10-02 16:08:57,300][anemoi.graphs.edges.builders.knn][INFO] - Using KNN-Edges (with 3 nearest neighbours) between hidden and data.
+[2025-10-02 16:08:57,300][anemoi.graphs.edges.builders.base][WARNING] - The 'torch-cluster' library is not installed. Installing 'torch-cluster' can significantly improve performance for graph creation. You can install it using 'pip install torch-cluster'.
+[2025-10-02 16:08:57,307][anemoi.graphs.edges.builders.knn][INFO] - Using KNN-Edges (with 3 nearest neighbours) between hidden and data.
+[2025-10-02 16:08:57,308][anemoi.graphs.edges.builders.base][WARNING] - The 'torch-cluster' library is not installed. Installing 'torch-cluster' can significantly improve performance for graph creation. You can install it using 'pip install torch-cluster'.
+[2025-10-02 16:08:57,328][anemoi.graphs.create][INFO] - Cleaning graph.
+[2025-10-02 16:08:57,329][anemoi.graphs.create][INFO] - _grid_reference_distance deleted from graph.
+[2025-10-02 16:08:57,329][anemoi.graphs.create][INFO] - _dataset deleted from graph.
+[2025-10-02 16:08:57,329][anemoi.graphs.create][INFO] - _grid_reference_distance deleted from graph.
+[2025-10-02 16:08:57,330][anemoi.graphs.create][INFO] - Cleaning graph.
+[2025-10-02 16:08:57,330][anemoi.graphs.create][INFO] - _grid_reference_distance deleted from graph.
+[2025-10-02 16:08:57,330][anemoi.graphs.create][INFO] - _dataset deleted from graph.
+[2025-10-02 16:08:57,330][anemoi.graphs.create][INFO] - _grid_reference_distance deleted from graph.
+[2025-10-02 16:08:57,333][anemoi.graphs.edges.builders.knn][INFO] - Using KNN-Edges (with 3 nearest neighbours) between hidden and data.
+[2025-10-02 16:08:57,333][anemoi.graphs.edges.builders.base][WARNING] - The 'torch-cluster' library is not installed. Installing 'torch-cluster' can significantly improve performance for graph creation. You can install it using 'pip install torch-cluster'.
+[2025-10-02 16:08:57,353][anemoi.graphs.create][INFO] - Graph saved at /scratch/momc/graphs/graph_o32.pt.
+[2025-10-02 16:08:57,354][anemoi.graphs.create][INFO] - Graph saved at /scratch/momc/graphs/graph_o32.pt.
+[2025-10-02 16:08:57,363][anemoi.graphs.create][INFO] - Cleaning graph.
+[2025-10-02 16:08:57,363][anemoi.graphs.create][INFO] - _grid_reference_distance deleted from graph.
+[2025-10-02 16:08:57,363][anemoi.graphs.create][INFO] - _dataset deleted from graph.
+[2025-10-02 16:08:57,363][anemoi.graphs.create][INFO] - _grid_reference_distance deleted from graph.
+[2025-10-02 16:08:57,371][anemoi.graphs.create][INFO] - Graph saved at /scratch/momc/graphs/graph_o32.pt.
+[2025-10-02 16:08:57,486][anemoi.graphs.edges.builders.knn][INFO] - Using KNN-Edges (with 3 nearest neighbours) between hidden and data.
+[2025-10-02 16:08:57,486][anemoi.graphs.edges.builders.base][WARNING] - The 'torch-cluster' library is not installed. Installing 'torch-cluster' can significantly improve performance for graph creation. You can install it using 'pip install torch-cluster'.
+[2025-10-02 16:08:57,517][anemoi.graphs.create][INFO] - Cleaning graph.
+[2025-10-02 16:08:57,517][anemoi.graphs.create][INFO] - _grid_reference_distance deleted from graph.
+[2025-10-02 16:08:57,517][anemoi.graphs.create][INFO] - _dataset deleted from graph.
+[2025-10-02 16:08:57,517][anemoi.graphs.create][INFO] - _grid_reference_distance deleted from graph.
+[2025-10-02 16:08:57,523][anemoi.graphs.create][INFO] - Graph saved at /scratch/momc/graphs/graph_o32.pt.
+[2025-10-02 16:08:58,242][anemoi.training.data.datamodule.singledatamodule][WARNING] - Falling back rollout to: 1
+[2025-10-02 16:08:58,243][anemoi.training.data.datamodule.singledatamodule][INFO] - Timeincrement set to 1 for data with frequency, 21600, and timestep, 21600
+[2025-10-02 16:08:58,245][anemoi.training.train.train][INFO] - Number of data variables: 101
+[2025-10-02 16:08:58,245][anemoi.training.train.train][INFO] - Variables: ['q_50', 'q_100', 'q_150', 'q_200', 'q_250', 'q_300', 'q_400', 'q_500', 'q_600', 'q_700', 'q_850', 'q_925', 'q_1000', 't_50', 't_100', 't_150', 't_200', 't_250', 't_300', 't_400', 't_500', 't_600', 't_700', 't_850', 't_925', 't_1000', 'u_50', 'u_100', 'u_150', 'u_200', 'u_250', 'u_300', 'u_400', 'u_500', 'u_600', 'u_700', 'u_850', 'u_925', 'u_1000', 'v_50', 'v_100', 'v_150', 'v_200', 'v_250', 'v_300', 'v_400', 'v_500', 'v_600', 'v_700', 'v_850', 'v_925', 'v_1000', 'w_50', 'w_100', 'w_150', 'w_200', 'w_250', 'w_300', 'w_400', 'w_500', 'w_600', 'w_700', 'w_850', 'w_925', 'w_1000', 'z_50', 'z_100', 'z_150', 'z_200', 'z_250', 'z_300', 'z_400', 'z_500', 'z_600', 'z_700', 'z_850', 'z_925', 'z_1000', '10u', '10v', '2d', '2t', 'lsm', 'msl', 'sdor', 'skt', 'slor', 'sp', 'tcw', 'z', 'cp', 'tp', 'cos_latitude', 'cos_longitude', 'sin_latitude', 'sin_longitude', 'cos_julian_day', 'cos_local_time', 'sin_julian_day', 'sin_local_time', 'insolation']
+[2025-10-02 16:08:58,244][anemoi.training.data.datamodule.singledatamodule][WARNING] - Falling back rollout to: 1
+[2025-10-02 16:08:58,245][anemoi.training.train.train][INFO] - Total number of prognostic variables: 88
+[2025-10-02 16:08:58,245][anemoi.training.train.train][INFO] - Total number of auxiliary variables: 13
+[2025-10-02 16:08:58,245][anemoi.training.data.datamodule.singledatamodule][INFO] - Timeincrement set to 1 for data with frequency, 21600, and timestep, 21600
+[2025-10-02 16:08:58,245][anemoi.training.train.train][INFO] - Total GPU count / model group size: 4 - NB: the learning rate will be scaled by this factor!
+[2025-10-02 16:08:58,246][anemoi.training.train.train][INFO] - Effective learning rate: 4.000e-03
+[2025-10-02 16:08:58,245][anemoi.training.data.datamodule.singledatamodule][WARNING] - Falling back rollout to: 1
+[2025-10-02 16:08:58,246][anemoi.training.data.datamodule.singledatamodule][INFO] - Timeincrement set to 1 for data with frequency, 21600, and timestep, 21600
+[2025-10-02 16:08:58,248][anemoi.training.train.train][INFO] - Number of data variables: 101
+[2025-10-02 16:08:58,248][anemoi.training.train.train][INFO] - Variables: ['q_50', 'q_100', 'q_150', 'q_200', 'q_250', 'q_300', 'q_400', 'q_500', 'q_600', 'q_700', 'q_850', 'q_925', 'q_1000', 't_50', 't_100', 't_150', 't_200', 't_250', 't_300', 't_400', 't_500', 't_600', 't_700', 't_850', 't_925', 't_1000', 'u_50', 'u_100', 'u_150', 'u_200', 'u_250', 'u_300', 'u_400', 'u_500', 'u_600', 'u_700', 'u_850', 'u_925', 'u_1000', 'v_50', 'v_100', 'v_150', 'v_200', 'v_250', 'v_300', 'v_400', 'v_500', 'v_600', 'v_700', 'v_850', 'v_925', 'v_1000', 'w_50', 'w_100', 'w_150', 'w_200', 'w_250', 'w_300', 'w_400', 'w_500', 'w_600', 'w_700', 'w_850', 'w_925', 'w_1000', 'z_50', 'z_100', 'z_150', 'z_200', 'z_250', 'z_300', 'z_400', 'z_500', 'z_600', 'z_700', 'z_850', 'z_925', 'z_1000', '10u', '10v', '2d', '2t', 'lsm', 'msl', 'sdor', 'skt', 'slor', 'sp', 'tcw', 'z', 'cp', 'tp', 'cos_latitude', 'cos_longitude', 'sin_latitude', 'sin_longitude', 'cos_julian_day', 'cos_local_time', 'sin_julian_day', 'sin_local_time', 'insolation']
+[2025-10-02 16:08:58,248][anemoi.training.train.train][INFO] - Total number of prognostic variables: 88
+[2025-10-02 16:08:58,248][anemoi.training.train.train][INFO] - Total number of auxiliary variables: 13
+[2025-10-02 16:08:58,248][anemoi.training.train.train][INFO] - Total GPU count / model group size: 4 - NB: the learning rate will be scaled by this factor!
+[2025-10-02 16:08:58,248][anemoi.training.train.train][INFO] - Effective learning rate: 4.000e-03
+[2025-10-02 16:08:58,248][anemoi.training.train.train][INFO] - Number of data variables: 101
+[2025-10-02 16:08:58,248][anemoi.training.train.train][INFO] - Variables: ['q_50', 'q_100', 'q_150', 'q_200', 'q_250', 'q_300', 'q_400', 'q_500', 'q_600', 'q_700', 'q_850', 'q_925', 'q_1000', 't_50', 't_100', 't_150', 't_200', 't_250', 't_300', 't_400', 't_500', 't_600', 't_700', 't_850', 't_925', 't_1000', 'u_50', 'u_100', 'u_150', 'u_200', 'u_250', 'u_300', 'u_400', 'u_500', 'u_600', 'u_700', 'u_850', 'u_925', 'u_1000', 'v_50', 'v_100', 'v_150', 'v_200', 'v_250', 'v_300', 'v_400', 'v_500', 'v_600', 'v_700', 'v_850', 'v_925', 'v_1000', 'w_50', 'w_100', 'w_150', 'w_200', 'w_250', 'w_300', 'w_400', 'w_500', 'w_600', 'w_700', 'w_850', 'w_925', 'w_1000', 'z_50', 'z_100', 'z_150', 'z_200', 'z_250', 'z_300', 'z_400', 'z_500', 'z_600', 'z_700', 'z_850', 'z_925', 'z_1000', '10u', '10v', '2d', '2t', 'lsm', 'msl', 'sdor', 'skt', 'slor', 'sp', 'tcw', 'z', 'cp', 'tp', 'cos_latitude', 'cos_longitude', 'sin_latitude', 'sin_longitude', 'cos_julian_day', 'cos_local_time', 'sin_julian_day', 'sin_local_time', 'insolation']
+[2025-10-02 16:08:58,248][anemoi.training.train.train][INFO] - Total number of prognostic variables: 88
+[2025-10-02 16:08:58,249][anemoi.training.train.train][INFO] - Total number of auxiliary variables: 13
+[2025-10-02 16:08:58,249][anemoi.training.train.train][INFO] - Total GPU count / model group size: 4 - NB: the learning rate will be scaled by this factor!
+[2025-10-02 16:08:58,249][anemoi.training.train.train][INFO] - Effective learning rate: 4.000e-03
+[2025-10-02 16:08:58,250][anemoi.training.data.datamodule.singledatamodule][WARNING] - Falling back rollout to: 1
+[2025-10-02 16:08:58,251][anemoi.training.data.datamodule.singledatamodule][INFO] - Timeincrement set to 1 for data with frequency, 21600, and timestep, 21600
+[2025-10-02 16:08:58,253][anemoi.training.train.train][INFO] - Number of data variables: 101
+[2025-10-02 16:08:58,253][anemoi.training.train.train][INFO] - Variables: ['q_50', 'q_100', 'q_150', 'q_200', 'q_250', 'q_300', 'q_400', 'q_500', 'q_600', 'q_700', 'q_850', 'q_925', 'q_1000', 't_50', 't_100', 't_150', 't_200', 't_250', 't_300', 't_400', 't_500', 't_600', 't_700', 't_850', 't_925', 't_1000', 'u_50', 'u_100', 'u_150', 'u_200', 'u_250', 'u_300', 'u_400', 'u_500', 'u_600', 'u_700', 'u_850', 'u_925', 'u_1000', 'v_50', 'v_100', 'v_150', 'v_200', 'v_250', 'v_300', 'v_400', 'v_500', 'v_600', 'v_700', 'v_850', 'v_925', 'v_1000', 'w_50', 'w_100', 'w_150', 'w_200', 'w_250', 'w_300', 'w_400', 'w_500', 'w_600', 'w_700', 'w_850', 'w_925', 'w_1000', 'z_50', 'z_100', 'z_150', 'z_200', 'z_250', 'z_300', 'z_400', 'z_500', 'z_600', 'z_700', 'z_850', 'z_925', 'z_1000', '10u', '10v', '2d', '2t', 'lsm', 'msl', 'sdor', 'skt', 'slor', 'sp', 'tcw', 'z', 'cp', 'tp', 'cos_latitude', 'cos_longitude', 'sin_latitude', 'sin_longitude', 'cos_julian_day', 'cos_local_time', 'sin_julian_day', 'sin_local_time', 'insolation']
+[2025-10-02 16:08:58,253][anemoi.training.train.train][INFO] - Total number of prognostic variables: 88
+[2025-10-02 16:08:58,253][anemoi.training.train.train][INFO] - Total number of auxiliary variables: 13
+[2025-10-02 16:08:58,253][anemoi.training.train.train][INFO] - Total GPU count / model group size: 4 - NB: the learning rate will be scaled by this factor!
+[2025-10-02 16:08:58,253][anemoi.training.train.train][INFO] - Effective learning rate: 4.000e-03
+[2025-10-02 16:08:59,832][anemoi.training.diagnostics.callbacks.plot][INFO] - Setting up asynchronous plotting ...
+[2025-10-02 16:08:59,832][anemoi.training.diagnostics.callbacks.plot][INFO] - Setting up asynchronous plotting ...
+[2025-10-02 16:08:59,832][anemoi.training.diagnostics.callbacks.plot][INFO] - Setting up asynchronous plotting ...
+[2025-10-02 16:08:59,832][anemoi.training.diagnostics.callbacks.plot][INFO] - Setting up asynchronous plotting ...
+[2025-10-02 16:08:59,873][anemoi.training.diagnostics.callbacks.plot][INFO] - Setting up asynchronous plotting ...
+[2025-10-02 16:08:59,873][anemoi.training.diagnostics.callbacks.plot][INFO] - Setting up asynchronous plotting ...
+[2025-10-02 16:08:59,873][anemoi.training.diagnostics.callbacks.plot][INFO] - Setting up asynchronous plotting ...
+[2025-10-02 16:08:59,873][anemoi.training.diagnostics.callbacks.plot][INFO] - Setting up asynchronous plotting ...
+[2025-10-02 16:08:59,873][anemoi.training.diagnostics.callbacks.plot][INFO] - Using defined accumulation colormap for fields: ['tp', 'cp']
+[2025-10-02 16:08:59,873][anemoi.training.diagnostics.callbacks.plot][INFO] - Using defined accumulation colormap for fields: ['tp', 'cp']
+[2025-10-02 16:08:59,873][anemoi.training.diagnostics.callbacks.plot][INFO] - Using defined accumulation colormap for fields: ['tp', 'cp']
+[2025-10-02 16:08:59,873][anemoi.training.diagnostics.callbacks.plot][INFO] - Using defined accumulation colormap for fields: ['tp', 'cp']
+[2025-10-02 16:08:59,912][anemoi.models.migrations.migrator][INFO] - Loading migration 1755530253_initial
+[2025-10-02 16:08:59,912][anemoi.models.migrations.migrator][INFO] - Loading migration 1755530253_initial
+[2025-10-02 16:08:59,912][anemoi.models.migrations.migrator][INFO] - Loading migration 1755530253_initial
+[2025-10-02 16:08:59,912][anemoi.models.migrations.migrator][INFO] - Loading migration 1755530253_initial
+[2025-10-02 16:08:59,986][anemoi.training.train.train][INFO] - MLFlow logger enabled
+[2025-10-02 16:08:59,986][anemoi.training.train.train][INFO] - MLFlow logger enabled
+[2025-10-02 16:08:59,987][anemoi.training.train.train][INFO] - MLFlow logger enabled
+[2025-10-02 16:08:59,987][anemoi.training.train.train][INFO] - MLFlow logger enabled
+[2025-10-02 16:08:59,988][pytorch_lightning.utilities.rank_zero][INFO] - Using 16bit Automatic Mixed Precision (AMP)
+[2025-10-02 16:09:00,005][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: True (cuda), used: True
+[2025-10-02 16:09:00,005][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2025-10-02 16:09:00,005][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2025-10-02 16:09:00,042][lightning_fabric.utilities.seed][INFO] - [rank: 1] Seed set to 35295700
+[2025-10-02 16:09:00,042][lightning_fabric.utilities.seed][INFO] - [rank: 0] Seed set to 35295700
+[2025-10-02 16:09:00,042][lightning_fabric.utilities.seed][INFO] - [rank: 2] Seed set to 35295700
+[2025-10-02 16:09:00,042][lightning_fabric.utilities.seed][INFO] - [rank: 3] Seed set to 35295700
+[2025-10-02 16:09:00,043][anemoi.training.train.train][INFO] - Initial seed: Rank 1, initial seed 35295700, running with random seed: 35295700
+[2025-10-02 16:09:00,043][anemoi.training.train.train][INFO] - Initial seed: Rank 0, initial seed 35295700, running with random seed: 35295700
+[2025-10-02 16:09:00,043][anemoi.training.train.train][INFO] - Initial seed: Rank 2, initial seed 35295700, running with random seed: 35295700
+[2025-10-02 16:09:00,043][anemoi.training.train.train][INFO] - Initial seed: Rank 3, initial seed 35295700, running with random seed: 35295700
+[2025-10-02 16:09:07,750][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: lsm is not normalized.
+[2025-10-02 16:09:07,751][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: cos_latitude is not normalized.
+[2025-10-02 16:09:07,751][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: cos_longitude is not normalized.
+[2025-10-02 16:09:07,751][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: sin_latitude is not normalized.
+[2025-10-02 16:09:07,751][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: sin_longitude is not normalized.
+[2025-10-02 16:09:07,751][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: lsm is not normalized.
+[2025-10-02 16:09:07,751][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: cos_julian_day is not normalized.
+[2025-10-02 16:09:07,751][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: cos_local_time is not normalized.
+[2025-10-02 16:09:07,751][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: cos_latitude is not normalized.
+[2025-10-02 16:09:07,751][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: sin_julian_day is not normalized.
+[2025-10-02 16:09:07,751][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: cos_longitude is not normalized.
+[2025-10-02 16:09:07,751][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: sin_local_time is not normalized.
+[2025-10-02 16:09:07,751][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: sin_latitude is not normalized.
+[2025-10-02 16:09:07,751][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: lsm is not normalized.
+[2025-10-02 16:09:07,751][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: lsm is not normalized.
+[2025-10-02 16:09:07,751][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: insolation is not normalized.
+[2025-10-02 16:09:07,751][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: sin_longitude is not normalized.
+[2025-10-02 16:09:07,751][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: cos_latitude is not normalized.
+[2025-10-02 16:09:07,751][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: cos_latitude is not normalized.
+[2025-10-02 16:09:07,751][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: cos_julian_day is not normalized.
+[2025-10-02 16:09:07,751][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: cos_longitude is not normalized.
+[2025-10-02 16:09:07,751][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: cos_longitude is not normalized.
+[2025-10-02 16:09:07,751][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: cos_local_time is not normalized.
+[2025-10-02 16:09:07,751][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: sin_latitude is not normalized.
+[2025-10-02 16:09:07,751][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: sin_latitude is not normalized.
+[2025-10-02 16:09:07,751][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: sin_julian_day is not normalized.
+[2025-10-02 16:09:07,751][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: sin_longitude is not normalized.
+[2025-10-02 16:09:07,751][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: sin_longitude is not normalized.
+[2025-10-02 16:09:07,751][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: sin_local_time is not normalized.
+[2025-10-02 16:09:07,751][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: cos_julian_day is not normalized.
+[2025-10-02 16:09:07,751][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: cos_julian_day is not normalized.
+[2025-10-02 16:09:07,751][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: insolation is not normalized.
+[2025-10-02 16:09:07,751][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: cos_local_time is not normalized.
+[2025-10-02 16:09:07,751][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: cos_local_time is not normalized.
+[2025-10-02 16:09:07,751][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: sin_julian_day is not normalized.
+[2025-10-02 16:09:07,751][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: sin_julian_day is not normalized.
+[2025-10-02 16:09:07,751][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: sin_local_time is not normalized.
+[2025-10-02 16:09:07,751][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: sin_local_time is not normalized.
+[2025-10-02 16:09:07,751][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: insolation is not normalized.
+[2025-10-02 16:09:07,751][anemoi.models.preprocessing.normalizer][INFO] - Normalizing: insolation is not normalized.
+[2025-10-02 16:09:08,030][anemoi.models.layers.utils][INFO] - Linear kernel: torch.nn.Linear.
+[2025-10-02 16:09:08,030][anemoi.models.layers.utils][INFO] - Linear kernel: torch.nn.Linear.
+[2025-10-02 16:09:08,031][anemoi.models.layers.utils][INFO] - Linear kernel: torch.nn.Linear.
+[2025-10-02 16:09:08,031][anemoi.models.layers.utils][INFO] - LayerNorm kernel: torch.nn.LayerNorm.
+[2025-10-02 16:09:08,031][anemoi.models.layers.utils][INFO] - LayerNorm kernel: torch.nn.LayerNorm.
+[2025-10-02 16:09:08,031][anemoi.models.layers.utils][INFO] - Linear kernel: torch.nn.Linear.
+[2025-10-02 16:09:08,031][anemoi.models.layers.utils][INFO] - LayerNorm kernel: torch.nn.LayerNorm.
+[2025-10-02 16:09:08,032][anemoi.models.layers.utils][INFO] - Activation kernel: torch.nn.GELU.
+[2025-10-02 16:09:08,032][anemoi.models.layers.utils][INFO] - Activation kernel: torch.nn.GELU.
+[2025-10-02 16:09:08,032][anemoi.models.layers.utils][INFO] - LayerNorm kernel: torch.nn.LayerNorm.
+[2025-10-02 16:09:08,032][anemoi.models.layers.utils][INFO] - Activation kernel: torch.nn.GELU.
+[2025-10-02 16:09:08,032][anemoi.models.layers.utils][INFO] - Activation kernel: torch.nn.GELU.
+[2025-10-02 16:09:08,060][anemoi.models.layers.utils][INFO] - QueryNorm kernel: anemoi.models.layers.normalization.AutocastLayerNorm.
+[2025-10-02 16:09:08,061][anemoi.models.layers.utils][INFO] - QueryNorm kernel: anemoi.models.layers.normalization.AutocastLayerNorm.
+[2025-10-02 16:09:08,061][anemoi.models.layers.utils][INFO] - QueryNorm kernel: anemoi.models.layers.normalization.AutocastLayerNorm.
+[2025-10-02 16:09:08,061][anemoi.models.layers.utils][INFO] - QueryNorm kernel: anemoi.models.layers.normalization.AutocastLayerNorm.
+[2025-10-02 16:09:08,061][anemoi.models.layers.utils][INFO] - KeyNorm kernel: anemoi.models.layers.normalization.AutocastLayerNorm.
+[2025-10-02 16:09:08,061][anemoi.models.layers.utils][INFO] - KeyNorm kernel: anemoi.models.layers.normalization.AutocastLayerNorm.
+[2025-10-02 16:09:08,061][anemoi.models.layers.utils][INFO] - KeyNorm kernel: anemoi.models.layers.normalization.AutocastLayerNorm.
+[2025-10-02 16:09:08,061][anemoi.models.layers.utils][INFO] - KeyNorm kernel: anemoi.models.layers.normalization.AutocastLayerNorm.
+[2025-10-02 16:09:08,275][anemoi.models.layers.utils][INFO] - Linear kernel: torch.nn.Linear.
+[2025-10-02 16:09:08,275][anemoi.models.layers.utils][INFO] - Linear kernel: torch.nn.Linear.
+[2025-10-02 16:09:08,276][anemoi.models.layers.utils][INFO] - LayerNorm kernel: torch.nn.LayerNorm.
+[2025-10-02 16:09:08,276][anemoi.models.layers.utils][INFO] - Linear kernel: torch.nn.Linear.
+[2025-10-02 16:09:08,276][anemoi.models.layers.utils][INFO] - LayerNorm kernel: torch.nn.LayerNorm.
+[2025-10-02 16:09:08,276][anemoi.models.layers.utils][INFO] - Linear kernel: torch.nn.Linear.
+[2025-10-02 16:09:08,276][anemoi.models.layers.utils][INFO] - Activation kernel: torch.nn.GELU.
+[2025-10-02 16:09:08,276][anemoi.models.layers.utils][INFO] - Activation kernel: torch.nn.GELU.
+[2025-10-02 16:09:08,276][anemoi.models.layers.utils][INFO] - LayerNorm kernel: torch.nn.LayerNorm.
+[2025-10-02 16:09:08,277][anemoi.models.layers.utils][INFO] - LayerNorm kernel: torch.nn.LayerNorm.
+[2025-10-02 16:09:08,277][anemoi.models.layers.utils][INFO] - QueryNorm kernel: anemoi.models.layers.normalization.AutocastLayerNorm.
+[2025-10-02 16:09:08,277][anemoi.models.layers.utils][INFO] - Activation kernel: torch.nn.GELU.
+[2025-10-02 16:09:08,277][anemoi.models.layers.utils][INFO] - QueryNorm kernel: anemoi.models.layers.normalization.AutocastLayerNorm.
+[2025-10-02 16:09:08,277][anemoi.models.layers.utils][INFO] - Activation kernel: torch.nn.GELU.
+[2025-10-02 16:09:08,278][anemoi.models.layers.utils][INFO] - KeyNorm kernel: anemoi.models.layers.normalization.AutocastLayerNorm.
+[2025-10-02 16:09:08,278][anemoi.models.layers.utils][INFO] - QueryNorm kernel: anemoi.models.layers.normalization.AutocastLayerNorm.
+[2025-10-02 16:09:08,278][anemoi.models.layers.utils][INFO] - KeyNorm kernel: anemoi.models.layers.normalization.AutocastLayerNorm.
+[2025-10-02 16:09:08,278][anemoi.models.layers.utils][INFO] - QueryNorm kernel: anemoi.models.layers.normalization.AutocastLayerNorm.
+[2025-10-02 16:09:08,278][anemoi.models.layers.utils][INFO] - KeyNorm kernel: anemoi.models.layers.normalization.AutocastLayerNorm.
+[2025-10-02 16:09:08,278][anemoi.models.layers.utils][INFO] - KeyNorm kernel: anemoi.models.layers.normalization.AutocastLayerNorm.
+[2025-10-02 16:09:08,312][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,318][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,323][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,327][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,327][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,327][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,329][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,333][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,333][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,333][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,334][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,339][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,339][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,339][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,340][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,344][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,344][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,345][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,345][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,350][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,350][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,350][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,351][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,355][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,356][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,356][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,357][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,361][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,361][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,361][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,362][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,367][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,367][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,367][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,368][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,372][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,372][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,372][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,373][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,378][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,378][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,378][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,379][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,383][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,383][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,383][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,384][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,389][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,389][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,389][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,389][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,394][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,394][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,394][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,395][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,400][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,400][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,400][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,405][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,405][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,405][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,407][anemoi.models.layers.utils][INFO] - Linear kernel: torch.nn.Linear.
+[2025-10-02 16:09:08,407][anemoi.models.layers.utils][INFO] - LayerNorm kernel: torch.nn.LayerNorm.
+[2025-10-02 16:09:08,408][anemoi.models.layers.utils][INFO] - Activation kernel: torch.nn.GELU.
+[2025-10-02 16:09:08,409][anemoi.models.layers.utils][INFO] - QueryNorm kernel: anemoi.models.layers.normalization.AutocastLayerNorm.
+[2025-10-02 16:09:08,409][anemoi.models.layers.utils][INFO] - KeyNorm kernel: anemoi.models.layers.normalization.AutocastLayerNorm.
+[2025-10-02 16:09:08,410][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,411][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,411][anemoi.models.layers.attention][INFO] - Using flash attention v2
+[2025-10-02 16:09:08,422][anemoi.models.layers.utils][INFO] - Linear kernel: torch.nn.Linear.
+[2025-10-02 16:09:08,422][anemoi.models.layers.utils][INFO] - Linear kernel: torch.nn.Linear.
+[2025-10-02 16:09:08,422][anemoi.models.layers.utils][INFO] - Linear kernel: torch.nn.Linear.
+[2025-10-02 16:09:08,422][anemoi.models.layers.utils][INFO] - LayerNorm kernel: torch.nn.LayerNorm.
+[2025-10-02 16:09:08,423][anemoi.models.layers.utils][INFO] - LayerNorm kernel: torch.nn.LayerNorm.
+[2025-10-02 16:09:08,423][anemoi.models.layers.utils][INFO] - LayerNorm kernel: torch.nn.LayerNorm.
+[2025-10-02 16:09:08,423][anemoi.models.layers.utils][INFO] - Activation kernel: torch.nn.GELU.
+[2025-10-02 16:09:08,423][anemoi.models.layers.utils][INFO] - Activation kernel: torch.nn.GELU.
+[2025-10-02 16:09:08,423][anemoi.models.layers.utils][INFO] - Activation kernel: torch.nn.GELU.
+[2025-10-02 16:09:08,424][anemoi.models.layers.utils][INFO] - QueryNorm kernel: anemoi.models.layers.normalization.AutocastLayerNorm.
+[2025-10-02 16:09:08,424][anemoi.models.layers.utils][INFO] - QueryNorm kernel: anemoi.models.layers.normalization.AutocastLayerNorm.
+[2025-10-02 16:09:08,424][anemoi.models.layers.utils][INFO] - QueryNorm kernel: anemoi.models.layers.normalization.AutocastLayerNorm.
+[2025-10-02 16:09:08,424][anemoi.models.layers.utils][INFO] - KeyNorm kernel: anemoi.models.layers.normalization.AutocastLayerNorm.
+[2025-10-02 16:09:08,424][anemoi.models.layers.utils][INFO] - KeyNorm kernel: anemoi.models.layers.normalization.AutocastLayerNorm.
+[2025-10-02 16:09:08,424][anemoi.models.layers.utils][INFO] - KeyNorm kernel: anemoi.models.layers.normalization.AutocastLayerNorm.
+[2025-10-02 16:09:08,551][anemoi.training.losses.scalers.variable_level][INFO] - Variable Level Scaling: Applying ReluVariableLevelScaler scaling to pl variables ({'param': ['q', 't', 'u', 'v', 'w', 'z']})
+[2025-10-02 16:09:08,551][anemoi.training.losses.scalers.variable_level][INFO] - with slope = 0.001 and y-intercept/minimum = 0.2.
+[2025-10-02 16:09:08,552][anemoi.training.losses.scalers.variable_level][INFO] - Variable Level Scaling: Applying ReluVariableLevelScaler scaling to pl variables ({'param': ['q', 't', 'u', 'v', 'w', 'z']})
+[2025-10-02 16:09:08,552][anemoi.training.losses.scalers.variable_level][INFO] - with slope = 0.001 and y-intercept/minimum = 0.2.
+[2025-10-02 16:09:08,552][anemoi.training.losses.scalers.variable_level][INFO] - Variable Level Scaling: Applying ReluVariableLevelScaler scaling to pl variables ({'param': ['q', 't', 'u', 'v', 'w', 'z']})
+[2025-10-02 16:09:08,552][anemoi.training.losses.scalers.variable_level][INFO] - with slope = 0.001 and y-intercept/minimum = 0.2.
+[2025-10-02 16:09:08,552][anemoi.training.losses.scalers.variable_level][INFO] - Variable Level Scaling: Applying ReluVariableLevelScaler scaling to pl variables ({'param': ['q', 't', 'u', 'v', 'w', 'z']})
+[2025-10-02 16:09:08,552][anemoi.training.losses.scalers.variable_level][INFO] - with slope = 0.001 and y-intercept/minimum = 0.2.
+[2025-10-02 16:09:08,619][anemoi.training.train.train][INFO] - The following submodules will NOT be trained: []
+[2025-10-02 16:09:08,620][anemoi.training.train.train][INFO] - The following submodules will NOT be trained: []
+[2025-10-02 16:09:08,620][anemoi.training.train.train][INFO] - The following submodules will NOT be trained: []
+[2025-10-02 16:09:08,620][anemoi.training.train.train][INFO] - The following submodules will NOT be trained: []
+[2025-10-02 16:09:10,715][anemoi.training.utils.compile][INFO] - The following modules will be compiled: ['anemoi.models.layers.conv.GraphTransformerConv']
+[2025-10-02 16:09:10,716][anemoi.training.utils.compile][INFO] - The following modules will be compiled: ['anemoi.models.layers.conv.GraphTransformerConv']
+[2025-10-02 16:09:10,824][lightning_fabric.utilities.distributed][INFO] - Initializing distributed: GLOBAL_RANK: 1, MEMBER: 2/4
+[2025-10-02 16:09:10,824][lightning_fabric.utilities.distributed][INFO] - Initializing distributed: GLOBAL_RANK: 3, MEMBER: 4/4
+[2025-10-02 16:09:10,943][anemoi.training.utils.compile][INFO] - The following modules will be compiled: ['anemoi.models.layers.conv.GraphTransformerConv']
+[2025-10-02 16:09:10,959][anemoi.training.utils.compile][INFO] - The following modules will be compiled: ['anemoi.models.layers.conv.GraphTransformerConv']
+[2025-10-02 16:09:10,961][lightning_fabric.utilities.distributed][INFO] - Initializing distributed: GLOBAL_RANK: 2, MEMBER: 3/4
+[2025-10-02 16:09:10,979][lightning_fabric.utilities.distributed][INFO] - Initializing distributed: GLOBAL_RANK: 0, MEMBER: 1/4
+[2025-10-02 16:09:12,476][pytorch_lightning.utilities.rank_zero][INFO] - ----------------------------------------------------------------------------------------------------
+distributed_backend=nccl
+All distributed processes registered. Starting with 4 processes
+----------------------------------------------------------------------------------------------------
+
+[2025-10-02 16:09:12,704][pytorch_lightning.accelerators.cuda][INFO] - LOCAL_RANK: 3 - CUDA_VISIBLE_DEVICES: [0,1,2,3]
+[2025-10-02 16:09:12,704][pytorch_lightning.accelerators.cuda][INFO] - LOCAL_RANK: 2 - CUDA_VISIBLE_DEVICES: [0,1,2,3]
+[2025-10-02 16:09:12,704][pytorch_lightning.accelerators.cuda][INFO] - LOCAL_RANK: 1 - CUDA_VISIBLE_DEVICES: [0,1,2,3]
+[2025-10-02 16:09:12,704][pytorch_lightning.accelerators.cuda][INFO] - LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3]
+[2025-10-02 16:09:13,332][lightning_fabric.utilities.seed][INFO] - [rank: 1] Seed set to 70591400
+[2025-10-02 16:09:13,332][lightning_fabric.utilities.seed][INFO] - [rank: 2] Seed set to 105887100
+[2025-10-02 16:09:13,332][lightning_fabric.utilities.seed][INFO] - [rank: 3] Seed set to 141182800
+[2025-10-02 16:09:13,332][lightning_fabric.utilities.seed][INFO] - [rank: 0] Seed set to 35295700
+[2025-10-02 16:09:13,370][pytorch_lightning.callbacks.model_summary][INFO] - 
+  | Name    | Type                 | Params | Mode 
+---------------------------------------------------------
+0 | model   | AnemoiModelInterface | 15.0 M | train
+1 | loss    | MSELoss              | 0      | train
+2 | metrics | ModuleDict           | 0      | train
+---------------------------------------------------------
+15.0 M    Trainable params
+0         Non-trainable params
+15.0 M    Total params
+59.997    Total estimated model params size (MB)
+286       Modules in train mode
+0         Modules in eval mode
+[2025-10-02 16:09:13,424][anemoi.training.diagnostics.mlflow.logger][INFO] - Logging 492 parameters
+[2025-10-02 16:09:16,293][pytorch_lightning.trainer.connectors.signal_connector][INFO] - SLURM auto-requeueing enabled. Setting signal handlers.
+[2025-10-02 16:09:16,293][pytorch_lightning.trainer.connectors.signal_connector][INFO] - SLURM auto-requeueing enabled. Setting signal handlers.
+[2025-10-02 16:09:16,293][pytorch_lightning.trainer.connectors.signal_connector][INFO] - SLURM auto-requeueing enabled. Setting signal handlers.
+[2025-10-02 16:09:16,293][pytorch_lightning.trainer.connectors.signal_connector][INFO] - SLURM auto-requeueing enabled. Setting signal handlers.
+[2025-10-02 16:09:16,867][anemoi.training.data.datamodule.singledatamodule][WARNING] - Falling back rollout to: 1
+[2025-10-02 16:09:16,868][anemoi.training.data.datamodule.singledatamodule][WARNING] - Falling back rollout to: 1
+[2025-10-02 16:09:16,870][anemoi.training.data.datamodule.singledatamodule][WARNING] - Falling back rollout to: 1
+[2025-10-02 16:09:16,870][anemoi.training.data.datamodule.singledatamodule][WARNING] - Falling back rollout to: 1
+[2025-10-02 16:09:16,977][anemoi.training.data.dataset.singledataset][INFO] - Worker 1 (pid 1410177, global_rank 2, model comm group 2)  has low/high range 773 / 818
+[2025-10-02 16:09:16,977][anemoi.training.data.dataset.singledataset][INFO] - Worker 0 (pid 1410173, global_rank 3, model comm group 3)  has low/high range 1092 / 1137
+[2025-10-02 16:09:16,977][anemoi.training.data.dataset.singledataset][INFO] - Worker 0 (pid 1410169, global_rank 2, model comm group 2)  has low/high range 728 / 773
+[2025-10-02 16:09:16,977][anemoi.training.data.dataset.singledataset][INFO] - Worker 1 (pid 1410181, global_rank 3, model comm group 3)  has low/high range 1137 / 1182
+[2025-10-02 16:09:16,977][anemoi.training.data.dataset.singledataset][INFO] - Worker 0 (pid 1410168, global_rank 1, model comm group 1)  has low/high range 364 / 409
+[2025-10-02 16:09:16,977][anemoi.training.data.dataset.singledataset][INFO] - Worker 1 (pid 1410176, global_rank 1, model comm group 1)  has low/high range 409 / 454
+[2025-10-02 16:09:16,977][anemoi.training.data.dataset.singledataset][INFO] - Worker 0 (pid 1410172, global_rank 0, model comm group 0)  has low/high range 0 / 45
+[2025-10-02 16:09:16,977][anemoi.training.data.dataset.singledataset][INFO] - Worker 1 (pid 1410180, global_rank 0, model comm group 0)  has low/high range 45 / 90
+[2025-10-02 16:09:16,988][anemoi.training.data.dataset.singledataset][INFO] - Worker 2 (pid 1410184, global_rank 0, model comm group 0)  has low/high range 90 / 135
+[2025-10-02 16:09:17,024][anemoi.training.data.dataset.singledataset][INFO] - Worker 3 (pid 1410186, global_rank 0, model comm group 0)  has low/high range 135 / 180
+[2025-10-02 16:09:17,058][anemoi.training.data.dataset.singledataset][INFO] - Worker 1 (validation, pid 1410176, glob. rank 1, model comm group 1, group_rank 0, seed group id 1, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:17,058][anemoi.training.data.dataset.singledataset][INFO] - Worker 0 (validation, pid 1410168, glob. rank 1, model comm group 1, group_rank 0, seed group id 1, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:17,058][anemoi.training.data.dataset.singledataset][INFO] - Worker 0 (validation, pid 1410173, glob. rank 3, model comm group 3, group_rank 0, seed group id 3, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:17,058][anemoi.training.data.dataset.singledataset][INFO] - Worker 0 (validation, pid 1410169, glob. rank 2, model comm group 2, group_rank 0, seed group id 2, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:17,058][anemoi.training.data.dataset.singledataset][INFO] - Worker 1 (validation, pid 1410181, glob. rank 3, model comm group 3, group_rank 0, seed group id 3, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:17,058][anemoi.training.data.dataset.singledataset][INFO] - Worker 1 (validation, pid 1410177, glob. rank 2, model comm group 2, group_rank 0, seed group id 2, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:17,058][anemoi.training.data.dataset.singledataset][INFO] - Worker 1 (validation, pid 1410180, glob. rank 0, model comm group 0, group_rank 0, seed group id 0, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:17,058][anemoi.training.data.dataset.singledataset][INFO] - Worker 2 (validation, pid 1410184, glob. rank 0, model comm group 0, group_rank 0, seed group id 0, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:17,058][anemoi.training.data.dataset.singledataset][INFO] - Worker 0 (validation, pid 1410172, glob. rank 0, model comm group 0, group_rank 0, seed group id 0, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:17,058][anemoi.training.data.dataset.singledataset][INFO] - Worker 3 (validation, pid 1410186, glob. rank 0, model comm group 0, group_rank 0, seed group id 0, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:17,059][anemoi.training.data.dataset.singledataset][INFO] - Worker 4 (pid 1410188, global_rank 0, model comm group 0)  has low/high range 180 / 225
+[2025-10-02 16:09:17,062][anemoi.training.data.dataset.singledataset][INFO] - Worker 4 (validation, pid 1410188, glob. rank 0, model comm group 0, group_rank 0, seed group id 0, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:17,095][anemoi.training.data.dataset.singledataset][INFO] - Worker 5 (pid 1410190, global_rank 0, model comm group 0)  has low/high range 225 / 270
+[2025-10-02 16:09:17,097][anemoi.training.data.dataset.singledataset][INFO] - Worker 5 (validation, pid 1410190, glob. rank 0, model comm group 0, group_rank 0, seed group id 0, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:17,131][anemoi.training.data.dataset.singledataset][INFO] - Worker 6 (pid 1410192, global_rank 0, model comm group 0)  has low/high range 270 / 315
+[2025-10-02 16:09:17,133][anemoi.training.data.dataset.singledataset][INFO] - Worker 6 (validation, pid 1410192, glob. rank 0, model comm group 0, group_rank 0, seed group id 0, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:17,158][anemoi.training.data.dataset.singledataset][INFO] - Worker 2 (pid 1410194, global_rank 1, model comm group 1)  has low/high range 454 / 499
+[2025-10-02 16:09:17,159][anemoi.training.data.dataset.singledataset][INFO] - Worker 2 (pid 1410195, global_rank 2, model comm group 2)  has low/high range 818 / 863
+[2025-10-02 16:09:17,161][anemoi.training.data.dataset.singledataset][INFO] - Worker 2 (validation, pid 1410194, glob. rank 1, model comm group 1, group_rank 0, seed group id 1, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:17,161][anemoi.training.data.dataset.singledataset][INFO] - Worker 2 (validation, pid 1410195, glob. rank 2, model comm group 2, group_rank 0, seed group id 2, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:17,167][anemoi.training.data.dataset.singledataset][INFO] - Worker 2 (pid 1410199, global_rank 3, model comm group 3)  has low/high range 1182 / 1227
+[2025-10-02 16:09:17,167][anemoi.training.data.dataset.singledataset][INFO] - Worker 7 (pid 1410198, global_rank 0, model comm group 0)  has low/high range 315 / 360
+[2025-10-02 16:09:17,169][anemoi.training.data.dataset.singledataset][INFO] - Worker 2 (validation, pid 1410199, glob. rank 3, model comm group 3, group_rank 0, seed group id 3, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:17,170][anemoi.training.data.dataset.singledataset][INFO] - Worker 7 (validation, pid 1410198, glob. rank 0, model comm group 0, group_rank 0, seed group id 0, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:17,173][anemoi.models.data_indices.collection][INFO] - The order of the variables in the model matches the order in the data.
+[2025-10-02 16:09:17,186][anemoi.training.data.dataset.singledataset][INFO] - Worker 3 (pid 1410211, global_rank 1, model comm group 1)  has low/high range 499 / 544
+[2025-10-02 16:09:17,187][anemoi.training.data.dataset.singledataset][INFO] - Worker 3 (pid 1410212, global_rank 2, model comm group 2)  has low/high range 863 / 908
+[2025-10-02 16:09:17,189][anemoi.training.data.dataset.singledataset][INFO] - Worker 3 (validation, pid 1410211, glob. rank 1, model comm group 1, group_rank 0, seed group id 1, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:17,190][anemoi.training.data.dataset.singledataset][INFO] - Worker 3 (validation, pid 1410212, glob. rank 2, model comm group 2, group_rank 0, seed group id 2, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:17,201][anemoi.training.data.dataset.singledataset][INFO] - Worker 3 (pid 1410215, global_rank 3, model comm group 3)  has low/high range 1227 / 1272
+[2025-10-02 16:09:17,204][anemoi.training.data.dataset.singledataset][INFO] - Worker 3 (validation, pid 1410215, glob. rank 3, model comm group 3, group_rank 0, seed group id 3, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:17,214][anemoi.training.data.dataset.singledataset][INFO] - Worker 4 (pid 1410217, global_rank 1, model comm group 1)  has low/high range 544 / 589
+[2025-10-02 16:09:17,215][anemoi.training.data.dataset.singledataset][INFO] - Worker 4 (pid 1410219, global_rank 2, model comm group 2)  has low/high range 908 / 953
+[2025-10-02 16:09:17,216][anemoi.training.data.dataset.singledataset][INFO] - Worker 4 (validation, pid 1410217, glob. rank 1, model comm group 1, group_rank 0, seed group id 1, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:17,218][anemoi.training.data.dataset.singledataset][INFO] - Worker 4 (validation, pid 1410219, glob. rank 2, model comm group 2, group_rank 0, seed group id 2, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:17,237][anemoi.training.data.dataset.singledataset][INFO] - Worker 4 (pid 1410221, global_rank 3, model comm group 3)  has low/high range 1272 / 1317
+[2025-10-02 16:09:17,239][anemoi.training.data.dataset.singledataset][INFO] - Worker 4 (validation, pid 1410221, glob. rank 3, model comm group 3, group_rank 0, seed group id 3, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:17,243][anemoi.training.data.dataset.singledataset][INFO] - Worker 5 (pid 1410223, global_rank 1, model comm group 1)  has low/high range 589 / 634
+[2025-10-02 16:09:17,245][anemoi.training.data.dataset.singledataset][INFO] - Worker 5 (pid 1410225, global_rank 2, model comm group 2)  has low/high range 953 / 998
+[2025-10-02 16:09:17,245][anemoi.training.data.dataset.singledataset][INFO] - Worker 5 (validation, pid 1410223, glob. rank 1, model comm group 1, group_rank 0, seed group id 1, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:17,247][anemoi.training.data.dataset.singledataset][INFO] - Worker 5 (validation, pid 1410225, glob. rank 2, model comm group 2, group_rank 0, seed group id 2, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:17,272][anemoi.training.data.dataset.singledataset][INFO] - Worker 6 (pid 1410227, global_rank 1, model comm group 1)  has low/high range 634 / 679
+[2025-10-02 16:09:17,273][anemoi.training.data.dataset.singledataset][INFO] - Worker 5 (pid 1410229, global_rank 3, model comm group 3)  has low/high range 1317 / 1362
+[2025-10-02 16:09:17,274][anemoi.training.data.dataset.singledataset][INFO] - Worker 6 (pid 1410230, global_rank 2, model comm group 2)  has low/high range 998 / 1043
+[2025-10-02 16:09:17,274][anemoi.training.data.dataset.singledataset][INFO] - Worker 6 (validation, pid 1410227, glob. rank 1, model comm group 1, group_rank 0, seed group id 1, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:17,276][anemoi.training.data.dataset.singledataset][INFO] - Worker 5 (validation, pid 1410229, glob. rank 3, model comm group 3, group_rank 0, seed group id 3, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:17,276][anemoi.training.data.dataset.singledataset][INFO] - Worker 6 (validation, pid 1410230, glob. rank 2, model comm group 2, group_rank 0, seed group id 2, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:17,302][anemoi.training.data.dataset.singledataset][INFO] - Worker 7 (pid 1410233, global_rank 1, model comm group 1)  has low/high range 679 / 724
+[2025-10-02 16:09:17,302][anemoi.models.data_indices.collection][INFO] - The order of the variables in the model matches the order in the data.
+[2025-10-02 16:09:17,305][anemoi.training.data.dataset.singledataset][INFO] - Worker 7 (validation, pid 1410233, glob. rank 1, model comm group 1, group_rank 0, seed group id 1, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:17,305][anemoi.training.data.dataset.singledataset][INFO] - Worker 7 (pid 1410242, global_rank 2, model comm group 2)  has low/high range 1043 / 1088
+[2025-10-02 16:09:17,306][anemoi.models.data_indices.collection][INFO] - The order of the variables in the model matches the order in the data.
+[2025-10-02 16:09:17,308][anemoi.training.data.dataset.singledataset][INFO] - Worker 7 (validation, pid 1410242, glob. rank 2, model comm group 2, group_rank 0, seed group id 2, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:17,310][anemoi.training.data.dataset.singledataset][INFO] - Worker 6 (pid 1410255, global_rank 3, model comm group 3)  has low/high range 1362 / 1407
+[2025-10-02 16:09:17,313][anemoi.training.data.dataset.singledataset][INFO] - Worker 6 (validation, pid 1410255, glob. rank 3, model comm group 3, group_rank 0, seed group id 3, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:17,346][anemoi.training.data.dataset.singledataset][INFO] - Worker 7 (pid 1410257, global_rank 3, model comm group 3)  has low/high range 1407 / 1452
+[2025-10-02 16:09:17,348][anemoi.models.data_indices.collection][INFO] - The order of the variables in the model matches the order in the data.
+[2025-10-02 16:09:17,349][anemoi.training.data.dataset.singledataset][INFO] - Worker 7 (validation, pid 1410257, glob. rank 3, model comm group 3, group_rank 0, seed group id 3, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:30,208][anemoi.training.data.dataset.singledataset][INFO] - Worker 0 (pid 1411015, global_rank 2, model comm group 2)  has low/high range 30680 / 32597
+[2025-10-02 16:09:30,208][anemoi.training.data.dataset.singledataset][INFO] - Worker 0 (pid 1411016, global_rank 1, model comm group 1)  has low/high range 15340 / 17257
+[2025-10-02 16:09:30,209][anemoi.training.data.dataset.singledataset][INFO] - Worker 0 (pid 1411019, global_rank 3, model comm group 3)  has low/high range 46020 / 47937
+[2025-10-02 16:09:30,210][anemoi.training.data.dataset.singledataset][INFO] - Worker 0 (pid 1411021, global_rank 0, model comm group 0)  has low/high range 0 / 1917
+[2025-10-02 16:09:30,211][anemoi.training.data.dataset.singledataset][INFO] - Worker 0 (train, pid 1411015, glob. rank 2, model comm group 2, group_rank 0, seed group id 2, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:30,211][anemoi.training.data.dataset.singledataset][INFO] - Worker 0 (train, pid 1411016, glob. rank 1, model comm group 1, group_rank 0, seed group id 1, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:30,212][anemoi.training.data.dataset.singledataset][INFO] - Worker 0 (train, pid 1411019, glob. rank 3, model comm group 3, group_rank 0, seed group id 3, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:30,213][anemoi.training.data.dataset.singledataset][INFO] - Worker 0 (train, pid 1411021, glob. rank 0, model comm group 0, group_rank 0, seed group id 0, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:30,227][anemoi.training.data.dataset.singledataset][INFO] - Worker 1 (pid 1411023, global_rank 2, model comm group 2)  has low/high range 32597 / 34514
+[2025-10-02 16:09:30,230][anemoi.training.data.dataset.singledataset][INFO] - Worker 1 (pid 1411025, global_rank 1, model comm group 1)  has low/high range 17257 / 19174
+[2025-10-02 16:09:30,230][anemoi.training.data.dataset.singledataset][INFO] - Worker 1 (train, pid 1411023, glob. rank 2, model comm group 2, group_rank 0, seed group id 2, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:30,233][anemoi.training.data.dataset.singledataset][INFO] - Worker 1 (train, pid 1411025, glob. rank 1, model comm group 1, group_rank 0, seed group id 1, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:30,240][anemoi.training.data.dataset.singledataset][INFO] - Worker 1 (pid 1411027, global_rank 3, model comm group 3)  has low/high range 47937 / 49854
+[2025-10-02 16:09:30,244][anemoi.training.data.dataset.singledataset][INFO] - Worker 1 (train, pid 1411027, glob. rank 3, model comm group 3, group_rank 0, seed group id 3, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:30,256][anemoi.training.data.dataset.singledataset][INFO] - Worker 1 (pid 1411029, global_rank 0, model comm group 0)  has low/high range 1917 / 3834
+[2025-10-02 16:09:30,260][anemoi.training.data.dataset.singledataset][INFO] - Worker 1 (train, pid 1411029, glob. rank 0, model comm group 0, group_rank 0, seed group id 0, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:30,267][anemoi.training.data.dataset.singledataset][INFO] - Worker 2 (pid 1411031, global_rank 2, model comm group 2)  has low/high range 34514 / 36431
+[2025-10-02 16:09:30,269][anemoi.training.data.dataset.singledataset][INFO] - Worker 2 (pid 1411032, global_rank 1, model comm group 1)  has low/high range 19174 / 21091
+[2025-10-02 16:09:30,270][anemoi.training.data.dataset.singledataset][INFO] - Worker 2 (train, pid 1411031, glob. rank 2, model comm group 2, group_rank 0, seed group id 2, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:30,272][anemoi.training.data.dataset.singledataset][INFO] - Worker 2 (train, pid 1411032, glob. rank 1, model comm group 1, group_rank 0, seed group id 1, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:30,283][anemoi.training.data.dataset.singledataset][INFO] - Worker 2 (pid 1411035, global_rank 3, model comm group 3)  has low/high range 49854 / 51771
+[2025-10-02 16:09:30,286][anemoi.training.data.dataset.singledataset][INFO] - Worker 2 (train, pid 1411035, glob. rank 3, model comm group 3, group_rank 0, seed group id 3, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:30,302][anemoi.training.data.dataset.singledataset][INFO] - Worker 3 (pid 1411037, global_rank 2, model comm group 2)  has low/high range 36431 / 38348
+[2025-10-02 16:09:30,304][anemoi.training.data.dataset.singledataset][INFO] - Worker 3 (train, pid 1411037, glob. rank 2, model comm group 2, group_rank 0, seed group id 2, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:30,307][anemoi.training.data.dataset.singledataset][INFO] - Worker 3 (pid 1411040, global_rank 1, model comm group 1)  has low/high range 21091 / 23008
+[2025-10-02 16:09:30,308][anemoi.training.data.dataset.singledataset][INFO] - Worker 2 (pid 1411039, global_rank 0, model comm group 0)  has low/high range 3834 / 5751
+[2025-10-02 16:09:30,310][anemoi.training.data.dataset.singledataset][INFO] - Worker 3 (train, pid 1411040, glob. rank 1, model comm group 1, group_rank 0, seed group id 1, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:30,311][anemoi.training.data.dataset.singledataset][INFO] - Worker 2 (train, pid 1411039, glob. rank 0, model comm group 0, group_rank 0, seed group id 0, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:30,324][anemoi.training.data.dataset.singledataset][INFO] - Worker 3 (pid 1411043, global_rank 3, model comm group 3)  has low/high range 51771 / 53688
+[2025-10-02 16:09:30,327][anemoi.training.data.dataset.singledataset][INFO] - Worker 3 (train, pid 1411043, glob. rank 3, model comm group 3, group_rank 0, seed group id 3, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:30,338][anemoi.training.data.dataset.singledataset][INFO] - Worker 4 (pid 1411045, global_rank 2, model comm group 2)  has low/high range 38348 / 40265
+[2025-10-02 16:09:30,341][anemoi.training.data.dataset.singledataset][INFO] - Worker 4 (train, pid 1411045, glob. rank 2, model comm group 2, group_rank 0, seed group id 2, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:30,356][anemoi.training.data.dataset.singledataset][INFO] - Worker 4 (pid 1411047, global_rank 1, model comm group 1)  has low/high range 23008 / 24925
+[2025-10-02 16:09:30,356][anemoi.training.data.dataset.singledataset][INFO] - Worker 3 (pid 1411049, global_rank 0, model comm group 0)  has low/high range 5751 / 7668
+[2025-10-02 16:09:30,359][anemoi.training.data.dataset.singledataset][INFO] - Worker 3 (train, pid 1411049, glob. rank 0, model comm group 0, group_rank 0, seed group id 0, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:30,360][anemoi.training.data.dataset.singledataset][INFO] - Worker 4 (train, pid 1411047, glob. rank 1, model comm group 1, group_rank 0, seed group id 1, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:30,365][anemoi.training.data.dataset.singledataset][INFO] - Worker 4 (pid 1411051, global_rank 3, model comm group 3)  has low/high range 53688 / 55605
+[2025-10-02 16:09:30,368][anemoi.training.data.dataset.singledataset][INFO] - Worker 4 (train, pid 1411051, glob. rank 3, model comm group 3, group_rank 0, seed group id 3, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:30,376][anemoi.training.data.dataset.singledataset][INFO] - Worker 5 (pid 1411053, global_rank 2, model comm group 2)  has low/high range 40265 / 42182
+[2025-10-02 16:09:30,379][anemoi.training.data.dataset.singledataset][INFO] - Worker 5 (train, pid 1411053, glob. rank 2, model comm group 2, group_rank 0, seed group id 2, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:30,393][anemoi.training.data.dataset.singledataset][INFO] - Worker 5 (pid 1411055, global_rank 1, model comm group 1)  has low/high range 24925 / 26842
+[2025-10-02 16:09:30,396][anemoi.training.data.dataset.singledataset][INFO] - Worker 5 (train, pid 1411055, glob. rank 1, model comm group 1, group_rank 0, seed group id 1, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:30,404][anemoi.training.data.dataset.singledataset][INFO] - Worker 4 (pid 1411057, global_rank 0, model comm group 0)  has low/high range 7668 / 9585
+[2025-10-02 16:09:30,408][anemoi.training.data.dataset.singledataset][INFO] - Worker 4 (train, pid 1411057, glob. rank 0, model comm group 0, group_rank 0, seed group id 0, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:30,408][anemoi.training.data.dataset.singledataset][INFO] - Worker 5 (pid 1411059, global_rank 3, model comm group 3)  has low/high range 55605 / 57522
+[2025-10-02 16:09:30,411][anemoi.training.data.dataset.singledataset][INFO] - Worker 5 (train, pid 1411059, glob. rank 3, model comm group 3, group_rank 0, seed group id 3, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:30,411][anemoi.training.data.dataset.singledataset][INFO] - Worker 6 (pid 1411061, global_rank 2, model comm group 2)  has low/high range 42182 / 44099
+[2025-10-02 16:09:30,414][anemoi.training.data.dataset.singledataset][INFO] - Worker 6 (train, pid 1411061, glob. rank 2, model comm group 2, group_rank 0, seed group id 2, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:30,433][anemoi.training.data.dataset.singledataset][INFO] - Worker 6 (pid 1411063, global_rank 1, model comm group 1)  has low/high range 26842 / 28759
+[2025-10-02 16:09:30,436][anemoi.training.data.dataset.singledataset][INFO] - Worker 6 (train, pid 1411063, glob. rank 1, model comm group 1, group_rank 0, seed group id 1, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:30,450][anemoi.training.data.dataset.singledataset][INFO] - Worker 6 (pid 1411070, global_rank 3, model comm group 3)  has low/high range 57522 / 59439
+[2025-10-02 16:09:30,450][anemoi.training.data.dataset.singledataset][INFO] - Worker 7 (pid 1411065, global_rank 2, model comm group 2)  has low/high range 44099 / 46016
+[2025-10-02 16:09:30,452][anemoi.training.data.dataset.singledataset][INFO] - Worker 5 (pid 1411075, global_rank 0, model comm group 0)  has low/high range 9585 / 11502
+[2025-10-02 16:09:30,453][anemoi.training.data.dataset.singledataset][INFO] - Worker 6 (train, pid 1411070, glob. rank 3, model comm group 3, group_rank 0, seed group id 3, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:30,454][anemoi.training.data.dataset.singledataset][INFO] - Worker 7 (train, pid 1411065, glob. rank 2, model comm group 2, group_rank 0, seed group id 2, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:30,455][anemoi.training.data.dataset.singledataset][INFO] - Worker 5 (train, pid 1411075, glob. rank 0, model comm group 0, group_rank 0, seed group id 0, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:30,475][anemoi.training.data.dataset.singledataset][INFO] - Worker 7 (pid 1411080, global_rank 1, model comm group 1)  has low/high range 28759 / 30676
+[2025-10-02 16:09:30,478][anemoi.training.data.dataset.singledataset][INFO] - Worker 7 (train, pid 1411080, glob. rank 1, model comm group 1, group_rank 0, seed group id 1, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:30,494][anemoi.training.data.dataset.singledataset][INFO] - Worker 7 (pid 1411091, global_rank 3, model comm group 3)  has low/high range 59439 / 61356
+[2025-10-02 16:09:30,498][anemoi.training.data.dataset.singledataset][INFO] - Worker 7 (train, pid 1411091, glob. rank 3, model comm group 3, group_rank 0, seed group id 3, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:30,498][anemoi.training.data.dataset.singledataset][INFO] - Worker 6 (pid 1411098, global_rank 0, model comm group 0)  has low/high range 11502 / 13419
+[2025-10-02 16:09:30,501][anemoi.training.data.dataset.singledataset][INFO] - Worker 6 (train, pid 1411098, glob. rank 0, model comm group 0, group_rank 0, seed group id 0, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:30,546][anemoi.training.data.dataset.singledataset][INFO] - Worker 7 (pid 1411104, global_rank 0, model comm group 0)  has low/high range 13419 / 15336
+[2025-10-02 16:09:30,555][anemoi.training.data.dataset.singledataset][INFO] - Worker 7 (train, pid 1411104, glob. rank 0, model comm group 0, group_rank 0, seed group id 0, base_seed 35295700, sanity rnd 0.599787)
+[2025-10-02 16:09:30,793][anemoi.models.data_indices.collection][INFO] - The order of the variables in the model matches the order in the data.
+[2025-10-02 16:09:30,837][anemoi.models.data_indices.collection][INFO] - The order of the variables in the model matches the order in the data.
+[2025-10-02 16:09:30,947][anemoi.models.data_indices.collection][INFO] - The order of the variables in the model matches the order in the data.
+[2025-10-02 16:09:30,966][anemoi.models.data_indices.collection][INFO] - The order of the variables in the model matches the order in the data.
+[2025-10-02 16:31:57,331][anemoi.models.data_indices.collection][INFO] - The order of the variables in the model matches the order in the data.
+[2025-10-02 16:31:57,332][anemoi.models.data_indices.collection][INFO] - The order of the variables in the model matches the order in the data.
+[2025-10-02 16:31:57,333][anemoi.models.data_indices.collection][INFO] - The order of the variables in the model matches the order in the data.
+[2025-10-02 16:31:57,334][anemoi.models.data_indices.collection][INFO] - The order of the variables in the model matches the order in the data.
+[2025-10-02 16:32:17,377][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/inference-last.ckpt
+[2025-10-02 16:32:17,377][anemoi.utils.checkpoints][INFO] - Saving metadata to inference-last/anemoi-metadata/ai-models.json
+[2025-10-02 16:32:17,378][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to inference-last/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 16:32:17,379][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to inference-last/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 16:32:18,057][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/last.ckpt
+[2025-10-02 16:32:18,057][anemoi.utils.checkpoints][INFO] - Saving metadata to archive/anemoi-metadata/ai-models.json
+[2025-10-02 16:32:18,058][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to archive/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 16:32:18,058][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to archive/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 16:32:18,480][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/inference-anemoi-by_epoch-epoch_000-step_003840.ckpt
+[2025-10-02 16:32:18,480][anemoi.utils.checkpoints][INFO] - Saving metadata to inference-anemoi-by_epoch-epoch_000-step_003840/anemoi-metadata/ai-models.json
+[2025-10-02 16:32:18,482][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to inference-anemoi-by_epoch-epoch_000-step_003840/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 16:32:18,482][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to inference-anemoi-by_epoch-epoch_000-step_003840/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 16:32:19,236][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/anemoi-by_epoch-epoch_000-step_003840.ckpt
+[2025-10-02 16:32:19,236][anemoi.utils.checkpoints][INFO] - Saving metadata to archive/anemoi-metadata/ai-models.json
+[2025-10-02 16:32:19,238][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to archive/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 16:32:19,238][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to archive/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 16:32:19,363][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/inference-last.ckpt
+[2025-10-02 16:32:19,363][anemoi.utils.checkpoints][INFO] - Saving metadata to inference-last/anemoi-metadata/ai-models.json
+[2025-10-02 16:32:19,364][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to inference-last/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 16:32:19,364][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to inference-last/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 16:32:20,115][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/last.ckpt
+[2025-10-02 16:32:20,115][anemoi.utils.checkpoints][INFO] - Saving metadata to archive/anemoi-metadata/ai-models.json
+[2025-10-02 16:32:20,116][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to archive/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 16:32:20,116][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to archive/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 16:54:48,397][anemoi.models.data_indices.collection][INFO] - The order of the variables in the model matches the order in the data.
+[2025-10-02 16:54:48,398][anemoi.models.data_indices.collection][INFO] - The order of the variables in the model matches the order in the data.
+[2025-10-02 16:54:48,398][anemoi.models.data_indices.collection][INFO] - The order of the variables in the model matches the order in the data.
+[2025-10-02 16:54:48,397][anemoi.models.data_indices.collection][INFO] - The order of the variables in the model matches the order in the data.
+[2025-10-02 16:55:08,218][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/inference-last.ckpt
+[2025-10-02 16:55:08,218][anemoi.utils.checkpoints][INFO] - Saving metadata to inference-last/anemoi-metadata/ai-models.json
+[2025-10-02 16:55:08,219][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to inference-last/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 16:55:08,220][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to inference-last/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 16:55:09,073][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/last.ckpt
+[2025-10-02 16:55:09,073][anemoi.utils.checkpoints][INFO] - Saving metadata to archive/anemoi-metadata/ai-models.json
+[2025-10-02 16:55:09,074][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to archive/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 16:55:09,075][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to archive/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 16:55:09,187][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/inference-anemoi-by_epoch-epoch_001-step_007680.ckpt
+[2025-10-02 16:55:09,187][anemoi.utils.checkpoints][INFO] - Saving metadata to inference-anemoi-by_epoch-epoch_001-step_007680/anemoi-metadata/ai-models.json
+[2025-10-02 16:55:09,188][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to inference-anemoi-by_epoch-epoch_001-step_007680/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 16:55:09,189][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to inference-anemoi-by_epoch-epoch_001-step_007680/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 16:55:09,933][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/anemoi-by_epoch-epoch_001-step_007680.ckpt
+[2025-10-02 16:55:09,933][anemoi.utils.checkpoints][INFO] - Saving metadata to archive/anemoi-metadata/ai-models.json
+[2025-10-02 16:55:09,935][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to archive/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 16:55:09,935][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to archive/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 16:55:10,058][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/inference-last.ckpt
+[2025-10-02 16:55:10,058][anemoi.utils.checkpoints][INFO] - Saving metadata to inference-last/anemoi-metadata/ai-models.json
+[2025-10-02 16:55:10,060][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to inference-last/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 16:55:10,060][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to inference-last/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 16:55:10,795][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/last.ckpt
+[2025-10-02 16:55:10,795][anemoi.utils.checkpoints][INFO] - Saving metadata to archive/anemoi-metadata/ai-models.json
+[2025-10-02 16:55:10,797][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to archive/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 16:55:10,797][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to archive/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 17:17:38,859][anemoi.models.data_indices.collection][INFO] - The order of the variables in the model matches the order in the data.
+[2025-10-02 17:17:38,859][anemoi.models.data_indices.collection][INFO] - The order of the variables in the model matches the order in the data.
+[2025-10-02 17:17:38,859][anemoi.models.data_indices.collection][INFO] - The order of the variables in the model matches the order in the data.
+[2025-10-02 17:17:38,860][anemoi.models.data_indices.collection][INFO] - The order of the variables in the model matches the order in the data.
+[2025-10-02 17:17:58,432][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/inference-last.ckpt
+[2025-10-02 17:17:58,432][anemoi.utils.checkpoints][INFO] - Saving metadata to inference-last/anemoi-metadata/ai-models.json
+[2025-10-02 17:17:58,433][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to inference-last/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 17:17:58,434][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to inference-last/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 17:17:59,134][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/last.ckpt
+[2025-10-02 17:17:59,134][anemoi.utils.checkpoints][INFO] - Saving metadata to archive/anemoi-metadata/ai-models.json
+[2025-10-02 17:17:59,135][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to archive/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 17:17:59,136][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to archive/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 17:17:59,250][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/inference-anemoi-by_epoch-epoch_002-step_011520.ckpt
+[2025-10-02 17:17:59,250][anemoi.utils.checkpoints][INFO] - Saving metadata to inference-anemoi-by_epoch-epoch_002-step_011520/anemoi-metadata/ai-models.json
+[2025-10-02 17:17:59,252][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to inference-anemoi-by_epoch-epoch_002-step_011520/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 17:17:59,252][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to inference-anemoi-by_epoch-epoch_002-step_011520/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 17:17:59,933][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/anemoi-by_epoch-epoch_002-step_011520.ckpt
+[2025-10-02 17:17:59,933][anemoi.utils.checkpoints][INFO] - Saving metadata to archive/anemoi-metadata/ai-models.json
+[2025-10-02 17:17:59,934][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to archive/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 17:17:59,935][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to archive/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 17:18:00,058][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/inference-last.ckpt
+[2025-10-02 17:18:00,058][anemoi.utils.checkpoints][INFO] - Saving metadata to inference-last/anemoi-metadata/ai-models.json
+[2025-10-02 17:18:00,060][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to inference-last/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 17:18:00,060][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to inference-last/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 17:18:00,793][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/last.ckpt
+[2025-10-02 17:18:00,793][anemoi.utils.checkpoints][INFO] - Saving metadata to archive/anemoi-metadata/ai-models.json
+[2025-10-02 17:18:00,794][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to archive/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 17:18:00,795][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to archive/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 17:40:21,318][anemoi.models.data_indices.collection][INFO] - The order of the variables in the model matches the order in the data.
+[2025-10-02 17:40:21,319][anemoi.models.data_indices.collection][INFO] - The order of the variables in the model matches the order in the data.
+[2025-10-02 17:40:21,320][anemoi.models.data_indices.collection][INFO] - The order of the variables in the model matches the order in the data.
+[2025-10-02 17:40:21,321][anemoi.models.data_indices.collection][INFO] - The order of the variables in the model matches the order in the data.
+[2025-10-02 17:40:41,430][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/inference-last.ckpt
+[2025-10-02 17:40:41,430][anemoi.utils.checkpoints][INFO] - Saving metadata to inference-last/anemoi-metadata/ai-models.json
+[2025-10-02 17:40:41,431][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to inference-last/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 17:40:41,431][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to inference-last/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 17:40:42,261][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/last.ckpt
+[2025-10-02 17:40:42,261][anemoi.utils.checkpoints][INFO] - Saving metadata to archive/anemoi-metadata/ai-models.json
+[2025-10-02 17:40:42,262][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to archive/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 17:40:42,262][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to archive/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 17:40:42,412][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/inference-anemoi-by_epoch-epoch_003-step_015360.ckpt
+[2025-10-02 17:40:42,413][anemoi.utils.checkpoints][INFO] - Saving metadata to inference-anemoi-by_epoch-epoch_003-step_015360/anemoi-metadata/ai-models.json
+[2025-10-02 17:40:42,414][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to inference-anemoi-by_epoch-epoch_003-step_015360/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 17:40:42,414][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to inference-anemoi-by_epoch-epoch_003-step_015360/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 17:40:43,092][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/anemoi-by_epoch-epoch_003-step_015360.ckpt
+[2025-10-02 17:40:43,092][anemoi.utils.checkpoints][INFO] - Saving metadata to archive/anemoi-metadata/ai-models.json
+[2025-10-02 17:40:43,093][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to archive/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 17:40:43,093][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to archive/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 17:40:43,221][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/inference-last.ckpt
+[2025-10-02 17:40:43,221][anemoi.utils.checkpoints][INFO] - Saving metadata to inference-last/anemoi-metadata/ai-models.json
+[2025-10-02 17:40:43,222][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to inference-last/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 17:40:43,223][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to inference-last/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 17:40:43,961][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/last.ckpt
+[2025-10-02 17:40:43,961][anemoi.utils.checkpoints][INFO] - Saving metadata to archive/anemoi-metadata/ai-models.json
+[2025-10-02 17:40:43,962][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to archive/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 17:40:43,963][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to archive/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 18:03:16,019][anemoi.models.data_indices.collection][INFO] - The order of the variables in the model matches the order in the data.
+[2025-10-02 18:03:16,019][anemoi.models.data_indices.collection][INFO] - The order of the variables in the model matches the order in the data.
+[2025-10-02 18:03:16,020][anemoi.models.data_indices.collection][INFO] - The order of the variables in the model matches the order in the data.
+[2025-10-02 18:03:16,026][anemoi.models.data_indices.collection][INFO] - The order of the variables in the model matches the order in the data.
+[2025-10-02 18:03:35,990][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/inference-last.ckpt
+[2025-10-02 18:03:35,990][anemoi.utils.checkpoints][INFO] - Saving metadata to inference-last/anemoi-metadata/ai-models.json
+[2025-10-02 18:03:35,992][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to inference-last/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 18:03:35,992][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to inference-last/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 18:03:36,730][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/last.ckpt
+[2025-10-02 18:03:36,730][anemoi.utils.checkpoints][INFO] - Saving metadata to archive/anemoi-metadata/ai-models.json
+[2025-10-02 18:03:36,732][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to archive/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 18:03:36,732][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to archive/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 18:03:36,844][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/inference-anemoi-by_epoch-epoch_004-step_019200.ckpt
+[2025-10-02 18:03:36,844][anemoi.utils.checkpoints][INFO] - Saving metadata to inference-anemoi-by_epoch-epoch_004-step_019200/anemoi-metadata/ai-models.json
+[2025-10-02 18:03:36,846][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to inference-anemoi-by_epoch-epoch_004-step_019200/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 18:03:36,846][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to inference-anemoi-by_epoch-epoch_004-step_019200/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 18:03:37,524][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/anemoi-by_epoch-epoch_004-step_019200.ckpt
+[2025-10-02 18:03:37,524][anemoi.utils.checkpoints][INFO] - Saving metadata to archive/anemoi-metadata/ai-models.json
+[2025-10-02 18:03:37,525][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to archive/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 18:03:37,525][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to archive/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 18:03:37,651][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/inference-last.ckpt
+[2025-10-02 18:03:37,651][anemoi.utils.checkpoints][INFO] - Saving metadata to inference-last/anemoi-metadata/ai-models.json
+[2025-10-02 18:03:37,653][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to inference-last/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 18:03:37,653][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to inference-last/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 18:03:38,385][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/last.ckpt
+[2025-10-02 18:03:38,385][anemoi.utils.checkpoints][INFO] - Saving metadata to archive/anemoi-metadata/ai-models.json
+[2025-10-02 18:03:38,386][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to archive/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 18:03:38,386][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to archive/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 18:26:06,962][anemoi.models.data_indices.collection][INFO] - The order of the variables in the model matches the order in the data.
+[2025-10-02 18:26:06,962][anemoi.models.data_indices.collection][INFO] - The order of the variables in the model matches the order in the data.
+[2025-10-02 18:26:06,962][anemoi.models.data_indices.collection][INFO] - The order of the variables in the model matches the order in the data.
+[2025-10-02 18:26:06,962][anemoi.models.data_indices.collection][INFO] - The order of the variables in the model matches the order in the data.
+[2025-10-02 18:26:26,291][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/inference-last.ckpt
+[2025-10-02 18:26:26,291][anemoi.utils.checkpoints][INFO] - Saving metadata to inference-last/anemoi-metadata/ai-models.json
+[2025-10-02 18:26:26,292][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to inference-last/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 18:26:26,292][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to inference-last/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 18:26:27,054][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/last.ckpt
+[2025-10-02 18:26:27,054][anemoi.utils.checkpoints][INFO] - Saving metadata to archive/anemoi-metadata/ai-models.json
+[2025-10-02 18:26:27,055][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to archive/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 18:26:27,056][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to archive/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 18:26:27,169][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/inference-anemoi-by_epoch-epoch_005-step_023040.ckpt
+[2025-10-02 18:26:27,169][anemoi.utils.checkpoints][INFO] - Saving metadata to inference-anemoi-by_epoch-epoch_005-step_023040/anemoi-metadata/ai-models.json
+[2025-10-02 18:26:27,171][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to inference-anemoi-by_epoch-epoch_005-step_023040/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 18:26:27,171][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to inference-anemoi-by_epoch-epoch_005-step_023040/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 18:26:27,866][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/anemoi-by_epoch-epoch_005-step_023040.ckpt
+[2025-10-02 18:26:27,866][anemoi.utils.checkpoints][INFO] - Saving metadata to archive/anemoi-metadata/ai-models.json
+[2025-10-02 18:26:27,868][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to archive/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 18:26:27,868][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to archive/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 18:26:27,992][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/inference-last.ckpt
+[2025-10-02 18:26:27,992][anemoi.utils.checkpoints][INFO] - Saving metadata to inference-last/anemoi-metadata/ai-models.json
+[2025-10-02 18:26:27,993][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to inference-last/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 18:26:27,994][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to inference-last/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 18:26:28,723][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/last.ckpt
+[2025-10-02 18:26:28,723][anemoi.utils.checkpoints][INFO] - Saving metadata to archive/anemoi-metadata/ai-models.json
+[2025-10-02 18:26:28,724][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to archive/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 18:26:28,724][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to archive/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 18:49:03,721][anemoi.models.data_indices.collection][INFO] - The order of the variables in the model matches the order in the data.
+[2025-10-02 18:49:03,722][anemoi.models.data_indices.collection][INFO] - The order of the variables in the model matches the order in the data.
+[2025-10-02 18:49:03,722][anemoi.models.data_indices.collection][INFO] - The order of the variables in the model matches the order in the data.
+[2025-10-02 18:49:03,722][anemoi.models.data_indices.collection][INFO] - The order of the variables in the model matches the order in the data.
+[2025-10-02 18:49:23,600][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/inference-last.ckpt
+[2025-10-02 18:49:23,600][anemoi.utils.checkpoints][INFO] - Saving metadata to inference-last/anemoi-metadata/ai-models.json
+[2025-10-02 18:49:23,602][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to inference-last/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 18:49:23,602][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to inference-last/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 18:49:24,530][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/last.ckpt
+[2025-10-02 18:49:24,531][anemoi.utils.checkpoints][INFO] - Saving metadata to archive/anemoi-metadata/ai-models.json
+[2025-10-02 18:49:24,532][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to archive/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 18:49:24,532][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to archive/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 18:49:24,645][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/inference-anemoi-by_epoch-epoch_006-step_026880.ckpt
+[2025-10-02 18:49:24,646][anemoi.utils.checkpoints][INFO] - Saving metadata to inference-anemoi-by_epoch-epoch_006-step_026880/anemoi-metadata/ai-models.json
+[2025-10-02 18:49:24,647][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to inference-anemoi-by_epoch-epoch_006-step_026880/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 18:49:24,647][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to inference-anemoi-by_epoch-epoch_006-step_026880/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 18:49:25,334][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/anemoi-by_epoch-epoch_006-step_026880.ckpt
+[2025-10-02 18:49:25,335][anemoi.utils.checkpoints][INFO] - Saving metadata to archive/anemoi-metadata/ai-models.json
+[2025-10-02 18:49:25,336][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to archive/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 18:49:25,336][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to archive/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 18:49:25,466][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/inference-last.ckpt
+[2025-10-02 18:49:25,466][anemoi.utils.checkpoints][INFO] - Saving metadata to inference-last/anemoi-metadata/ai-models.json
+[2025-10-02 18:49:25,467][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to inference-last/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 18:49:25,467][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to inference-last/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 18:49:26,205][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/last.ckpt
+[2025-10-02 18:49:26,206][anemoi.utils.checkpoints][INFO] - Saving metadata to archive/anemoi-metadata/ai-models.json
+[2025-10-02 18:49:26,207][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to archive/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 18:49:26,207][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to archive/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 19:07:54,236][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_steps=30000` reached.
+[2025-10-02 19:07:54,349][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/inference-anemoi-by_time-epoch_007-step_030000.ckpt
+[2025-10-02 19:07:54,350][anemoi.utils.checkpoints][INFO] - Saving metadata to inference-anemoi-by_time-epoch_007-step_030000/anemoi-metadata/ai-models.json
+[2025-10-02 19:07:54,351][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to inference-anemoi-by_time-epoch_007-step_030000/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 19:07:54,352][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to inference-anemoi-by_time-epoch_007-step_030000/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 19:07:55,042][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/anemoi-by_time-epoch_007-step_030000.ckpt
+[2025-10-02 19:07:55,042][anemoi.utils.checkpoints][INFO] - Saving metadata to archive/anemoi-metadata/ai-models.json
+[2025-10-02 19:07:55,044][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to archive/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 19:07:55,044][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to archive/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 19:07:55,171][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/inference-last.ckpt
+[2025-10-02 19:07:55,171][anemoi.utils.checkpoints][INFO] - Saving metadata to inference-last/anemoi-metadata/ai-models.json
+[2025-10-02 19:07:55,173][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to inference-last/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 19:07:55,173][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to inference-last/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 19:07:55,905][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/last.ckpt
+[2025-10-02 19:07:55,905][anemoi.utils.checkpoints][INFO] - Saving metadata to archive/anemoi-metadata/ai-models.json
+[2025-10-02 19:07:55,906][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to archive/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 19:07:55,907][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to archive/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 19:07:56,016][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/inference-anemoi-by_epoch-epoch_007-step_030000.ckpt
+[2025-10-02 19:07:56,017][anemoi.utils.checkpoints][INFO] - Saving metadata to inference-anemoi-by_epoch-epoch_007-step_030000/anemoi-metadata/ai-models.json
+[2025-10-02 19:07:56,018][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to inference-anemoi-by_epoch-epoch_007-step_030000/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 19:07:56,018][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to inference-anemoi-by_epoch-epoch_007-step_030000/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 19:07:56,698][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/anemoi-by_epoch-epoch_007-step_030000.ckpt
+[2025-10-02 19:07:56,698][anemoi.utils.checkpoints][INFO] - Saving metadata to archive/anemoi-metadata/ai-models.json
+[2025-10-02 19:07:56,700][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to archive/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 19:07:56,700][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to archive/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 19:07:56,829][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/inference-last.ckpt
+[2025-10-02 19:07:56,829][anemoi.utils.checkpoints][INFO] - Saving metadata to inference-last/anemoi-metadata/ai-models.json
+[2025-10-02 19:07:56,830][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to inference-last/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 19:07:56,831][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to inference-last/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 19:07:57,556][anemoi.utils.checkpoints][INFO] - Adding extra information to checkpoint /lus/h2resw01/scratch/momc/checkpoint/3b456a9a70dc465dae27f8c63a781fb3/last.ckpt
+[2025-10-02 19:07:57,556][anemoi.utils.checkpoints][INFO] - Saving metadata to archive/anemoi-metadata/ai-models.json
+[2025-10-02 19:07:57,557][anemoi.utils.checkpoints][INFO] - Saving supporting array `latitudes` to archive/anemoi-metadata/latitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 19:07:57,558][anemoi.utils.checkpoints][INFO] - Saving supporting array `longitudes` to archive/anemoi-metadata/longitudes.numpy (shape=(10944,), dtype=float64)
+[2025-10-02 19:07:57,872][anemoi.training.diagnostics.callbacks.plot][INFO] - Teardown of the Plot Callback ...
+[2025-10-02 19:07:57,873][anemoi.training.diagnostics.callbacks.plot][INFO] - waiting and shutting down the executor ...
+[2025-10-02 19:07:57,873][anemoi.training.diagnostics.callbacks.plot][INFO] - Teardown of the Plot Callback ...
+[2025-10-02 19:07:57,873][anemoi.training.diagnostics.callbacks.plot][INFO] - waiting and shutting down the executor ...
+[2025-10-02 19:07:57,873][anemoi.training.diagnostics.mlflow.logger][INFO] - Stopping terminal log monitoring and saving buffered terminal outputs. Final status: SUCCESS
+[2025-10-02 19:07:57,886][anemoi.training.diagnostics.callbacks.plot][INFO] - Teardown of the Plot Callback ...
+[2025-10-02 19:07:57,886][anemoi.training.diagnostics.callbacks.plot][INFO] - waiting and shutting down the executor ...
+[2025-10-02 19:07:57,886][anemoi.training.diagnostics.callbacks.plot][INFO] - Teardown of the Plot Callback ...
+[2025-10-02 19:07:57,887][anemoi.training.diagnostics.callbacks.plot][INFO] - waiting and shutting down the executor ...
+[2025-10-02 19:07:57,894][anemoi.training.diagnostics.callbacks.plot][INFO] - Teardown of the Plot Callback ...
+[2025-10-02 19:07:57,894][anemoi.training.diagnostics.callbacks.plot][INFO] - waiting and shutting down the executor ...
+[2025-10-02 19:07:57,894][anemoi.training.diagnostics.callbacks.plot][INFO] - Teardown of the Plot Callback ...
+[2025-10-02 19:07:57,894][anemoi.training.diagnostics.callbacks.plot][INFO] - waiting and shutting down the executor ...
+[2025-10-02 19:07:57,908][anemoi.training.diagnostics.callbacks.plot][INFO] - Teardown of the Plot Callback ...
+[2025-10-02 19:07:57,908][anemoi.training.diagnostics.callbacks.plot][INFO] - waiting and shutting down the executor ...
+[2025-10-02 19:07:57,908][anemoi.training.diagnostics.callbacks.plot][INFO] - Teardown of the Plot Callback ...
+[2025-10-02 19:07:57,908][anemoi.training.diagnostics.callbacks.plot][INFO] - waiting and shutting down the executor ...

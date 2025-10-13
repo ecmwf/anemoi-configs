@@ -1,0 +1,34 @@
+[2025-10-01 12:58:10,199][anemoi.training.train.train][INFO] - Skipping config validation.
+[2025-10-01 12:58:10,200][anemoi.training.train.train][INFO] - Starting from checkpoint: False
+[2025-10-01 12:58:11,155][anemoi.training.diagnostics.logger][INFO] - Maximum number of params allowed to be logged is: 2000
+[2025-10-01 12:58:11,157][anemoi.training.diagnostics.mlflow.logger][INFO] - MLflow is logging offline.
+[2025-10-01 12:58:11,369][anemoi.training.diagnostics.mlflow.logger][INFO] - Logging 1 parameters
+[2025-10-01 12:58:11,375][anemoi.training.diagnostics.mlflow.logger][INFO] - Terminal Log Path: /scratch/momc/plots/dd1d08c4cb7e4c42a5096f484a632eb2/plots/terminal_log.txt
+[2025-10-01 12:58:11,375][anemoi.training.diagnostics.mlflow.logger][INFO] - SLURM job id: 34985135
+[2025-10-01 12:58:11,375][anemoi.training.train.train][INFO] - Mlflow Run id: dd1d08c4cb7e4c42a5096f484a632eb2
+[2025-10-01 12:58:11,376][anemoi.training.train.train][INFO] - Run id: dd1d08c4cb7e4c42a5096f484a632eb2
+[2025-10-01 12:58:11,376][anemoi.training.train.train][INFO] - Parent run server2server: None
+[2025-10-01 12:58:11,376][anemoi.training.train.train][INFO] - Fork run server2server: None
+[2025-10-01 12:58:11,376][anemoi.training.train.train][INFO] - Checkpoints path: /scratch/momc/checkpoint/dd1d08c4cb7e4c42a5096f484a632eb2
+[2025-10-01 12:58:11,376][anemoi.training.train.train][INFO] - Plots path: /scratch/momc/plots/dd1d08c4cb7e4c42a5096f484a632eb2
+[2025-10-01 12:58:11,376][anemoi.training.train.train][INFO] - Dry run: False
+[2025-10-01 12:58:11,941][anemoi.graphs.nodes.builders.from_file][INFO] - Reading the dataset from /home/mlx/ai-ml/datasets//aifs-ea-an-oper-0001-mars-o48-1979-2022-6h-v6.zarr.
+[2025-10-01 12:58:13,603][anemoi.utils.grids][WARNING] - Loading grids from custom user path /home/mlx/ai-ml/grids/grid-o32.npz
+[2025-10-01 12:58:13,990][anemoi.graphs.edges.builders.cutoff][INFO] - Using CutOff-Edges (with radius = 208.3 km) between data and hidden.
+[2025-10-01 12:58:14,158][anemoi.graphs.edges.builders.base][WARNING] - The 'torch-cluster' library is not installed. Installing 'torch-cluster' can significantly improve performance for graph creation. You can install it using 'pip install torch-cluster'.
+[2025-10-01 12:58:15,979][anemoi.graphs.edges.builders.knn][INFO] - Using KNN-Edges (with 3 nearest neighbours) between hidden and data.
+[2025-10-01 12:58:15,979][anemoi.graphs.edges.builders.base][WARNING] - The 'torch-cluster' library is not installed. Installing 'torch-cluster' can significantly improve performance for graph creation. You can install it using 'pip install torch-cluster'.
+[2025-10-01 12:58:16,011][anemoi.graphs.create][INFO] - Cleaning graph.
+[2025-10-01 12:58:16,011][anemoi.graphs.create][INFO] - _grid_reference_distance deleted from graph.
+[2025-10-01 12:58:16,011][anemoi.graphs.create][INFO] - _dataset deleted from graph.
+[2025-10-01 12:58:16,011][anemoi.graphs.create][INFO] - _grid_reference_distance deleted from graph.
+[2025-10-01 12:58:16,057][anemoi.graphs.create][INFO] - Graph saved at /scratch/momc/graphs/graph_o32.pt.
+[2025-10-01 12:58:17,583][anemoi.training.data.datamodule.singledatamodule][WARNING] - Falling back rollout to: 1
+[2025-10-01 12:58:17,584][anemoi.training.data.datamodule.singledatamodule][INFO] - Timeincrement set to 1 for data with frequency, 21600, and timestep, 21600
+[2025-10-01 12:58:17,587][anemoi.training.train.train][INFO] - Number of data variables: 101
+[2025-10-01 12:58:17,587][anemoi.training.train.train][INFO] - Variables: ['q_50', 'q_100', 'q_150', 'q_200', 'q_250', 'q_300', 'q_400', 'q_500', 'q_600', 'q_700', 'q_850', 'q_925', 'q_1000', 't_50', 't_100', 't_150', 't_200', 't_250', 't_300', 't_400', 't_500', 't_600', 't_700', 't_850', 't_925', 't_1000', 'u_50', 'u_100', 'u_150', 'u_200', 'u_250', 'u_300', 'u_400', 'u_500', 'u_600', 'u_700', 'u_850', 'u_925', 'u_1000', 'v_50', 'v_100', 'v_150', 'v_200', 'v_250', 'v_300', 'v_400', 'v_500', 'v_600', 'v_700', 'v_850', 'v_925', 'v_1000', 'w_50', 'w_100', 'w_150', 'w_200', 'w_250', 'w_300', 'w_400', 'w_500', 'w_600', 'w_700', 'w_850', 'w_925', 'w_1000', 'z_50', 'z_100', 'z_150', 'z_200', 'z_250', 'z_300', 'z_400', 'z_500', 'z_600', 'z_700', 'z_850', 'z_925', 'z_1000', '10u', '10v', '2d', '2t', 'lsm', 'msl', 'sdor', 'skt', 'slor', 'sp', 'tcw', 'z', 'cp', 'tp', 'cos_latitude', 'cos_longitude', 'sin_latitude', 'sin_longitude', 'cos_julian_day', 'cos_local_time', 'sin_julian_day', 'sin_local_time', 'insolation']
+[2025-10-01 12:58:17,587][anemoi.training.train.train][INFO] - Total number of prognostic variables: 88
+[2025-10-01 12:58:17,587][anemoi.training.train.train][INFO] - Total number of auxiliary variables: 13
+[2025-10-01 12:58:17,587][anemoi.training.train.train][INFO] - Total GPU count / model group size: 1 - NB: the learning rate will be scaled by this factor!
+[2025-10-01 12:58:17,587][anemoi.training.train.train][INFO] - Effective learning rate: 6.250e-05
+[2025-10-01 12:58:17,587][anemoi.training.train.train][INFO] - Training limits: max_epochs=100, max_steps=150000. Training will stop when either limit is reached first. Learning rate scheduler will run for 150000 steps.

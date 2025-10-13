@@ -1,0 +1,4 @@
+- hardware=slurm
+- training.lr.rate=1e-3
+- training.lr.iterations=50000
+- diagnostics.log.mlflow.run_name=lr 1e-3 50000 iterations

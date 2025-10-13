@@ -1,0 +1,16 @@
+[2025-10-01 12:57:21,423][anemoi.training.train.train][INFO] - Skipping config validation.
+[2025-10-01 12:57:21,424][anemoi.training.train.train][INFO] - Starting from checkpoint: False
+[2025-10-01 12:57:22,405][anemoi.training.diagnostics.logger][INFO] - Maximum number of params allowed to be logged is: 2000
+[2025-10-01 12:57:22,407][anemoi.training.diagnostics.mlflow.logger][INFO] - MLflow is logging offline.
+[2025-10-01 12:57:22,556][pytorch_lightning.loggers.mlflow][WARNING] - Experiment with name benchmark not found. Creating it.
+[2025-10-01 12:57:23,988][anemoi.training.diagnostics.mlflow.logger][INFO] - Logging 1 parameters
+[2025-10-01 12:57:23,996][anemoi.training.diagnostics.mlflow.logger][INFO] - Terminal Log Path: /scratch/momc/plots/0b35ba4fc3f84bf4930e233c0fdaf404/plots/terminal_log.txt
+[2025-10-01 12:57:23,996][anemoi.training.diagnostics.mlflow.logger][INFO] - SLURM job id: 34985135
+[2025-10-01 12:57:23,996][anemoi.training.train.train][INFO] - Mlflow Run id: 0b35ba4fc3f84bf4930e233c0fdaf404
+[2025-10-01 12:57:23,997][anemoi.training.train.train][INFO] - Run id: 0b35ba4fc3f84bf4930e233c0fdaf404
+[2025-10-01 12:57:23,997][anemoi.training.train.train][INFO] - Parent run server2server: None
+[2025-10-01 12:57:23,997][anemoi.training.train.train][INFO] - Fork run server2server: None
+[2025-10-01 12:57:23,997][anemoi.training.train.train][INFO] - Checkpoints path: /scratch/momc/checkpoint/0b35ba4fc3f84bf4930e233c0fdaf404
+[2025-10-01 12:57:23,997][anemoi.training.train.train][INFO] - Plots path: /scratch/momc/plots/0b35ba4fc3f84bf4930e233c0fdaf404
+[2025-10-01 12:57:23,997][anemoi.training.train.train][INFO] - Dry run: False
+[2025-10-01 12:57:34,294][anemoi.graphs.nodes.builders.from_file][INFO] - Reading the dataset from /home/mlx/ai-ml/datasets/stable//aifs-ea-an-oper-0001-mars-o48-1979-2022-6h-v6.zarr.
