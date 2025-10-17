@@ -1,5 +1,5 @@
-data: ???
-output: ???
+data: /datasets/
+output: /home/student/
 truncation: null
 logs:
   base: ${hardware.paths.output}logs/
