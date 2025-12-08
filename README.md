@@ -1,6 +1,6 @@
-# Configs
+# Anemoi Configs
 
-Here you can find a collection of configurations for anemoi models used in scientific experiments towards increasing time resolution. This particular branch of anemoi-configs was created to facilitate sharing configs, provide an overview and keep track of experiments which are performed at various institutions involved. It is not planned for the moment to converge with the main branch. 
+This branch of the repository contains a collection of configurations for anemoi models used in scientific experiments towards increasing time resolution. This particular branch was created to facilitate sharing configs, provide an overview and keep track of experiments which are performed at various institutions involved. It is not planned for the moment to converge with the main branch. 
 
 For the moment models of three different types are considered:
  - vanilla models: forecaster with 1 output step per model forward, i.e. horizon = step
@@ -11,4 +11,4 @@ For the multi-out models it is strongly suggested to perform scientific experime
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+[Apache License 2.0](LICENSE) In applying this licence, ECMWF does not waive the privileges and immunities granted to it by virtue of its status as an intergovernmental organisation nor does it submit to any jurisdiction.
