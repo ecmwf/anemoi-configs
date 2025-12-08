@@ -1,4 +1,4 @@
-# Anemoi Configs
+# Anemoi Configs [Time Resolution Experiments]
 
 This branch of the repository contains a collection of configurations for anemoi models used in scientific experiments towards increasing time resolution. This particular branch was created to facilitate sharing configs, provide an overview and keep track of experiments which are performed at various institutions involved. It is not planned for the moment to converge with the main branch. 
 
