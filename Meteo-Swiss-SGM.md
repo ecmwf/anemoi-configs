@@ -10,3 +10,5 @@ Training
 – Stage A, B - Dieter
 – Stage C, D - Michele
 Cerra checkpoint??
+
+Proposal: put everything in one mlflow experiment: time-resolution-experiments
