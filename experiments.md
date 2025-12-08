@@ -1,6 +1,13 @@
 # Planned Experiments
 
-## Meteo-Swiss
+## RMI (In progress)
+**Focus**: Investigate added value of multiple output steps and hyperparameter tuning 
+**Domain**: Global o96 resolution
+
+### Training Configurations
+configs/global-o96
+
+## Meteo-Swiss (planned)
 
 **Focus**: Increasing time resolution with stretched-grid comparisons  
 **Domain**: MeteoSwiss domain
