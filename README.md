@@ -1,97 +1,13 @@
-# Anemoi Configs
+# Configs
 
-This repository provides information, examples, and tutorials on config files for use with Anemoi.
+Here you can find a collection of configurations for anemoi models used in scientific experiments towards increasing time resolution. This particular branch of anemoi-configs was created to facilitate sharing configs, provide an overview and keep track of experiments which are performed at various institutions involved. It is not planned for the moment to converge with the main branch. 
 
-[Apache License 2.0](LICENSE) In applying this licence, ECMWF does not waive the privileges and immunities granted to it by virtue of its status as an intergovernmental organisation nor does it submit to any jurisdiction.
+For the moment models of three different types are considered:
+ - vanilla models: forecaster with 1 output step per model forward, i.e. horizon = step
+ - multi-out models: forecaster with n output steps per model forward, i.e. horizon = n*step
+ - time-interpolator: creates n intermediate time steps when provided with two time steps of a forecaster, i.e step = horizon/n
 
-You can find the announcements of all new configs [here](https://github.com/ecmwf/anemoi-configs/discussions/categories/configs).
-
-## Table of Contents
-
-- [Introduction](#introduction)
-<!-- - [Getting Started](#getting-started) -->
-- [Configuration Files](#configuration-files)
-<!-- - [Tutorials](#tutorials) -->
-- [Tools](#tools)
-<!-- - [Contributing](#contributing) -->
-- [License](#license)
-
-## Introduction
-
-Welcome to the Anemoi Configs repository.
-
-This is still a work in progress and will expand to include more configs, and tools. Check back soon.
-
-<!-- ## Getting Started
-
-To get started with Anemoi and its configuration files, follow these steps:
-
-1. Install Anemoi.
-2. Clone this repository.
-3. Follow the examples and tutorials provided. -->
-
-## Configuration Files
-
-In [configs](/configs) you can find a curated selection of Anemoi config files detailing
-how to train a model, all the way from dataset creation to finetuning.
-
-<!-- ## Tutorials
-
-Step-by-step tutorials to guide you through creating and modifying configuration files.
-
-![Tutorials](tutorials/)
- -->
-
-## Tools
-
-We provide some basic tools to help you get started with using these configs.
-
-First clone this repository
-
-```bash
-git clone https://github.com/ecmwf/anemoi-configs
-```
-
-## Create Tool
-
-The `create.sh` script is a tool designed to create a new environment from a specified configuration folder. It sets up a virtual environment, installs necessary packages, and copies configuration files to a specified output directory.
-
-### Usage
-
-To display the help message for the `create.sh` script, run the following command:
-
-```bash
-./tools/create.sh -h
-```
-
-```shell
-Usage: ./tools/create.sh <config-path> [--use-uv] [--venv-path <path>] [--output-path <path>]
-
-    <config-path>          Relative path to the configuration folder
-    --use-uv               Optionally use uv
-    --venv-path <path>     Path to create the virtual environment (default: $HOME/anemoi_configs/<config-path>/venv/)
-    --output-path <path>   Path to copy the configuration (default: $HOME/anemoi_configs/<config-path>)
-    -h, --help             Display this help message
-```
-
-#### Example
-
-To create a new environment using the configuration folder `example-config`, use the following command:
-
-```bash
-./tools/create.sh configs/example-config --use-uv --venv-path /custom/path/to/venv --output-path /custom/path/to/output
-```
-
-This command will:
-
-1. Create a virtual environment at `/custom/path/to/venv`.
-2. Install the necessary packages listed in `example-config/environment.txt`.
-3. Copy the configuration files from `example-config` to `/custom/path/to/output`.
-
-<!-- 
-## Contributing
-
-We welcome contributions from the community. Please read our [contributing guidelines](CONTRIBUTING.md) to get started. -->
+For the multi-out models it is strongly suggested to perform scientific experiments with the anemoi-core branch https://github.com/ecmwf/anemoi-core/tree/multi-out-tmp , which is a functioning branch that has been frozen while https://github.com/ecmwf/anemoi-core/tree/feat/multi-output-steps is a branch that is undergoing continuing development and hence less suited for scientific experiments and comparisons. 
 
 ## License
 
