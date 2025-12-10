@@ -319,7 +319,7 @@ diagnostics:
       offline: false
       authentication: false
       log_model: false
-      tracking_uri: https://servicedepl.meteoswiss.ch/mlstore/
+      tracking_uri: https://mlflow.ecmwf.int
       experiment_name: time_resolution_experiments
       project_name: S-RUC
       system: true
@@ -334,8 +334,8 @@ diagnostics:
   print_memory_summary: true
 hardware:
   paths:
-    data: /scratch/mch/miccatta/datasets
-    output: /scratch/mch/miccatta/output
+    data: /scratch/mch/miccatta/datasets/
+    output: /scratch/mch/miccatta/output/
     truncation: null
     logs:
       base: ${hardware.paths.output}/
