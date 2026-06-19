@@ -1,0 +1,169 @@
+format: zarr
+resolution: n320  # n320
+# Time frequency requested from dataset
+frequency: 6h
+# Time step of model (must be multiple of frequency)
+timestep: 6h
+
+# features that are not part of the forecast state
+# but are used as forcing to generate the forecast state
+forcing:
+- "cos_latitude"
+- "cos_longitude"
+- "sin_latitude"
+- "sin_longitude"
+- "cos_julian_day"
+- "cos_local_time"
+- "sin_julian_day"
+- "sin_local_time"
+- "insolation"
+- "lsm"
+- "sdor"
+- "slor"
+- "z"
+- "wmb"
+# features that are only part of the forecast state
+# but are not used as the input to the model
+diagnostic:
+- tp
+- cp
+- sf
+- tcc
+- hcc
+- lcc
+- mcc
+- snowc
+- ro
+- ssrd
+- strd
+- 100u
+- 100v
+- q_50
+- w_10
+- w_50
+- w_100
+- w_150
+- w_200
+- w_250
+- w_300
+- w_400
+- w_500
+- w_600
+- w_700
+- w_850
+- w_925
+- w_1000
+
+normalizer:
+  default: "mean-std"
+
+  # Remap cp statistics to those of tp when using FractionBounding. This ensures
+  # that cp, as a fraction of tp, remains consistent with tp's scale and statistics.
+  # NOTE: This remap should only be applied if FractionBounding is enabled for cp.
+  # remap:
+  #   cp: tp
+
+  # Standardization applied to tp and cp variables. Ensure that if cp is bounded
+  # as a fraction of tp, both variables are normalized using these shared statistics.
+  # "Std" normalization is preferred here over "mean-std" to avoid shifting of the
+  # zero value in the normalized space.
+  remap:
+    cp: tp
+    sf: tp
+  std:
+    - "tp"
+    - "cp"
+    - "sf"
+    - "ro"
+    - "tcw"
+    - "ssrd"
+    - "q_50"
+    - "q_100"
+    - "q_150"
+    - "q_200"
+    - "q_250"
+    - "q_300"
+    - "q_400"
+    - "q_500"
+    - "q_600"
+    - "q_700"
+    - "q_850"
+    - "q_925"
+    - "q_1000"
+    - "mwp"
+    - "swh"
+    - "h1012"
+    - "h1214"
+    - "h1417"
+    - "h1721"
+    - "h2125"
+    - "h2530"
+  min-max:
+  max:
+    - "sdor"
+    - "slor"
+    - "z"
+  none:
+    - "cos_latitude"
+    - "cos_longitude"
+    - "sin_latitude"
+    - "sin_longitude"
+    - "cos_julian_day"
+    - "cos_local_time"
+    - "sin_julian_day"
+    - "sin_local_time"
+    - "insolation"
+    - "lsm"
+    - "tcc"
+    - "mcc"
+    - "hcc"
+    - "lcc"
+    - "swvl1"
+    - "swvl2"
+    - "snowc"
+    - "sd"
+    - "cos_mwd"
+    - "sin_mwd"
+
+# processors including imputers and normalizers are applied in order of definition
+# note that the conditional_nan_postprocessor must be listed before the imputer, so that during the inverse transform it will be applied after the imputer
+processors:
+  conditional_nan_postprocessor:
+    _target_: anemoi.models.preprocessing.postprocessor.ConditionalNaNPostprocessor
+    config: ${data.conditional_nan}
+  normalizer:
+    _target_: anemoi.models.preprocessing.normalizer.InputNormalizer
+    config: ${data.normalizer}
+  const_imputer:
+    _target_: anemoi.models.preprocessing.imputer.ConstantImputer
+    config: ${data.const_imputer}
+
+const_imputer:
+  default: "none"
+  0:
+  - cos_mwd
+  - sin_mwd
+  - mwp
+  - swh
+  - h1012
+  - h1214
+  - h1417
+  - h1721
+  - h2125
+  - h2530
+  - cdww
+  - wmb
+  - swvl1
+  - swvl2
+  - ro
+  - sd
+  - snowc
+
+conditional_nan:
+  remap: sd
+  nan:
+    - snowc
+    - ro
+
+# Values set in the code
+num_features: null # number of features in the forecast state
