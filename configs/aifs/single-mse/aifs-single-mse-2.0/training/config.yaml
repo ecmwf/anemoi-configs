@@ -1,0 +1,53 @@
+defaults:
+- data: zarr
+- dataloader: native_grid
+- diagnostics: evaluation
+- datamodule: single
+- hardware: slurm
+- graph: encoder_decoder_only
+- model: transformer
+- training: single_2.0
+- _self_
+
+config_validation: True
+
+hardware:
+  num_gpus_per_model: ${oc.decode:${oc.env:AIFS_NUM_GPUS_PER_MODEL,4}}
+
+diagnostics:
+  log:
+    mlflow:
+      enabled: True
+      offline: True
+      experiment_name: 'aifs-single-v2'
+      run_name: "AIFS 2.0, pre-train"
+      terminal: True
+  plot:
+    callbacks:
+      - _target_: anemoi.training.diagnostics.callbacks.plot.PlotLoss
+        # group parameters by categories when visualizing contributions to the loss
+        # one-parameter groups are possible to highlight individual parameters
+        parameter_groups:
+          moisture: [tp, cp, tcw]
+          sfc_wind: [10u, 10v]
+          cloud: [hcc, lcc, mcc]
+          wave: [cos_mwd, sin_mwd, mwp, swh, h1012, h1214, h1417, h1721, h2125, h2530, cdww]
+          snow: [snowc, sd]
+          land: [swvl2, swvl1,stl2,stl1,ro]
+        every_n_batches: ${diagnostics.plot.frequency.batch}
+
+model:
+  num_channels: 1024
+
+dataloader:
+  limit_batches:
+    training: null
+    validation: 100
+
+training:
+  # max_epochs: 67
+  max_steps: 260000
+  lr:
+    rate: 3.125e-5
+    iterations: 260000
+    min: 3e-7  # Not scaled by GPU

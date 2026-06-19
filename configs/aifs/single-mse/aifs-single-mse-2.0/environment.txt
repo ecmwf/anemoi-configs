@@ -1,0 +1,11 @@
+anemoi-datasets==0.5.26
+anemoi-graphs==0.6.4
+anemoi-inference==0.7.1
+anemoi-models==0.9.3
+anemoi-training==0.6.3
+anemoi-transform==0.1.16
+anemoi-utils==0.4.33
+
+flash-attn @ https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.4.post1/flash_attn-2.7.4.post1+cu12torch2.6cxx11abiTRUE-cp312-cp312-linux_x86_64.whl
+torch==2.7
+torchvision>=0.21
